@@ -1,0 +1,14 @@
+import {Link} from "react-router-dom"
+import '../assets/style/loginForm.css'
+import Registers from '../components/registerForm-2'
+
+
+function RegisterPage(){
+    return(
+        <div className="page-container">
+            <Registers/>
+        </div>
+    );
+}
+
+export default RegisterPage

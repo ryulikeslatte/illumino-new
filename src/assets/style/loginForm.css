@@ -1,0 +1,163 @@
+.page-container{
+    background-color: #F1F4F8;
+    width: 100vw;
+    height: 100vh;
+    padding: 273px 194px;
+    display: flex;
+    align-items: center;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 1124px;
+    height: 467px;
+    border-radius: 20px;
+    padding: 120px 55px;
+
+}
+
+.top-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-container{
+    
+    margin-right: 207px;
+    text-align: left;
+}
+
+.left-container img{
+    width: 116px;
+    height: 60px;
+}
+
+.left-container p{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.left-container .llumino-link{
+    color: #0164E5;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.left-container h1{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.right-container{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-container .register{
+    color:#292929;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: -230px !important;
+    margin-top : 23px;
+}
+
+.register .links a{
+    color: #0164E5;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.account{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 18px 0;
+    border-bottom: 1px solid #D9D9D9;
+    width: 450px;
+}
+
+.account img{
+    margin-right: 20px !important;
+    width: 45px;
+    height: 45px;
+}
+
+.account-detail p:first-child{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.account-detail p:last-child{
+    color: #D9D9D9;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: -6px;
+}
+
+.utility-buttons{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 18px 0;
+    border-bottom: 1px solid #D9D9D9;
+    width: 450px;
+}
+
+.utility-buttons p{
+    color: rgba(41, 41, 41, 0.70);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 27px;
+}
+
+.utility-buttons img{
+    width: 30px;
+    height: 30px;
+    margin-left: 8.5px;
+}
+
+.button-cancel{
+    width: 100px;
+    height: 40px;
+    padding: 17px 22px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    color: #F5F5F5;
+    cursor: pointer;
+    border: 1px solid #0164E5;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #0164E5;
+    margin-top: 31px;
+    margin-left: 900px;
+}
+

@@ -1,0 +1,10 @@
+.homePage-container{
+    display: flex !important;
+}
+
+.example{
+    background-color: red;
+    height: 920px;
+    width: 500px;
+}
+

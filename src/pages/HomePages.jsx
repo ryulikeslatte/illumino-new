@@ -56,16 +56,16 @@ function HomePages(){
                         <div className="popular-songs-card">
                             <img src={MusicCover2} alt="music cover" />
                             <div className="popular-songs-card-detail">
-                                <p>Top hit 1</p>
-                                <p>3:45</p>
+                                <p>Happy mood</p>
+                                <p>3:15</p>
                                 <img src={PlayButton} alt="" />
                             </div>
                         </div>
                         <div className="popular-songs-card">
                             <img src={MusicCover3} alt="music cover" />
                             <div className="popular-songs-card-detail">
-                                <p>Top hit 1</p>
-                                <p>3:45</p>
+                                <p>self health</p>
+                                <p>3:15</p>
                                 <img src={PlayButton} alt="" />
                             </div>
                         </div>
@@ -99,24 +99,24 @@ function HomePages(){
                         <div className="music-list-content-card">
                             <img src={MusicCover5} alt="Music Cover" />
                             <div className="music-list-content-card-detail">
-                                <p>Waiting from the bus</p>
-                                <p>3:45</p>
+                                <p>Coups</p>
+                                <p>4:20</p>
                                 <img src={PlayButton} alt="play button" />
                             </div>
                         </div>
                         <div className="music-list-content-card">
                             <img src={MusicCover6} alt="Music Cover" />
                             <div className="music-list-content-card-detail">
-                                <p>Waiting from the bus</p>
-                                <p>3:45</p>
+                                <p>Night with friend</p>
+                                <p>4:20</p>
                                 <img src={PlayButton} alt="play button" />
                             </div>
                         </div>
                         <div className="music-list-content-card">
                             <img src={MusicCover7} alt="Music Cover" />
                             <div className="music-list-content-card-detail">
-                                <p>Waiting from the bus</p>
-                                <p>3:45</p>
+                                <p>Summer Vibes</p>
+                                <p>3:15</p>
                                 <img src={PlayButton} alt="play button" />
                             </div>
                         </div>
@@ -131,29 +131,29 @@ function HomePages(){
                         <div className="story-list-content-card">
                             <img src={StoryCover1} alt="story Cover" />
                             <div className="story-list-content-card-detail">
-                                <p>Waiting from the bus</p>
+                                <p>Track</p>
                                 <p>3:45</p>
                             </div>
                         </div>
                         <div className="story-list-content-card">
                             <img src={StoryCover2} alt="story Cover" />
                             <div className="story-list-content-card-detail">
-                                <p>Waiting from the bus</p>
-                                <p>3:45</p>
+                                <p>My Emotional</p>
+                                <p>4:20</p>
                             </div>
                         </div>
                         <div className="story-list-content-card">
                             <img src={StoryCover3} alt="story Cover" />
                             <div className="story-list-content-card-detail">
-                                <p>Waiting from the bus</p>
-                                <p>3:45</p>
+                                <p>Adventure Night</p>
+                                <p>4:20</p>
                             </div>
                         </div>
                         <div className="story-list-content-card">
                             <img src={StoryCover4} alt="story Cover" />
                             <div className="story-list-content-card-detail">
-                                <p>Waiting from the bus</p>
-                                <p>3:45</p>
+                                <p>Summer Vibes</p>
+                                <p>3:15</p>
                             </div>
                         </div>
                     </div>

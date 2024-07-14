@@ -1,0 +1,118 @@
+.journalPages-container{
+    display: flex;
+}
+
+.journalPages-core-container{
+    width: 100vw;
+}
+
+.journalPages-core-container .journalPages-core-top-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 39px 38px 36px 37px;
+}
+
+.journalPages-core-top-content .back-button-journalPages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.journalPages-core-top-content .back-button-journalPages p{
+    color: var(--primary, #FFF);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.journalPages-core-top-content .back-button-journalPages img{
+    width: 28px;
+    height: 50px;
+}
+
+.journalPages-core-top-content .user-profile img{
+    width: 60px;
+    height: 60px;
+}
+
+.journalPages-add-note-content{
+    padding: 0 27px;
+
+}
+
+.journalPages-add-note-content h2{
+    color: var(--primary, #FFF);
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 21px;
+}
+
+.journalPages-add-note-content .add-note-input-field-area{
+    position: relative;
+
+}
+
+.journalPages-add-note-content .add-note-input-field-area textarea{
+    width: 100%;
+    height: 155px;
+    padding: 25px;
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    background-color: #202122;
+    border-radius: 15px;
+    margin-bottom: 42px;
+}
+
+.journalPages-add-note-content .add-note-input-field-area button{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: var(--f-570, #F5F5F5B2);
+    text-decoration: underline;
+    top: 110px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.journalPages-recent-activity-content{
+    padding: 0 27px;
+}
+
+.journalPages-recent-activity-content h2{
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 52.5px;
+    text-align: left;   
+    color : var(--primary, #FFFFFF);
+    margin-bottom: 21px;
+}
+
+.journalPages-recent-activity-content .recent-activity-content-list{
+    width: 100%;
+    height: 511px;
+    margin-bottom: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.journalPages-recent-activity-content .recent-activity-content-list p{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    color: #F5F5F54D;
+}
+

@@ -1,75 +1,128 @@
-.homePage-container{
+.searchPage-container{
     display: flex !important;
 }
 
-.homePage-content{
+.searchPage-content{
     width: 100vw;
 }
 
-.homePage-top-content{
+.searchPage-top-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 34px 32px 25px 32px;
 }
 
-.homePage-top-content h1{
+.searchPage-top-content .back-button-searchPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.searchPage-top-content .back-button-searchPage p{
     color: var(--primary, #FFF);
-    font-size: 42px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
-.homePage-login-option{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.searchPage-top-content .back-button-searchPage img{
+    width: 28px;
+    height: 50px;
 }
 
-.homePage-login-option a{
-    color: #F5F5F5;
-    text-align: center;
+.searchPage-top-content .user-profile img{
+    width: 60px;
+    height: 60px;
+}
+
+.searchPage-searchField{
+    padding: 0 32px;
+    position: relative;
+}
+
+.searchPage-searchField img{
+    position: absolute;
+    top: 25px;
+    left: 57px;
+}
+
+.searchPage-searchField input{
+    border-radius: 50px;
+    background-color: #202122;
+    width: 639px;
+    height: 75px;
+    border: none;
+    padding: 24px 24px 24px 74px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.searchPage-recent-activity{
+    padding: 0 32px;
+}
+
+.searchPage-recent-activity h2{
+    color: var(--primary, #FFF);
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 23px;
+    margin-bottom: 6px;
+}
+
+.searchPage-recent-activity .recent-activity-card-list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 17px 43px;
+    margin-bottom: 35px;
+}
+
+.searchPage-recent-activity .recent-activity-card{
+    flex: 0 0 31%;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border-radius: 7px;
+    background: #1D1E1F;
+    width: 388px;
+    height: 75px;
+}
+
+.searchPage-recent-activity .recent-activity-card p{
+    color: var(--primary, #FFF);
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    z-index: 1;
 }
 
-.homePage-login-option .google-option img{
-    margin-right: 10px;
+.searchPage-recent-activity .recent-activity-card img{
+    width: 65px;
+    height: 63.952px;
+    border-radius: 7px;
+    margin-right: 15px;
 }
 
-.homePage-login-option .google-option{
-    padding: 17px 22px;
-    margin-left: 52px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    background-color: #161616!important;
-    position: relative;
-}
 
-.homePage-login-option .google-option::before{
-    content: '';
-    position: absolute;
-    width: 102%;
-    height: 102%;
-    border-radius: 1000px;
-    background-image: linear-gradient(to right, #5946F4,#E17CB5, #A69CF8);
-    z-index: -1;
-}
 
-.homePage-popular-songs{
+
+
+.searchPage-popular-songs{
     padding: 0 32px;
     display: flex;
     flex-direction: column;
     gap: 0;
 }
 
-.homePage-popular-songs h1{
+.searchPage-popular-songs h1{
     margin: 12px 0;
     color: var(--primary, #FFF);
     font-size: 34px;
@@ -120,7 +173,65 @@
     height: 25px;
 }
 
-.homePage-feeling-content p{
+.searchPage-popular-story{
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.searchPage-popular-story h1{
+    margin: 12px 0;
+    color: var(--primary, #FFF);
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.popular-story-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.popular-story-card img{
+    margin-bottom: -7px;
+    width: 382px;
+    height: 340px;
+}
+
+.popular-story-card .popular-story-card-detail{
+    width: 382px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: #202122;
+    display: flex;
+    padding: 12px 12px 20px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.popular-story-card .popular-story-card-detail p:nth-child(2){
+    color: var(--wireframe-1, #B6B6B6);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.popular-story-card .popular-story-card-detail img{
+    width: 25px;
+    height: 25px;
+}
+
+.searchPage-feeling-content p{
     color: var(--primary, #FFF);
     text-align: center;
     font-size: 22px;
@@ -130,7 +241,7 @@
     margin-top: 36px;
 }
 
-.homePage-feeling-content h2{
+.searchPage-feeling-content h2{
     color: var(--primary, #FFF);
     text-align: center;
     font-size: 35px;
@@ -139,7 +250,7 @@
     line-height: normal;
 }
 
-.homePage-feeling-content .feeling-content-list{
+.searchPage-feeling-content .feeling-content-list{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,14 +259,14 @@
     margin-bottom: 31px;
 }
 
-.homePage-music-content .music-top-content{
+.searchPage-music-content .music-top-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 32px;
 }
 
-.homePage-music-content .music-top-content h2{
+.searchPage-music-content .music-top-content h2{
     color: var(--primary, #FFF);
     font-size: 35px;
     font-style: normal;
@@ -163,7 +274,7 @@
     line-height: normal;
 }
 
-.homePage-music-content .music-top-content p{
+.searchPage-music-content .music-top-content p{
     color: var(--primary, #FFF);
     font-size: 14px;
     font-style: normal;
@@ -213,7 +324,7 @@
     height: 25px;
 }
 
-.homePage-story-content .story-top-content{
+.searchPage-story-content .story-top-content{
     margin-top: 32px;
     display: flex;
     align-items: center;
@@ -221,7 +332,7 @@
     padding: 0 32px;
 }
 
-.homePage-story-content .story-top-content h2{
+.searchPage-story-content .story-top-content h2{
     color: var(--primary, #FFF);
     font-size: 35px;
     font-style: normal;
@@ -229,7 +340,7 @@
     line-height: normal;
 }
 
-.homePage-story-content .story-top-content p{
+.searchPage-story-content .story-top-content p{
     color: var(--primary, #FFF);
     font-size: 14px;
     font-style: normal;
@@ -279,12 +390,12 @@
     height: 25px;
 }
 
-.homePage-daily-reflection-content{
+.searchPage-daily-reflection-content{
     padding: 0 32px;
     margin-bottom: 185px;
 }
 
-.homePage-daily-reflection-content h2{
+.searchPage-daily-reflection-content h2{
     color: var(--primary, #FFF);
     font-size: 35px;
     font-style: normal;

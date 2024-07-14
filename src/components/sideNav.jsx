@@ -16,15 +16,15 @@ function sideNav(){
                 <div className="group-links">
                     <div className="icon-links active">
                         <img src={HomeIcon} alt="Home" className="homes-icon"/>
-                        <p>Home</p>
+                        <Link to='/homes'><p>Home</p></Link>
                     </div>
                     <div className="icon-links">
                         <img src={SearchIcon} alt="Search" />
-                        <p>Search</p>
+                        <Link to='/search'><p>Search</p></Link>
                     </div>
                     <div className="icon-links">
                         <img src={JournalIcon} alt="Journal" />
-                        <p>Journal</p>
+                        <Link to='/journal'><p>Journal</p></Link>
                     </div>
                     <div className="icon-links">
                         <img src={MusicIcon} alt="Music" />

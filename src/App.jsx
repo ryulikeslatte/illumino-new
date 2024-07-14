@@ -4,6 +4,8 @@ import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import RegisterPage2 from './pages/RegisterPage-2'
 import HomePages from './pages/HomePages'
+import SearchPages from './pages/SearchPages'
+import JournalPages from './pages/JournalPages'
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
         <Route path='/register' element={<RegisterPage/>}/>
         <Route path='/register/p' element={<RegisterPage2/>}/>
         <Route path='/homes' element={<HomePages/>}/>
+        <Route path='/search' element={<SearchPages/>}/>
+        <Route path='/journal' element={<JournalPages/>}/>
       </Routes>
     </Router>
   );

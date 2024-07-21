@@ -1,0 +1,103 @@
+.dashboard-music-top .back-button-dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.dashboard-music-top .back-button-dashboard p{
+    color: var(--primary, #FFF);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.dashboard-music-top .back-button-dashboard img{
+    width: 28px;
+    height: 50px;
+}
+
+.dashboard-music-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 29px 39px;
+}
+
+.dashboard-music-content hr{
+    border: 0.5px solid var(--purple-2, #A69CF8);
+}
+
+.dashboard-music-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-music-card p:first-child{
+    color: var(--f-570, rgba(245, 245, 245, 0.70));
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 44px;
+}
+
+.dashboard-music-card .dashboard-music-card-cover{
+    width: 65px;
+    height: 63.952px;
+    border-radius: 7px;
+    margin-right: 15px;
+}
+
+.dashboard-music-card .dashboard-music-card-detail p:first-child{
+    color: var(--primary, #FFF);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.dashboard-music-card .dashboard-music-card-detail p:last-child{
+    color: var(--f-570, rgba(245, 245, 245, 0.70));
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.dashboard-music-card .dashboard-music-card-detail{
+    width: 313px;
+    margin-right: 611px;
+}
+
+.dashboard-music-card p:nth-child(4){
+    color: rgba(245, 245, 245, 0.40);
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin-right: 29px;
+}
+
+.dashboard-music-list-content{
+    padding: 36px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 35px 0;
+    margin-bottom: 347px;
+}
+
+.dashboard-music-container{
+    display: flex;
+}
+
+.dashboard-core-content{
+    position: relative;
+}
+

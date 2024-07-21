@@ -1,0 +1,107 @@
+.dashboard-users-top .back-button-dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.dashboard-users-top .back-button-dashboard p{
+    color: var(--primary, #FFF);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.dashboard-users-top .back-button-dashboard img{
+    width: 28px;
+    height: 50px;
+}
+
+.dashboard-users-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 29px 39px;
+}
+
+.dashboard-users-content hr{
+    border: 0.5px solid var(--purple-2, #A69CF8);
+}
+
+.dashboard-users-content{
+    width: 100vw;
+}
+
+.dashboard-users-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-users-card p:first-child{
+    color: var(--f-570, rgba(245, 245, 245, 0.70));
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 44px;
+}
+
+.dashboard-users-card .dashboard-users-card-cover{
+    width: 65px;
+    height: 63.952px;
+    border-radius: 7px;
+    margin-right: 15px;
+}
+
+.dashboard-users-card .dashboard-users-card-detail p:first-child{
+    color: var(--primary, #FFF);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.dashboard-users-card .dashboard-users-card-detail p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    color: var(--f-570, #F5F5F5B2);
+}
+
+.dashboard-users-card .dashboard-users-card-detail{
+    width: 313px;
+    margin-right: 611px;
+}
+
+.dashboard-users-card p:nth-child(4){
+    color: rgba(245, 245, 245, 0.40);
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin-right: 29px;
+}
+
+.dashboard-users-list-content{
+    padding: 36px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 35px 0;
+    margin-bottom: 521px;
+}
+
+.dashboard-users-container{
+    display: flex;
+}
+
+.dashboard-core-content{
+    position: relative;
+}
+

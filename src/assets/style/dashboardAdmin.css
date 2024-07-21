@@ -1,0 +1,101 @@
+.dashboard-admin-container{
+    display: flex;
+}
+
+.dashboard-admin-content{
+    width: 100vw;
+}
+
+.dashboard-admin-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 31px 26px 21px 26px;
+}
+
+.dashboard-admin-top h1{
+    color: #FFFFFF;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 67.5px;
+    text-align: left;
+
+}
+
+.dashboard-admin-content hr{
+    border: 0.5px solid var(--purple-2, #A69CF8);
+}
+
+.dashboard-admin-core-content{
+    padding: 21px 26px 26px 26px;
+}
+
+.dashboard-admin-core-content h2{
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 52.5px;
+    text-align: left;
+
+}
+
+.dashboard-core-content-group-button .dashboard-core-content-button:nth-child(1){
+    background-color: var(--purple-2, #A69CF8);
+}
+
+.dashboard-core-content-group-button .dashboard-core-content-button:nth-child(2){
+    background-color: var(--purple-2, #E17CB5);
+}
+
+.dashboard-core-content-group-button .dashboard-core-content-button:nth-child(3){
+    background-color: var(--purple-2, #5946F4);
+}
+
+
+.dashboard-core-content-group-button .dashboard-core-content-button img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 12px;
+}
+
+.dashboard-core-content-group-button .dashboard-core-content-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 370px;
+    height: 300px;
+    border-radius: 7px;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.dashboard-core-content-group-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 18px;
+    gap: 70px;
+    margin-bottom: 328px;
+}
+
+.dashboard-add-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #292929;
+    border-radius: 100%;
+    padding: 30px;
+    right: 40px;
+    bottom: -140px;
+    cursor: pointer;
+}
+
+.dashboard-add-button img{
+    width: 42.857px;
+    height: 42.857px;
+}

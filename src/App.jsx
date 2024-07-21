@@ -6,6 +6,13 @@ import RegisterPage2 from './pages/RegisterPage-2'
 import HomePages from './pages/HomePages'
 import SearchPages from './pages/SearchPages'
 import JournalPages from './pages/JournalPages'
+import WelcomeAdmin from './pages/Admin/WelcomeAdminPages'
+import AdminDashboard from './pages/Admin/DashboardAdminPages'
+import MusicDashboard from './pages/Admin/DashboardMusicPages'
+import AddMusic from './pages/Admin/AddMusicPage'
+import StoryDashboard from './pages/Admin/DashboardStoryPages'
+import AddStory from './pages/Admin/AddStoryPage'
+import UsersDashboard from './pages/Admin/DashboardUsersPages'
 
 
 function App() {
@@ -19,6 +26,13 @@ function App() {
         <Route path='/homes' element={<HomePages/>}/>
         <Route path='/search' element={<SearchPages/>}/>
         <Route path='/journal' element={<JournalPages/>}/>
+        <Route path='/admin' element={<WelcomeAdmin/>}/>
+        <Route path='/admin/dashboard' element={<AdminDashboard/>}/>
+        <Route path='/admin/music' element={<MusicDashboard/>}/>
+        <Route path='/admin/music/add' element={<AddMusic/>}/>
+        <Route path='/admin/story' element={<StoryDashboard/>}/>
+        <Route path='/admin/story/add' element={<AddStory/>}/>
+        <Route path='/admin/users' element={<UsersDashboard/>}/>
       </Routes>
     </Router>
   );

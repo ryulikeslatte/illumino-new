@@ -1,0 +1,104 @@
+.addStoryPage-content hr{
+    border: 0.5px solid var(--purple-2, #A69CF8);
+}
+
+.addStoryPage-container{
+    display: flex;
+}
+
+.addStoryPage-content{
+    width: 100vw;
+}
+
+.addStoryPage-core-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 39px;
+    padding: 63px 314px 30px 314px;
+}
+
+.addStoryPage-core-content .addStoryCover-field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 54px;
+    color: var(--primary, #FFF);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border-radius: 15px;
+    border: 1px solid var(--purple-2, #A69CF8);
+}
+
+.addStoryPage-core-content .addStoryCover-field img{
+    width: 70px;
+    height: 74px;
+}
+
+.addStoryPage-core-content input{
+    border-radius: 7px;
+    border: 1px solid var(--purple-2, #A69CF8);
+    background-color: #161616;
+    padding: 18px 26px;
+    width: 680px;
+    color: white;
+}
+
+.addStoryPage-core-content input[type="file"]::before{
+    content: 'Upload Music';
+    background-color: #161616;
+    color: rgba(255, 255, 255, 0.50) !important;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: white;
+}
+
+.addStoryPage-core-content input[type='file']::-webkit-file-upload-button {
+    display: none;
+}
+
+.addStoryPage-core-content input[type='file']::-webkit-file-selector-button {
+    display: none;
+}
+
+.addStoryPage-core-content input[type='file']{
+    color: transparent;
+}
+
+.addStoryPage-core-content .uploadStory-field{
+    position: relative;
+}
+
+.addStoryPage-core-content .uploadStory-field label{
+    position: absolute;
+    right: 10px;
+    top: 13px;
+}
+
+.addStoryPage-core-content .uploadStory-field label img{
+    width: 30px;
+    height: 30px;
+}
+
+.addStoryPage-core-content .confirm-button{
+    color: var(--f-570, rgba(245, 245, 245, 0.70));
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+    background-color: transparent;
+    border: none;
+    margin-top: -25px !important;
+}
+
+.addStoryPage-core-content:last-child .confirm-button{
+    margin-right: -630px;
+}

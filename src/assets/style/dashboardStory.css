@@ -1,11 +1,11 @@
-.dashboard-story-top .back-button-dashboard{
+.dashboard-story-top .back-button-dashboard {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
-.dashboard-story-top .back-button-dashboard p{
+.dashboard-story-top .back-button-dashboard p {
     color: var(--primary, #FFF);
     font-size: 40px;
     font-style: normal;
@@ -13,27 +13,27 @@
     line-height: normal;
 }
 
-.dashboard-story-top .back-button-dashboard img{
+.dashboard-story-top .back-button-dashboard img {
     width: 28px;
     height: 50px;
 }
 
-.dashboard-story-top{
+.dashboard-story-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 29px 39px;
 }
 
-.dashboard-story-content hr{
+.dashboard-story-content hr {
     border: 0.5px solid var(--purple-2, #A69CF8);
 }
 
-.dashboard-story-content{
+.dashboard-story-content {
     width: 100vw;
 }
 
-.dashboard-story-card{
+.dashboard-story-card {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,30 +42,31 @@
     border-radius: 12px !important;
 }
 
-.dashboard-story-container{
+.dashboard-story-container {
     display: flex;
 }
 
-.dashboard-core-content{
+.dashboard-core-content {
     position: relative;
 }
 
-.dashboard-story-card img{
+.dashboard-story-card img {
     width: 277px;
     height: 340px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
 }
 
-.dashboard-story-card .dashboard-story-card-detail h2{
+.dashboard-story-card .dashboard-story-card-detail h2 {
     color: var(--primary, #FFF);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
+    /* 150% */
 }
 
-.dashboard-story-card .dashboard-story-card-detail button{
+.dashboard-story-card .dashboard-story-card-detail .dashboard-story-delete-button {
     border-radius: 5px;
     background: var(--purple-2, #A69CF8);
     color: var(--primary, #FFF);
@@ -84,11 +85,83 @@
     border-radius: 0 0 8px 8px;
 }
 
-.dashboard-story-content-list{
+.dashboard-story-content-list {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 40px;
     padding: 50px 39px;
     margin-bottom: 243px;
+}
+
+.dashboard-story-delete-modal {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    z-index: 10;
+}
+
+.dashboard-story-delete-modal::before {
+    content: '';
+    position: fixed;
+    top: -200px;
+    left: -500px;
+    width: 200vw;
+    height: 200vh;
+    backdrop-filter: blur(6px);
+    z-index: -1;
+}
+
+
+.dashboard-story-delete-modal .dashboard-story-delete-modal-content {
+    width: 520px;
+    height: 300px;
+    border-radius: 7px;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+
+.dashboard-story-delete-modal p {
+    font-family: 'Poppins' !important;
+    color: #262626 !important;
+    font-size: 30px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 28px !important;
+    margin-bottom: 32px !important;
+    margin-right: -0.5px !important;
+}
+
+.dashboard-story-delete-modal button {
+    width: 100px;
+    height: 30px;
+    padding: 0px 37px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 8px;
+}
+
+.dashboard-story-delete-modal .delete-modal-button-group button:first-child {
+    background-color: var(--blue, #0164E5);
+    color: var(--primary, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    border: none;
+}
+
+.dashboard-story-delete-modal .delete-modal-button-group button:last-child {
+    border: 1px solid #E91D1D;
+    color: #E91D1D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
 }

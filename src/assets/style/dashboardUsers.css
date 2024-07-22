@@ -1,11 +1,11 @@
-.dashboard-users-top .back-button-dashboard{
+.dashboard-users-top .back-button-dashboard {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
-.dashboard-users-top .back-button-dashboard p{
+.dashboard-users-top .back-button-dashboard p {
     color: var(--primary, #FFF);
     font-size: 40px;
     font-style: normal;
@@ -13,33 +13,33 @@
     line-height: normal;
 }
 
-.dashboard-users-top .back-button-dashboard img{
+.dashboard-users-top .back-button-dashboard img {
     width: 28px;
     height: 50px;
 }
 
-.dashboard-users-top{
+.dashboard-users-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 29px 39px;
 }
 
-.dashboard-users-content hr{
+.dashboard-users-content hr {
     border: 0.5px solid var(--purple-2, #A69CF8);
 }
 
-.dashboard-users-content{
+.dashboard-users-content {
     width: 100vw;
 }
 
-.dashboard-users-card{
+.dashboard-users-card {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.dashboard-users-card p:first-child{
+.dashboard-users-card p:first-child {
     color: var(--f-570, rgba(245, 245, 245, 0.70));
     font-family: 'Roboto';
     font-size: 20px;
@@ -49,14 +49,14 @@
     margin-right: 44px;
 }
 
-.dashboard-users-card .dashboard-users-card-cover{
+.dashboard-users-card .dashboard-users-card-cover {
     width: 65px;
     height: 63.952px;
     border-radius: 7px;
     margin-right: 15px;
 }
 
-.dashboard-users-card .dashboard-users-card-detail p:first-child{
+.dashboard-users-card .dashboard-users-card-detail p:first-child {
     color: var(--primary, #FFF);
     font-size: 22px;
     font-style: normal;
@@ -64,7 +64,7 @@
     line-height: normal;
 }
 
-.dashboard-users-card .dashboard-users-card-detail p{
+.dashboard-users-card .dashboard-users-card-detail p {
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
@@ -72,12 +72,12 @@
     color: var(--f-570, #F5F5F5B2);
 }
 
-.dashboard-users-card .dashboard-users-card-detail{
+.dashboard-users-card .dashboard-users-card-detail {
     width: 313px;
     margin-right: 611px;
 }
 
-.dashboard-users-card p:nth-child(4){
+.dashboard-users-card p:nth-child(4) {
     color: rgba(245, 245, 245, 0.40);
     font-family: 'Roboto';
     font-size: 20px;
@@ -87,7 +87,7 @@
     margin-right: 29px;
 }
 
-.dashboard-users-list-content{
+.dashboard-users-list-content {
     padding: 36px 60px;
     display: flex;
     align-items: center;
@@ -97,11 +97,82 @@
     margin-bottom: 521px;
 }
 
-.dashboard-users-container{
+.dashboard-users-container {
     display: flex;
 }
 
-.dashboard-core-content{
+.dashboard-core-content {
     position: relative;
 }
 
+.dashboard-users-delete-modal {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    z-index: 10;
+}
+
+.dashboard-users-delete-modal::before {
+    content: '';
+    position: fixed;
+    top: -200px;
+    left: -500px;
+    width: 200vw;
+    height: 200vh;
+    backdrop-filter: blur(6px);
+    z-index: -1;
+}
+
+
+.dashboard-users-delete-modal .dashboard-users-delete-modal-content {
+    width: 520px;
+    height: 300px;
+    border-radius: 7px;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+
+.dashboard-users-delete-modal p {
+    font-family: 'Poppins' !important;
+    color: #262626 !important;
+    font-size: 30px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 28px !important;
+    margin-bottom: 32px !important;
+    margin-right: -0.5px !important;
+}
+
+.dashboard-users-delete-modal button {
+    width: 100px;
+    height: 30px;
+    padding: 0px 37px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 8px;
+}
+
+.dashboard-users-delete-modal .delete-modal-button-group button:first-child {
+    background-color: var(--blue, #0164E5);
+    color: var(--primary, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    border: none;
+}
+
+.dashboard-users-delete-modal .delete-modal-button-group button:last-child {
+    border: 1px solid #E91D1D;
+    color: #E91D1D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}

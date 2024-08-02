@@ -90,7 +90,6 @@ function DetailPlayMusic() {
                     </div>
                     <div className="mode">                        
                     <label class="container-mode">Meditation Mode
-                        <span class="check-mode"></span>
                         <input type="checkbox" checked="checked"/>
                     </label>
 

@@ -1,0 +1,253 @@
+.content {
+    display: flex;
+    color: white;
+}
+
+.musicPage-container{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .main-content .cal-section  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .main-content .cal-section .calendar {
+    width: 1202px;
+    height: 648.8px;
+    border-radius: 10px;
+    background-color: #1D1E1F;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .main-content .cal-section .calendar .react-calendar {
+    padding-top: 20px;
+}
+
+.main .main-content .cal-section .calendar .react-calendar .react-calendar__navigation {
+    display: flex;
+}
+
+.main .main-content .cal-section .calendar .react-calendar .react-calendar__navigation button{
+    border-width: 0;
+    background-color: #1D1E1F;
+    color: white;
+    font-size: 36px;
+    padding: 10px 30px 30px 30px;
+}
+
+.main .main-content .cal-section .calendar .react-calendar .react-calendar__month-view {
+    background-color: #1D1E1F;
+    font-size: 26px;
+    color: white;
+    border-width: 0;
+}
+
+.main .main-content .cal-section .calendar .react-calendar .react-calendar__month-view__weekdays__weekday {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgba(245, 245, 245, 0.40);
+}
+
+.main .main-content .cal-section .calendar .react-calendar .react-calendar__month-view__days button {
+    padding: 25px;
+    background-color: #1D1E1F;
+    color: white;
+    border: 1px solid rgba(245, 245, 245, 0.40);
+}
+
+.main .main-content .task-list .header{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 35px;
+    margin-top: 36px;
+}
+
+.main .main-content .task-list .task-list-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main .main-content .task-list .save {
+    display: flex;
+    margin-top: 50px;
+    margin-right: 40px;
+    font-size: 22px;
+    justify-content: flex-end;
+    color: rgba(245, 245, 245, 0.70);
+}
+
+.main .main-content .task-list .task-list-content .task-1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 36px;
+    background-color: #1D1E1F;
+    width: 265px;
+    height: 288px;
+    border-radius: 10px;
+    border: 1px solid var(--purple-2, #A69CF8);
+    justify-content: space-between;
+}
+
+.main .main-content .task-list .task-list-content .task-1 input {
+    margin-top: 16px;
+    margin-left: 16px;
+    align-self: flex-start;
+    width: 30px;
+    height: 30px;
+}
+
+.main .main-content .task-list .task-list-content .task-1 p {
+    align-self: flex-end;
+    margin: 30px 24px 0 0;
+    color: #A69CF8;
+    font-size: 26px;
+
+}
+
+.main .main-content .task-list .task-list-content .task-2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 36px;
+    width: 265px;
+    height: 288px;
+    border-radius: 10px;
+    border: 1px solid var(--purple-2, #A69CF8);
+    justify-content: space-between;
+    background-color: #1D1E1F;
+}
+
+.main .main-content .task-list .task-list-content .task-2 input {
+    margin-top: 16px;
+    margin-left: 16px;
+    align-self: flex-start;
+    width: 30px;
+    height: 30px;
+}
+
+.main .main-content .task-list .task-list-content .task-2 p {
+    align-self: flex-end;
+    margin: 30px 24px 0 0;
+    color: #A69CF8;
+    font-size: 26px;
+
+}
+
+.main .main-content .task-list .task-list-content .task-3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 36px;
+    width: 265px;
+    height: 288px;
+    border-radius: 10px;
+    border: 1px solid var(--purple-2, #A69CF8);
+    justify-content: space-between;
+    background-color: #1D1E1F;
+}
+
+.main .main-content .task-list .task-list-content .task-3 input {
+    margin-top: 16px;
+    margin-left: 16px;
+    align-self: flex-start;
+    width: 30px;
+    height: 30px;
+}
+
+.main .main-content .task-list .task-list-content .task-3 p {
+    align-self: center;
+    margin: 30px 0 0 0;
+    color: #A69CF8;
+    font-size: 26px;
+}
+
+.main .main-content .task-list .task-list-content .task-4 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 36px;
+    width: 265px;
+    height: 288px;
+    border-radius: 10px;
+    border: 1px solid var(--purple-2, #A69CF8);
+    justify-content: space-between;
+    background-color: #1D1E1F;
+}
+
+.main .main-content .task-list .task-list-content .task-4 input {
+    margin-top: 16px;
+    margin-left: 16px;
+    align-self: flex-start;
+    width: 30px;
+    height: 30px;
+}
+
+.main .main-content .task-list .task-list-content .task-4 p {
+    align-self: center;
+    margin: 30px 0 0 0;
+    color: #A69CF8;
+    font-size: 26px;
+
+}
+
+.main .main-content .task-list .task-list-content .task-1 img {
+    width: 163px;
+    height: 149px;
+    align-self: flex-start;
+}
+
+.main .main-content .task-list .task-list-content .task-2 img {
+    width: 163px;
+    height: 149px;
+    align-self: flex-start;
+}
+
+.main .main-content .task-list .task-list-content .task-3 img {
+    width: 163px;
+    height: 149px;
+    align-self: flex-start;
+}
+
+.main .main-content .task-list .task-list-content .task-4 img {
+    width: 163px;
+    height: 149px;
+    align-self: flex-start;
+}
+
+.main .main-content .recent-activity  .header {
+    font-size: 35px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.main .main-content .recent-activity .history-activity {
+    display: flex;
+}
+
+.main .main-content .recent-activity .history-activity p {
+    margin-right: 32px;
+}
+
+.main .main-content .recent-activity .history-activity .number {
+    font-size: 22px;
+}
+
+.main .main-content .recent-activity .history-activity .history .date {
+    font-size: 22px;
+}
+
+.main .main-content .recent-activity .history-activity .history .detail {
+    color: rgba(245, 245, 245, 0.70);
+    margin-top: 5px;
+    margin-bottom: 30px;
+}

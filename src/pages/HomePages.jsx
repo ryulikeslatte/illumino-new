@@ -124,7 +124,7 @@ function HomePages(){
                 </div>
                 <div className="homePage-story-content">
                     <div className="story-top-content">
-                        <h2>Track</h2>
+                        <h2>Story</h2>
                         <p><u>See all</u></p>
                     </div>
                     <div className="story-list-content">

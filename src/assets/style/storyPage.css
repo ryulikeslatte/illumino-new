@@ -1,0 +1,113 @@
+.container {
+    display: grid;
+    grid-template-columns: 220px 1fr;    
+}
+
+.main {
+    width: 100%;
+    color: white;
+    height: 100vh;
+}
+
+.main .recent {
+    margin: 40px; 
+}
+
+.main .recent .header {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.main .recent .history {
+    height: 446px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main .recent .history .story-card {
+    width: 277px;
+    height: 440px;
+    background-color:  #1D1E1F;
+}
+
+.main .recent .history .story-card .story-cover img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.main .recent .history .story-card .detail-story {
+    background-color:  #1D1E1F;
+    height: 106px;
+    padding: 12.7px 0 0 12px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main .recent .history .story-card .detail-story .title {
+    font-size: 20px;
+}
+
+.main .recent .history .story-card .detail-story .continue-read {
+    background-color: #A69CF8;
+    text-align: center;
+    width: 200px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.main .recent .history .story-card .detail-story .continue-read .percentage {
+    font-size: 12px;
+}
+
+.main .main-story {
+    margin: 40px; 
+}
+
+.main .main-story .header {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.main .main-story .collection {
+    height: 431px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main .main-story .collection .story-card {
+    width: 277px;
+    height: 440px;
+    background-color:  #1D1E1F;
+}
+
+.main .main-story .collection .story-card .story-cover img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.main .main-story .collection .story-card .detail-story {
+    background-color:  #1D1E1F;
+    height: 100px;
+    padding: 12.7px 0 0 12px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main .main-story .collection .story-card .detail-story .title {
+    font-size: 20px;
+}
+
+.main .main-story .collection .story-card .detail-story button {
+    background-color: #A69CF8;
+    text-align: center;
+    width: 75px;
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.main .recent .history .story-card .detail-story .continue-read .percentage {
+    font-size: 12px;
+}

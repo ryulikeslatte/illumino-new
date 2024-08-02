@@ -1,0 +1,113 @@
+
+.main {
+    color: white;
+    height: 100%;
+}
+
+.journalPages-core-top-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+
+.back-button-journalPages {
+    margin: 34px 0 0 50px;
+}
+
+.main .journalPages-core-top-content .user-profile {
+    margin: 32px 38px 0 0;
+}
+
+.container .main .main-content .music-cover img {
+    width: 700px;
+    height: 600px;
+    margin-left: 40px;
+}
+
+.container .main .main-content {
+   display: flex;
+}
+
+.container .main .main-content .explore {
+    margin: 0px 40px 20px 40px;
+    font-size: 30px;
+    width: 100%;
+}
+
+.container .main .main-content .explore .rec {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: .main {
+        color: white;
+    }
+    ;
+    border-radius: 7px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container .main .main-content .explore .rec .music-rec {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .main .main-content .explore .rec .music-rec p {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.container .main .main-content .explore .rec .music-rec img {
+    width: 65px;
+    height: 65px;
+}
+
+.container .main .main-content .explore .rec .play {
+    display: flex;
+    width: 25px;
+    height: 25px;
+}
+
+.container .main .button-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.container .main .button-bar .detail-music {
+    justify-content: center;
+}
+
+.container .main .button-bar .detail-music .title {
+    font-size: 30px;
+}
+
+.container .main .button-bar .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .main .button-bar .button img {
+    width: 30px;
+    height: 30px;
+    margin: 0 15px 0 15px;
+}
+
+.container .main .button-bar .button .play {
+    width: 60px;
+    height: 60px;
+}
+
+.container .main .button-bar .mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .main .button-bar .mode label {
+    margin-right: 20px;
+    font-size: 20px;
+}

@@ -1,7 +1,13 @@
-.side-nav {
-    width: 219px;
+nav {
+    justify-content: center;
+    position: fixed;
     height: 100%;
     background-color: #1D1E1F;
+}
+
+nav .side-nav-container .group-links a {
+    margin: 0px;
+    padding: 0px;
 }
 
 .side-nav-container {
@@ -11,23 +17,21 @@
     justify-content: center;
 }
 
-
-
 .group-links {
+    margin: 0px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     gap: 23px 0px;
 }
 
 .group-links .icon-links {
-    width: 193px;
+    width: 220px;
     height: 55px;
     display: flex;
     align-items: center;
-    padding: 0 0 0 28px;
     border-radius: 0px 7px 7px 0px;
-    transform: translateX(-11.5px);
-    padding: 0 0 0 34.33px !important;
+    padding: 0 0 0 35px !important;
 }
 
 .group-links .icon-links p {
@@ -36,16 +40,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-}
-
-.active {
-    /* position: relative;
-    width: 193px;
-    height: 55px;
-    border-radius: 0px 7px 7px 0px; */
-    background-color: #7363F5;
-    /* 
-     */
 }
 
 .active p {

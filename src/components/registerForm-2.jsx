@@ -1,5 +1,5 @@
 import '../assets/style/registerForm.css'
-import logo from '../assets/image/app-logo.png'
+import logo from '../assets/image/logo-illumino.png'
 import {Link} from "react-router-dom"
 
 function registerForm(){

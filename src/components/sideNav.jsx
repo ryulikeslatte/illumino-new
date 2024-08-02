@@ -1,6 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Logo from '../assets/image/app-logo.png';
+import Logo from '../assets/image/logo-illumino.png';
 import HomeIcon from '../assets/image/Group.png';
 import SearchIcon from '../assets/image/search-icon.png';
 import CalendarIcon from '../assets/image/calendar-icon.png';

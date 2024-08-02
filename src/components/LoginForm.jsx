@@ -1,5 +1,5 @@
 import '../assets/style/loginForm.css'
-import logo from '../assets/image/app-logo.png'
+import logo from '../assets/image/logo-illumino.png'
 import expProfil from '../assets/image/exp-profil.png'
 import {Link} from "react-router-dom"
 import defaultProfil from '../assets/image/default-profil.png'

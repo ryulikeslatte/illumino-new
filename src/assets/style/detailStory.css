@@ -1,0 +1,59 @@
+.container {
+    display: grid;
+    grid-template-columns: 220px 1fr; 
+    height: 100%;
+}
+
+.main {
+    color: white;
+}
+
+hr {
+    border-top: 1px solid #A69CF8;
+    width: 90%;
+    margin: auto;
+}
+
+.main .main-content {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.main .main-content img {
+    width: 1206px;
+    height: 579px;
+    justify-self: center;
+    align-self: center;
+}
+
+.main .main-content .story-content {
+    margin-top: 30px;
+}
+
+.main .main-content .story-content .title-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .main-content .story-content .title-section .title {
+    font-size: 35px;
+}
+
+.main .main-content .story-content .title-section .artist {
+    color: #B6B6B6;
+    font-size: 20px;
+}
+
+.main .main-content .story-content img {
+    width: 30px;
+    height: 30px;
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin-top: 18px;
+}
+
+.main .main-content .story-content .story {
+    text-align: justify;
+    margin-top: 50px;
+}

@@ -10,8 +10,6 @@ import Meditation from '../assets/image/meditation.png'
 import Listening from '../assets/image/listeningtomusic.png'
 import Writing from '../assets/image/writing.png'
 
-
-
 function CalendarPage() {
     const [date, setDate] = useState(new Date());
 

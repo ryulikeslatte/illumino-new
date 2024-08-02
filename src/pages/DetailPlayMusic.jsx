@@ -11,10 +11,6 @@ import PreviousButton from '../assets/image/previous.png';
 import PlayButton2 from '../assets/image/play.png';
 import NextButton from '../assets/image/next.png';
 
-
-
-
-
 function DetailPlayMusic() {
     return (
         <>
@@ -32,7 +28,7 @@ function DetailPlayMusic() {
                         <img src={expProfil} alt="user" />
                     </div>
                 </div>
-                <div className="main-content">
+                <div className="main-content-music">
                     <div className="music-cover">
                         <img src={MusicCover1} alt="music cover"/>
                     </div>

@@ -6,7 +6,7 @@
 .journalPages-core-top-content {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 38px;
+    margin-bottom: 20px;
 }
 
 .back-button-journalPages {
@@ -118,4 +118,10 @@
 .container .main .button-bar .mode label {
     font-size: 20px;
     display: flex;
+}
+
+.main .journalPages-footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

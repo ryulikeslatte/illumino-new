@@ -42,10 +42,23 @@ function MusicPage() {
                             <img src={PlayButton}/>
                         </div>
                     </div>
-                </div>
 
-                {/* 2 */}
-                <div className="music-core-content">
+                    <div className="music-card">
+                        <div className="music-content">
+                            <p>1</p>
+                            <img src={MusicCover1}/>
+                            <div className="detail">
+                                <p>Fire</p>
+                                <p>Artist enjy</p>
+                            </div>
+                            
+                        </div>
+                        <div className="music-duration">
+                            <p>3.15</p>
+                            <img src={PlayButton}/>
+                        </div>
+                    </div>
+
                     <div className="music-card">
                         <div className="music-content">
                             <p>1</p>
@@ -62,24 +75,8 @@ function MusicPage() {
                         </div>
                     </div>
                 </div>
-
-                {/* 3 */}
-                <div className="music-core-content">
-                    <div className="music-card">
-                        <div className="music-content">
-                            <p>1</p>
-                            <img src={MusicCover1}/>
-                            <div className="detail">
-                                <p>Fire</p>
-                                <p>Artist enjy</p>
-                            </div>
-                            
-                        </div>
-                        <div className="music-duration">
-                            <p>3.15</p>
-                            <img src={PlayButton}/>
-                        </div>
-                    </div>
+                <div className="journalPages-footer-container">
+                    <SecondFooter/>
                 </div>
             </div>
         </div>

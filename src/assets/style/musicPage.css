@@ -14,6 +14,10 @@ hr {
     margin: auto;
 }
 
+.main .music-core-content {
+    height: 100%;
+}
+
 .main .music-core-content .music-card {
     display: flex;
     justify-content: space-between;
@@ -50,4 +54,10 @@ hr {
 .main .music-core-content .music-card .music-duration img {
     width: 25px;
     height: 25px;
+}
+
+.main .journalPages-footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

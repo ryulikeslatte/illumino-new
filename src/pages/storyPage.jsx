@@ -129,6 +129,9 @@ function StoryPage() {
                         
                     </div>
                 </div>
+                <div className="journalPages-footer-container">
+                    <SecondFooter/>
+                </div>
             </div>
         </div>
         </>

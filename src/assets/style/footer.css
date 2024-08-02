@@ -1,14 +1,14 @@
 footer{
     display: flex;
+    flex-direction: row;
     gap: 60px;
     justify-content: center;
     align-items: center;
-    width: auto;
     height: 83px;
     margin-bottom: 36px;
 }
 
-footer a{
+footer a {
     color: rgba(245, 245, 245, 0.90);
     text-align: center;
     font-family: "Roboto", sans-serif;

@@ -32,6 +32,7 @@ function CalendarPage() {
                         <img src={expProfil} alt="user" />
                     </div>
                 </div>
+                <hr />
                 <div className="main-content">
                     <div className="cal-section">
                         <div className="calendar">
@@ -78,7 +79,9 @@ function CalendarPage() {
                         </div>
                     </div>
                 </div>
-                
+                <div className="journalPages-footer-container">
+                    <SecondFooter/>
+                </div>
             </div>
         </div>
         </>

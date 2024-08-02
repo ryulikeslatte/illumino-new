@@ -1,31 +1,26 @@
-.content {
-    display: flex;
-    color: white;
+.container {
+    display: grid;
+    grid-template-columns: 220px 1fr; 
+    height: 100%;
 }
 
-.musicPage-container{
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 220px;
-    display: flex;
-    flex-direction: column;
+.main hr {
+    border-top: 1px solid #A69CF8;
+    width: 90%;
+    margin: auto;
 }
 
 .main .main-content .cal-section  {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .main .main-content .cal-section .calendar {
-    width: 1202px;
     height: 648.8px;
     border-radius: 10px;
     background-color: #1D1E1F;
-    justify-content: center;
-    align-items: center;
 }
 
 .main .main-content .cal-section .calendar .react-calendar {

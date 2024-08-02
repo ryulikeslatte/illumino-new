@@ -19,6 +19,7 @@
 }
 
 .main .recent .history {
+    width: 100%;
     height: 446px;
     display: flex;
     justify-content: space-around;
@@ -110,4 +111,10 @@
 
 .main .recent .history .story-card .detail-story .continue-read .percentage {
     font-size: 12px;
+}
+
+.main .journalPages-footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

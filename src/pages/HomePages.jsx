@@ -143,7 +143,7 @@ function HomePages(){
                     <div className="story-list-content">
                         <div className="story-list-content-card">
                             <div className="story-list-content-card-detail">
-                                <img src={StoryCover1} alt="story Cover" />
+                                <img src={StoryCover1} alt="story Cover" className='cover'/>
                                 <div className="card-info">
                                     <p>Track</p>
                                     <p>3:45</p>
@@ -152,7 +152,7 @@ function HomePages(){
                         </div>
                         <div className="story-list-content-card">
                             <div className="story-list-content-card-detail">
-                                <img src={StoryCover2} alt="story Cover" />
+                                <img src={StoryCover2} alt="story Cover" className='cover'/>
                                 <div className="card-info">
                                     <p>My Emotional</p>
                                     <p>4:20</p>
@@ -161,16 +161,20 @@ function HomePages(){
                         </div>
                         <div className="story-list-content-card">
                             <div className="story-list-content-card-detail">
-                                <img src={StoryCover3} alt="story Cover" />
-                                <p>Adventure Night</p>
-                                <p>4:20</p>
+                                <img src={StoryCover3} alt="story Cover" className='cover'/>
+                                <div className="card-info">
+                                    <p>Adventure Night</p>
+                                    <p>4:20</p>
+                                </div>
                             </div>
                         </div>
                         <div className="story-list-content-card">
-                            <img src={StoryCover4} alt="story Cover" />
                             <div className="story-list-content-card-detail">
-                                <p>Summer Vibes</p>
-                                <p>3:15</p>
+                                <img src={StoryCover4} alt="story Cover" className='cover'/>
+                                <div className="card-info">
+                                    <p>Summer Vibes</p>
+                                    <p>3:15</p>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -89,7 +89,7 @@ function HomePages(){
                 </div>
                 <div className="homePage-music-content">
                     <div className="music-top-content">
-                        <h2>Music</h2>
+                        <h1>Music</h1>
                         <p><u>See all</u></p>
                     </div>
                     <div className="music-list-content">
@@ -137,7 +137,7 @@ function HomePages(){
                 </div>
                 <div className="homePage-story-content">
                     <div className="story-top-content">
-                        <h2>Story</h2>
+                        <h1>Story</h1>
                         <p><u>See all</u></p>
                     </div>
                     <div className="story-list-content">
@@ -180,17 +180,27 @@ function HomePages(){
                     </div>
                 </div>
                 <div className="homePage-daily-reflection-content">
-                    <h2>Daily Reflection</h2>
+                    <h1>Daily Reflection</h1>
                     <div className="daily-reflection-content-list">
                         <div className="daily-reflection-content-card">
-                            <img src={JournalIcon} alt="Journal Icon" />
-                            <h3>My Journal</h3>
-                            <p>Write about it...</p>
+                            <div className="card-detail">
+                                <div className="main-detail">
+                                    <img src={JournalIcon} alt="Journal Icon" />
+                                    <h3>My Journal</h3>
+                                </div>
+                                <p>Write about it...</p>
+                            </div>
                         </div>
                         <div className="daily-reflection-content-card">
-                            <img src={calendarIcon} alt="Journal Icon" />
-                            <h3>Activity Calendar</h3>
-                            <p>Shedule your daily activities here...</p>
+                            <div className="card-detail">
+                                <div className="main-detail">
+                                    <img src={calendarIcon} alt="Journal Icon" />
+                                    <h3>Activity Calendar</h3>
+                                </div>
+                                
+                                <p>Shedule your daily activities here...</p>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>

@@ -71,12 +71,12 @@
 
 .content .main-content {
     display: flex;
-    margin: 30px;
 }
 
 .content .main-content .homePage-popular-songs{
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
 }
 
 .content .main-content .homePage-popular-songs h1{
@@ -85,7 +85,8 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin: 15px 0;
+    margin: 40px 0 20px 40px;
+
 }
 
 .main-content .popular-songs-list{
@@ -98,6 +99,7 @@
 
 .popular-songs-card .popular-songs-card-detail{
     width: 382px;
+    height: 465px;
     background-color:  #1D1E1F;
     border-radius: 10px;
 }
@@ -122,6 +124,10 @@
     align-items: flex-start;
     gap: 4px;
     align-self: stretch;
+}
+
+.popular-songs-card .popular-songs-card-detail .card-info p {
+    font-size: 16px;
 }
 
 .homePage-feeling-content {
@@ -153,25 +159,24 @@
 .music-list-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 32px;
-    margin-top: 15px;
 }
 
 .music-list-content .music-list-content-card {
     background-color:  #1D1E1F;
-    height: 449px;
+    height: 450px;
     border-radius: 10px;
 }
 
 .music-list-content .music-list-content-card .card-info {
     display: flex;
-    padding: 5px 12px 12px 12px;
+    padding: 1px 12px 12px 12px;
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
     align-self: stretch;
+    font-size: 16px;
 }
 
 .music-list-content .music-list-content-card .cover {
@@ -179,28 +184,71 @@
     border-top-right-radius: 10px;
 }
 
+.homePage-music-content {
+    margin: 40px;
+}
+
+.homePage-music-content .music-top-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+
+.homePage-music-content .music-top-content h1 {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.homePage-music-content .music-top-content p {
+    justify-self: center;
+    align-self: center;
+}
+
+.homePage-story-content {
+    margin: 40px;
+}
+
+.homePage-story-content .story-top-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+
+.homePage-story-content .story-top-content h1 {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.homePage-story-content .story-top-content p {
+    justify-self: center;
+    align-self: center;
+}
+
 .story-list-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 32px;
-    margin-top: 15px;
 }
 
 .story-list-content .story-list-content-card {
     background-color:  #1D1E1F;
-    height: 449px;
+    height: 450px;
     border-radius: 10px;
 }
 
 .story-list-content .story-list-content-card .card-info {
     display: flex;
-    padding: 5px 12px 12px 12px;
+    padding: 20px 20px 20px 12px;
     flex-direction: column;
-    align-items: flex-start;
     gap: 4px;
-    align-self: stretch;
+    font-size: 16px;
 }
 
 .story-list-content .story-list-content-card .cover {
@@ -211,16 +259,49 @@
 .homePage-daily-reflection-content .daily-reflection-content-list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
 }
 
+.homePage-daily-reflection-content h1 {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 20px 40px;
+}
 
+.homePage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card {
+    background-color: #1D1E1F;
+    width: 591px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.homePage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card .card-detail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.homePage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card .card-detail .main-detail{
+    margin-top: 65px
+}
+
+.homePage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card .card-detail .main-detail img {
+    margin-bottom: 20px;
+}
+
+.homePage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card .card-detail .main-detail h3{
+    margin-bottom: 50px;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 
 .homePage-container .homePage-footer-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-

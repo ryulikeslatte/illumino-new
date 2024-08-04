@@ -1,12 +1,24 @@
 .searchPage-container{
-    display: flex !important;
+    display: grid;
+    grid-template-columns: 220px 1fr; 
+    height: 100%;
 }
 
 .searchPage-content{
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
-.searchPage-top-content{
+.content .searchPage-core-top-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* .searchPage-top-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -437,4 +449,4 @@
     font-weight: 300;
     line-height: normal;
 }
-
+ */

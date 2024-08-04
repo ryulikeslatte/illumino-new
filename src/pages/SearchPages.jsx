@@ -31,11 +31,10 @@ function SearchPages(){
     return(
         <>
         <div className="searchPage-container">
-
             <div className="nav-containers">
                 <SideNav/>
             </div>
-            <div className="searchPage-content">
+            <div className="content">
                 <div className="searchPage-top-content">
                     <div className="back-button-searchPage">
                         <img src={chevronIcon} alt="back" />

@@ -1,27 +1,34 @@
 .homePage-container{
-    display: flex !important;
+    display: grid;
+    grid-template-columns: 220px 1fr; 
+    height: 100%;
 }
 
-.homePage-content{
-    width: 100vw;
-}
-
-.homePage-top-content{
+.homePage-container .content{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 34px 32px 25px 32px;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: white;
 }
 
-.homePage-top-content h1{
+.content .homePage-top-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin: 34px 40px 20px 40px;
+}
+
+.content .homePage-top-content p {
     color: var(--primary, #FFF);
-    font-size: 42px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
-.homePage-login-option{
+.content .homePage-top-content .homePage-login-option {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,268 +69,128 @@
     z-index: -1;
 }
 
-.homePage-popular-songs{
-    padding: 0 32px;
+.content .main-content {
     display: flex;
-    flex-direction: column;
-    gap: 0;
+    margin: 30px;
 }
 
-.homePage-popular-songs h1{
-    margin: 12px 0;
+.content .main-content .homePage-popular-songs{
+    display: flex;
+    flex-direction: column;
+}
+
+.content .main-content .homePage-popular-songs h1{
     color: var(--primary, #FFF);
     font-size: 34px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin: 15px 0;
 }
 
-.popular-songs-list{
+.main-content .popular-songs-list{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    gap: 40px;
-}
-
-.popular-songs-card img{
+    justify-content: space-evenly;
     margin-bottom: -7px;
-    width: 382px;
-    height: 340px;
 }
 
 .popular-songs-card .popular-songs-card-detail{
     width: 382px;
-    color: #FFF;
-    font-size: 16px;
+    background-color:  #1D1E1F;
+    border-radius: 10px;
+}
+
+.popular-songs-list .popular-songs-card .popular-songs-card-detail .cover {
+    width: 382px;
+    height: 340px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.popular-songs-card .popular-songs-card-detail p:nth-child(2){
+    font-size: 20px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    background-color: #202122;
+    font-weight: 500;
+    line-height: 28px;
+}
+.popular-songs-card .popular-songs-card-detail .card-info {
     display: flex;
-    padding: 12px 12px 20px 12px;
+    padding: 12px;
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
     align-self: stretch;
 }
 
-.popular-songs-card .popular-songs-card-detail p:nth-child(2){
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px;
-}
-
-.popular-songs-card .popular-songs-card-detail img{
-    width: 25px;
-    height: 25px;
+.homePage-feeling-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .homePage-feeling-content p{
-    color: var(--primary, #FFF);
-    text-align: center;
     font-size: 22px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    margin-top: 36px;
 }
 
-.homePage-feeling-content h2{
-    color: var(--primary, #FFF);
-    text-align: center;
+.homePage-feeling-content h2 {
     font-size: 35px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
 }
 
-.homePage-feeling-content .feeling-content-list{
+.homePage-feeling-content .feeling-content-list {
     display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    gap: 100px;
+}
+
+.homePage-music-content {
+    display: flex;
+    flex-direction: column;
+}
+.music-list-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 0 32px;
+    margin-top: 15px;
+}
+
+.music-list-content .music-list-content-card {
+    background-color:  #1D1E1F;
+    height: 449px;
+    border-radius: 10px;
+}
+
+.music-list-content .music-list-content-card .card-info {
+    display: flex;
+    padding: 5px 12px 12px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.music-list-content .music-list-content-card .cover {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+.homePage-container .homePage-footer-container {
+    display: flex;
     justify-content: center;
-    gap : 109px;
-    margin-top: 46.24px;
-    margin-bottom: 31px;
-}
-
-.homePage-music-content .music-top-content{
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 32px;
 }
 
-.homePage-music-content .music-top-content h2{
-    color: var(--primary, #FFF);
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.homePage-music-content .music-top-content p{
-    color: var(--primary, #FFF);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-decoration-line: underline;
-    cursor: pointer;
-}
-
-.music-list-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 41px;
-    padding: 0 32px;
-    margin-top: 15px;
-}
-
-.music-list-content .music-list-content-card img{
-    width: 277px;
-    height: 340px;
-    margin-bottom: -13px;
-}
-
-.music-list-content .music-list-content-card-detail{
-    padding: 12px 12px 20px 12px;
-    width: 277px;
-    background-color: #202122;
-}
-
-.music-list-content .music-list-content-card-detail p{
-    background-color: #202122;
-    color: var(--primary, #FFF);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.music-list-content .music-list-content-card-detail p:nth-child(2){
-    font-family: 'Roboto';
-    font-size: 20px;
-}
-
-.music-list-content .music-list-content-card-detail img{
-    width: 25px;
-    height: 25px;
-}
-
-.homePage-story-content .story-top-content{
-    margin-top: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 32px;
-}
-
-.homePage-story-content .story-top-content h2{
-    color: var(--primary, #FFF);
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.homePage-story-content .story-top-content p{
-    color: var(--primary, #FFF);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-decoration-line: underline;
-    cursor: pointer;
-}
-
-.story-list-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 41px;
-    padding: 0 32px;
-    margin-top: 15px;
-}
-
-.story-list-content .story-list-content-card img{
-    width: 277px;
-    height: 340px;
-    margin-bottom: -13px;
-}
-
-.story-list-content .story-list-content-card-detail{
-    padding: 12px 12px 20px 12px;
-    width: 277px;
-    background-color: #202122;
-}
-
-.story-list-content .story-list-content-card-detail p{
-    background-color: #202122;
-    color: var(--primary, #FFF);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.story-list-content .story-list-content-card-detail p:nth-child(2){
-    font-family: 'Roboto';
-    font-size: 20px;
-}
-
-.story-list-content .story-list-content-card-detail img{
-    width: 25px;
-    height: 25px;
-}
-
-.homePage-daily-reflection-content{
-    padding: 0 32px;
-    margin-bottom: 185px;
-}
-
-.homePage-daily-reflection-content h2{
-    color: var(--primary, #FFF);
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin: 44px 0 18px 0;
-}
-
-.daily-reflection-content-list{
-    display: flex;
-    gap: 40px;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-.daily-reflection-content-list .daily-reflection-content-card{
-    background-color: #202122;
-    width: 591px;
-    height: 300px;
-    border-radius: 7px;
-    padding: 69px 0 37px 65px ;
-}
-
-.daily-reflection-content-list .daily-reflection-content-card h3{
-    color: var(--primary, #FFF);
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-top: 19px;
-    margin-bottom: 53px;
-}
-
-.daily-reflection-content-list .daily-reflection-content-card p{
-    color: var(--primary, #FFF);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
 

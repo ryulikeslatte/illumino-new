@@ -24,13 +24,12 @@ function HomePages(){
     return(
         <>
         <div className="homePage-container">
-
-            <div className="example-2">
+            <div className="homePage-side-container">
                 <SideNav/>
             </div>
-            <div className="homePage-content">
+            <div className="content">
                 <div className="homePage-top-content">
-                    <h1>Welcome to llumino!</h1>
+                    <p>Welcome to llumino!</p>
                     <div className="homePage-login-option">
                         <a href="#">Sign Up</a>
                         <a href="#">
@@ -42,36 +41,42 @@ function HomePages(){
                     </div>
                 </div>
                 <hr />
-                <div className="homePage-popular-songs">
-                    <h1>Popular Songs</h1>
-                    <div className="popular-songs-list">
-                        <div className="popular-songs-card">
-                            <img src={MusicCover1} alt="music cover" />
-                            <div className="popular-songs-card-detail">
-                                <p>Top hit 1</p>
-                                <p>3:45</p>
-                                <img src={PlayButton} alt="" />
+                <div className="main-content">
+                    <div className="homePage-popular-songs">
+                        <h1>Popular Songs</h1>
+                        <div className="popular-songs-list">
+                            <div className="popular-songs-card">
+                                <div className="popular-songs-card-detail">
+                                    <img src={MusicCover1} alt="music cover" className='cover' />
+                                    <div className="card-info">
+                                        <p>Top hit 1</p>
+                                        <p>3:45</p>
+                                        <img src={PlayButton} alt=""/>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div className="popular-songs-card">
+                                <div className="popular-songs-card-detail">
+                                    <img src={MusicCover2} alt="music cover" className='cover' />
+                                    <div className="card-info">
+                                        <p>Happy mood</p>
+                                        <p>3:15</p>
+                                        <img src={PlayButton} alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="popular-songs-card">
+                                <div className="popular-songs-card-detail">
+                                    <img src={MusicCover3} alt="music cover" className='cover'/>
+                                    <div className="card-info">
+                                        <p>self health</p>
+                                        <p>3:15</p>
+                                        <img src={PlayButton} alt="" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div className="popular-songs-card">
-                            <img src={MusicCover2} alt="music cover" />
-                            <div className="popular-songs-card-detail">
-                                <p>Happy mood</p>
-                                <p>3:15</p>
-                                <img src={PlayButton} alt="" />
-                            </div>
-                        </div>
-                        <div className="popular-songs-card">
-                            <img src={MusicCover3} alt="music cover" />
-                            <div className="popular-songs-card-detail">
-                                <p>self health</p>
-                                <p>3:15</p>
-                                <img src={PlayButton} alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
+                    </div> 
                 </div>
                 <div className="homePage-feeling-content">
                     <p>Hello arinza</p>
@@ -89,35 +94,43 @@ function HomePages(){
                     </div>
                     <div className="music-list-content">
                         <div className="music-list-content-card">
-                            <img src={MusicCover4} alt="Music Cover" />
                             <div className="music-list-content-card-detail">
-                                <p>Waiting from the bus</p>
-                                <p>3:45</p>
-                                <img src={PlayButton} alt="play button" />
+                                <img src={MusicCover4} alt="Music Cover" className='cover'/>
+                                <div className="card-info">
+                                    <p>Waiting from the bus</p>
+                                    <p>3:45</p>
+                                    <img src={PlayButton} alt="play button" />
+                                </div>
                             </div>
                         </div>
                         <div className="music-list-content-card">
-                            <img src={MusicCover5} alt="Music Cover" />
                             <div className="music-list-content-card-detail">
-                                <p>Coups</p>
-                                <p>4:20</p>
-                                <img src={PlayButton} alt="play button" />
+                                <img src={MusicCover5} alt="Music Cover" className='cover'/>
+                                <div className="card-info">
+                                    <p>Coups</p>
+                                    <p>4:20</p>
+                                    <img src={PlayButton} alt="play button" />
+                                </div>
                             </div>
                         </div>
                         <div className="music-list-content-card">
-                            <img src={MusicCover6} alt="Music Cover" />
                             <div className="music-list-content-card-detail">
-                                <p>Night with friend</p>
-                                <p>4:20</p>
-                                <img src={PlayButton} alt="play button" />
+                                <img src={MusicCover6} alt="Music Cover" className='cover'/>
+                                <div className="card-info">
+                                    <p>Night with friend</p>
+                                    <p>4:20</p>
+                                    <img src={PlayButton} alt="play button" />
+                                </div>
                             </div>
                         </div>
                         <div className="music-list-content-card">
-                            <img src={MusicCover7} alt="Music Cover" />
                             <div className="music-list-content-card-detail">
-                                <p>Summer Vibes</p>
-                                <p>3:15</p>
-                                <img src={PlayButton} alt="play button" />
+                                <img src={MusicCover7} alt="Music Cover" className='cover'/>
+                                <div className="card-info">
+                                    <p>Summer Vibes</p>
+                                    <p>3:15</p>
+                                    <img src={PlayButton} alt="play button" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -129,22 +142,26 @@ function HomePages(){
                     </div>
                     <div className="story-list-content">
                         <div className="story-list-content-card">
-                            <img src={StoryCover1} alt="story Cover" />
                             <div className="story-list-content-card-detail">
-                                <p>Track</p>
-                                <p>3:45</p>
+                                <img src={StoryCover1} alt="story Cover" />
+                                <div className="card-info">
+                                    <p>Track</p>
+                                    <p>3:45</p>
+                                </div>
                             </div>
                         </div>
                         <div className="story-list-content-card">
-                            <img src={StoryCover2} alt="story Cover" />
                             <div className="story-list-content-card-detail">
-                                <p>My Emotional</p>
-                                <p>4:20</p>
+                                <img src={StoryCover2} alt="story Cover" />
+                                <div className="card-info">
+                                    <p>My Emotional</p>
+                                    <p>4:20</p>
+                                </div>
                             </div>
                         </div>
                         <div className="story-list-content-card">
-                            <img src={StoryCover3} alt="story Cover" />
                             <div className="story-list-content-card-detail">
+                                <img src={StoryCover3} alt="story Cover" />
                                 <p>Adventure Night</p>
                                 <p>4:20</p>
                             </div>
@@ -173,11 +190,10 @@ function HomePages(){
                         </div>
                     </div>
                 </div>
+                <div className="homePage-footer-content">
+                    <SecondFooter/>
+                </div>
             </div>
-            
-        </div>
-        <div className="homePage-footer-content">
-            <SecondFooter/>
         </div>
         </>
     );

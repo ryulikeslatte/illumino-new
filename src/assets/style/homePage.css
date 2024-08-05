@@ -12,12 +12,58 @@
     color: white;
 }
 
+/* .main .storyPage-core-top-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.main .storyPage-core-top-content .user-profile {
+    margin: 32px 38px 0 0;
+}
+
+.main hr {
+    border-top: 1px solid #A69CF8;
+    width: 90%;
+    margin: auto;
+}
+
+.storyPage-core-top-content .back-button-journalPages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 34px 0 0 50px;
+}
+
+.storyPage-core-top-content .back-button-journalPages p{
+    color: var(--primary, #FFF);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.storyPage-core-top-content .back-button-journalPages img{
+    width: 28px;
+    height: 50px;
+}
+
+.storyPage-core-top-content .user-profile img{
+    width: 60px;
+    height: 60px;
+} */
+
 .content .homePage-top-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 20px;
-    margin: 34px 40px 20px 40px;
+}
+
+.content hr {
+    border-top: 1px solid #A69CF8;
+    width: 90%;
+    margin: auto;
 }
 
 .content .homePage-top-content p {
@@ -26,12 +72,14 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin: 34px 0 25px 50px;
 }
 
 .content .homePage-top-content .homePage-login-option {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
 }
 
 .homePage-login-option a{
@@ -51,6 +99,7 @@
 .homePage-login-option .google-option{
     padding: 17px 22px;
     margin-left: 52px;
+    margin-right: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +108,7 @@
     position: relative;
 }
 
-.homePage-login-option .google-option::before{
+.homePage-login-option .google-option::before {
     content: '';
     position: absolute;
     width: 102%;
@@ -69,55 +118,46 @@
     z-index: -1;
 }
 
-.content .main-content {
-    display: flex;
+.content .homePage-main-content {
+    margin: 40px;
 }
 
-.content .main-content .homePage-popular-songs{
+.content .homePage-main-content .homePage-popular-songs{
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
 }
 
-.content .main-content .homePage-popular-songs h1{
+.content .homePage-main-content .homePage-popular-songs h1{
     color: var(--primary, #FFF);
     font-size: 34px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin: 40px 0 20px 40px;
-
+    margin: 0 0 20px 0;
 }
 
-.main-content .popular-songs-list{
+.homePage-popular-songs .songs-list {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: -7px;
+    justify-content: space-around;
 }
 
-.popular-songs-card .popular-songs-card-detail{
-    width: 382px;
+.homePage-popular-songs .songs-card .songs-card-detail{
+    width: 360px;
     height: 465px;
     background-color:  #1D1E1F;
     border-radius: 10px;
 }
 
-.popular-songs-list .popular-songs-card .popular-songs-card-detail .cover {
-    width: 382px;
+.homePage-popular-songs .songs-list .songs-card .songs-card-detail .cover {
+    width: 360px;
     height: 340px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.popular-songs-card .popular-songs-card-detail p:nth-child(2){
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px;
-}
-.popular-songs-card .popular-songs-card-detail .card-info {
+.homePage-popular-songs .songs-card .songs-card-detail .card-info {
     display: flex;
     padding: 12px;
     flex-direction: column;
@@ -126,50 +166,51 @@
     align-self: stretch;
 }
 
-.popular-songs-card .popular-songs-card-detail .card-info p {
+.homePage-popular-songs .songs-card .songs-card-detail .card-info p {
     font-size: 16px;
 }
 
-.homePage-feeling-content {
+.homePage-main-content .homePage-feeling-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.homePage-feeling-content p{
+.homePage-main-content .homePage-feeling-content p{
     font-size: 22px;
 }
 
-.homePage-feeling-content h2 {
+.homePage-main-content .homePage-feeling-content h2 {
     font-size: 35px;
 }
 
-.homePage-feeling-content .feeling-content-list {
+.homePage-main-content .homePage-feeling-content .feeling-content-list {
     display: flex;
     flex-direction: row;
     margin-top: 40px;
     gap: 100px;
 }
 
-.homePage-music-content {
+.homePage-main-content .homePage-music-content {
     display: flex;
     flex-direction: column;
 }
-.music-list-content {
+
+.homePage-main-content .music-list-content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.music-list-content .music-list-content-card {
+.homePage-main-content .music-list-content .music-list-content-card {
     background-color:  #1D1E1F;
     height: 450px;
     border-radius: 10px;
 }
 
-.music-list-content .music-list-content-card .card-info {
+.homePage-main-content .music-list-content .music-list-content-card .card-info {
     display: flex;
     padding: 1px 12px 12px 12px;
     flex-direction: column;
@@ -179,71 +220,78 @@
     font-size: 16px;
 }
 
-.music-list-content .music-list-content-card .cover {
+.homePage-main-content .music-list-content .music-list-content-card .cover {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    width: 270px;
 }
 
-.homePage-music-content {
-    margin: 40px;
+.homePage-main-content .homePage-music-content {
+    margin-top: 40px;
 }
 
-.homePage-music-content .music-top-content {
+.homePage-main-content .homePage-music-content .music-top-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 0 20px 0;
 }
 
-.homePage-music-content .music-top-content h1 {
+.homePage-main-content .homePage-music-content .music-top-content h1 {
     font-size: 34px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
-.homePage-music-content .music-top-content p {
+.homePage-main-content .homePage-music-content .music-top-content a {
     justify-self: center;
-    align-self: center;
+    align-self: flex-end;
+    padding-right: 20px;
+    color: white;
+    text-decoration: underline;
 }
 
-.homePage-story-content {
-    margin: 40px;
+.homePage-main-content .homePage-story-content {
+    margin-top: 40px;
 }
 
-.homePage-story-content .story-top-content {
+.homePage-main-content .homePage-story-content .story-top-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 0 20px 0;
 }
 
-.homePage-story-content .story-top-content h1 {
+.homePage-main-content .homePage-story-content .story-top-content h1 {
     font-size: 34px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
-.homePage-story-content .story-top-content p {
+.homePage-main-content .homePage-story-content .story-top-content a {
     justify-self: center;
-    align-self: center;
+    align-self: flex-end;
+    padding-right: 20px;
+    color: white;
+    text-decoration: underline;
 }
 
-.story-list-content {
+.homePage-main-content .story-list-content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.story-list-content .story-list-content-card {
+.homePage-main-content .story-list-content .story-list-content-card {
     background-color:  #1D1E1F;
     height: 450px;
     border-radius: 10px;
 }
 
-.story-list-content .story-list-content-card .card-info {
+.homePage-main-content .story-list-content .story-list-content-card .card-info {
     display: flex;
     padding: 20px 20px 20px 12px;
     flex-direction: column;
@@ -251,48 +299,53 @@
     font-size: 16px;
 }
 
-.story-list-content .story-list-content-card .cover {
+.homePage-main-content .story-list-content .story-list-content-card .cover {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    width: 270px;
 }
 
-.homePage-daily-reflection-content .daily-reflection-content-list {
+.homePage-main-content .homePage-daily-reflection-content {
+    margin-top: 40px
+}
+
+.homePage-main-content .homePage-daily-reflection-content .daily-reflection-content-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-bottom: 40px;
 }
 
-.homePage-daily-reflection-content h1 {
+.homePage-main-content .homePage-daily-reflection-content h1 {
     font-size: 34px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin: 0 0 20px 40px;
+    margin: 0 0 20px 0;
 }
 
-.homePage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card {
+.homePage-main-content .homePage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card {
     background-color: #1D1E1F;
-    width: 591px;
+    width: 560px;
     height: 300px;
     border-radius: 10px;
 }
 
-.homePage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card .card-detail {
+.homePage-main-content .homePage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card .card-detail {
     display: flex;
     flex-direction: column;
     margin-left: 70px;
 }
 
-.homePage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card .card-detail .main-detail{
-    margin-top: 65px
+.homePage-main-content .homePage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card .card-detail .main-detail{
+    margin-top: 50px
 }
 
-.homePage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card .card-detail .main-detail img {
+.homePage-main-content .homePage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card .card-detail .main-detail img {
     margin-bottom: 20px;
 }
 
-.homePage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card .card-detail .main-detail h3{
+.homePage-main-content .homePage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card .card-detail .main-detail h3{
     margin-bottom: 50px;
     font-size: 28px;
     font-style: normal;

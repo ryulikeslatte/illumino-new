@@ -15,7 +15,7 @@ function MusicPage() {
                 <SideNav />
             </div>
             <div className="main">
-                <div className="journalPages-core-top-content">
+                <div className="musicPage-core-top-content">
                     <div className="back-button-journalPages">
                         <img src={chevronIcon} alt="back" />
                         <p>Music</p>

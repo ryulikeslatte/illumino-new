@@ -26,6 +26,7 @@ import chevronIcon from '../assets/image/chevron.svg'
 import expProfil from '../assets/image/exp-profil.png'
 import SearchIcon from '../assets/image/search-icon.png'
 import '../assets/style/searchPages.css'
+import { Link } from 'react-router-dom'
 
 function SearchPages(){
     return(
@@ -45,13 +46,13 @@ function SearchPages(){
                     </div>
                 </div>
                 <hr />
-                <div className="main-content">
+                <div className="searchPage-main-content">
                     <div className="searchPage-searchField">
                         <img src={SearchIcon} alt="search" />
                         <input type="text" placeholder='Search' />
                     </div>
                     <div className="searchPage-recent-activity">
-                        <h2>Recent Activity</h2>
+                        <h1>Recent Activity</h1>
                         <div className="recent-activity-card-list">
                             <div className="recent-activity-card">
                                 <img src={MusicCover1} alt="music cover" />
@@ -82,9 +83,9 @@ function SearchPages(){
                     </div>
                     <div className="searchPage-popular-songs">
                         <h1>Popular Songs</h1>
-                        <div className="popular-songs-list">
-                            <div className="popular-songs-card">
-                                <div className="popular-songs-card-detail">
+                        <div className="songs-list">
+                            <div className="songs-card">
+                                <div className="songs-card-detail">
                                     <img src={MusicCover1} alt="music cover" className='cover'/>
                                     <div className="card-info">
                                         <p>Top hit 1</p>
@@ -93,8 +94,8 @@ function SearchPages(){
                                     </div>
                                 </div>
                             </div>
-                            <div className="popular-songs-card">
-                                <div className="popular-songs-card-detail">
+                            <div className="songs-card">
+                                <div className="songs-card-detail">
                                     <img src={MusicCover2} alt="music cover" className='cover' />
                                     <div className="card-info">
                                         <p>Happy mood</p>
@@ -103,8 +104,8 @@ function SearchPages(){
                                     </div>
                                 </div>
                             </div>
-                            <div className="popular-songs-card">
-                                <div className="popular-songs-card-detail">
+                            <div className="songs-card">
+                                <div className="songs-card-detail">
                                     <img src={MusicCover3} alt="music cover" className='cover'/>
                                     <div className="card-info">
                                         <p>Self health</p>
@@ -158,82 +159,98 @@ function SearchPages(){
                     </div>
                     <div className="searchPage-music-content">
                         <div className="music-top-content">
-                            <h2>Music</h2>
-                            <p><u>See all</u></p>
+                            <h1>Music</h1>
+                            <Link to='/music'>See all</Link>
                         </div>
                         <div className="music-list-content">
                             <div className="music-list-content-card">
-                                <img src={MusicCover4} alt="Music Cover" />
                                 <div className="music-list-content-card-detail">
-                                    <p>Waiting from the bus</p>
-                                    <p>3:45</p>
-                                    <img src={PlayButton} alt="play button" />
+                                    <img src={MusicCover4} alt="Music Cover" className='cover'/>
+                                    <div className="card-info">
+                                        <p>Waiting from the bus</p>
+                                        <p>3:45</p>
+                                        <img src={PlayButton} alt="play button" />
+                                    </div>
                                 </div>
                             </div>
                             <div className="music-list-content-card">
-                                <img src={MusicCover5} alt="Music Cover" />
                                 <div className="music-list-content-card-detail">
-                                    <p>Coups</p>
-                                    <p>4:20</p>
-                                    <img src={PlayButton} alt="play button" />
+                                    <img src={MusicCover5} alt="Music Cover"  className='cover'/>
+                                    <div className="card-info">
+                                        <p>Coups</p>
+                                        <p>4:20</p>
+                                        <img src={PlayButton} alt="play button" />
+                                    </div>
                                 </div>
                             </div>
                             <div className="music-list-content-card">
-                                <img src={MusicCover6} alt="Music Cover" />
                                 <div className="music-list-content-card-detail">
-                                    <p>Night with friend</p>
-                                    <p>4:20</p>
-                                    <img src={PlayButton} alt="play button" />
+                                    <img src={MusicCover6} alt="Music Cover"  className='cover'/>
+                                    <div className="card-info">
+                                        <p>Night with friend</p>
+                                        <p>4:20</p>
+                                        <img src={PlayButton} alt="play button" />
+                                    </div>
                                 </div>
                             </div>
                             <div className="music-list-content-card">
-                                <img src={MusicCover7} alt="Music Cover" />
                                 <div className="music-list-content-card-detail">
-                                    <p>Summer Vibes</p>
-                                    <p>3:15</p>
-                                    <img src={PlayButton} alt="play button" />
+                                    <img src={MusicCover7} alt="Music Cover"  className='cover'/>
+                                    <div className="card-info">
+                                        <p>Summer Vibes</p>
+                                        <p>3:15</p>
+                                        <img src={PlayButton} alt="play button" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="searchPage-story-content">
                         <div className="story-top-content">
-                            <h2>Track</h2>
-                            <p><u>See all</u></p>
+                            <h1>Story</h1>
+                            <Link to='/story'>See all</Link>
                         </div>
                         <div className="story-list-content">
                             <div className="story-list-content-card">
-                                <img src={StoryCover1} alt="story Cover" />
                                 <div className="story-list-content-card-detail">
-                                    <p>Track</p>
-                                    <p>3:45</p>
+                                    <img src={StoryCover1} alt="story Cover" className='cover'/>
+                                    <div className="card-info">
+                                        <p>Track</p>
+                                        <p>3:45</p>
+                                    </div>
                                 </div>
                             </div>
                             <div className="story-list-content-card">
-                                <img src={StoryCover2} alt="story Cover" />
                                 <div className="story-list-content-card-detail">
-                                    <p>My Emotional</p>
-                                    <p>4:20</p>
+                                    <img src={StoryCover2} alt="story Cover" className='cover'/>
+                                    <div className="card-info">
+                                        <p>My Emotional</p>
+                                        <p>4:20</p>
+                                    </div>
                                 </div>
                             </div>
                             <div className="story-list-content-card">
-                                <img src={StoryCover3} alt="story Cover" />
                                 <div className="story-list-content-card-detail">
-                                    <p>Adventure Night</p>
-                                    <p>4:20</p>
+                                    <img src={StoryCover3} alt="story Cover" className='cover'/>
+                                    <div className="card-info">
+                                        <p>Adventure Night</p>
+                                        <p>4:20</p>
+                                    </div>
                                 </div>
                             </div>
                             <div className="story-list-content-card">
-                                <img src={StoryCover4} alt="story Cover" />
                                 <div className="story-list-content-card-detail">
-                                    <p>Summer Vibes</p>
-                                    <p>3:15</p>
+                                    <img src={StoryCover4} alt="story Cover" className='cover'/>
+                                    <div className="card-info">
+                                        <p>Summer Vibes</p>
+                                        <p>3:15</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="searchPage-daily-reflection-content">
-                        <h2>Daily Reflection</h2>
+                        <h1>Daily Reflection</h1>
                         <div className="daily-reflection-content-list">
                             <div className="daily-reflection-content-card">
                                 <div className="card-detail">

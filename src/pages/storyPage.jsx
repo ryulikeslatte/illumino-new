@@ -17,7 +17,7 @@ function StoryPage() {
                 </div>
             </div>
             <div className="main">
-                <div className="journalPages-core-top-content">
+                <div className="storyPage-core-top-content">
                     <div className="back-button-journalPages">
                         <img src={chevronIcon} alt="back" />
                         <p>Story</p>
@@ -28,7 +28,7 @@ function StoryPage() {
                 </div>
                 <hr />
                 <div className="recent">
-                    <p className="header">Recent Activity</p>
+                    <h1>Recent Activity</h1>
                     <div className="history">
                         <div className="story-card">
                             <div className="story-cover">
@@ -85,7 +85,7 @@ function StoryPage() {
                     </div>
                 </div>
                 <div className="main-story">
-                    <p className="header">Story Collection</p>
+                    <h1>Story Collection</h1>
                     <div className="collection">
                         <div className="story-card">
                             <div className="story-cover">

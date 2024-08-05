@@ -19,6 +19,7 @@ import StoryCover4 from '../assets/image/storycover4.png'
 import JournalIcon from '../assets/image/journalColor.svg'
 import calendarIcon from '../assets/image/calendarColor.svg'
 import '../assets/style/homePage.css'
+import { Link } from 'react-router-dom'
 
 function HomePages(){
     return(
@@ -41,12 +42,12 @@ function HomePages(){
                     </div>
                 </div>
                 <hr />
-                <div className="main-content">
+                <div className="homePage-main-content">
                     <div className="homePage-popular-songs">
                         <h1>Popular Songs</h1>
-                        <div className="popular-songs-list">
-                            <div className="popular-songs-card">
-                                <div className="popular-songs-card-detail">
+                        <div className="songs-list">
+                            <div className="songs-card">
+                                <div className="songs-card-detail">
                                     <img src={MusicCover1} alt="music cover" className='cover' />
                                     <div className="card-info">
                                         <p>Top hit 1</p>
@@ -55,8 +56,8 @@ function HomePages(){
                                     </div>  
                                 </div>
                             </div>
-                            <div className="popular-songs-card">
-                                <div className="popular-songs-card-detail">
+                            <div className="songs-card">
+                                <div className="songs-card-detail">
                                     <img src={MusicCover2} alt="music cover" className='cover' />
                                     <div className="card-info">
                                         <p>Happy mood</p>
@@ -65,8 +66,8 @@ function HomePages(){
                                     </div>
                                 </div>
                             </div>
-                            <div className="popular-songs-card">
-                                <div className="popular-songs-card-detail">
+                            <div className="songs-card">
+                                <div className="songs-card-detail">
                                     <img src={MusicCover3} alt="music cover" className='cover'/>
                                     <div className="card-info">
                                         <p>self health</p>
@@ -77,130 +78,129 @@ function HomePages(){
                             </div>
                         </div>
                     </div> 
-                </div>
-                <div className="homePage-feeling-content">
-                    <p>Hello arinza</p>
-                    <h2>How are you feeling today?</h2>
-                    <div className="feeling-content-list">
-                        <img src={SadReaction} alt="sad" />
-                        <img src={NormalReaction} alt="normal" />
-                        <img src={HappyReaction} alt="happy" />
-                    </div>
-                </div>
-                <div className="homePage-music-content">
-                    <div className="music-top-content">
-                        <h1>Music</h1>
-                        <p><u>See all</u></p>
-                    </div>
-                    <div className="music-list-content">
-                        <div className="music-list-content-card">
-                            <div className="music-list-content-card-detail">
-                                <img src={MusicCover4} alt="Music Cover" className='cover'/>
-                                <div className="card-info">
-                                    <p>Waiting from the bus</p>
-                                    <p>3:45</p>
-                                    <img src={PlayButton} alt="play button" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="music-list-content-card">
-                            <div className="music-list-content-card-detail">
-                                <img src={MusicCover5} alt="Music Cover" className='cover'/>
-                                <div className="card-info">
-                                    <p>Coups</p>
-                                    <p>4:20</p>
-                                    <img src={PlayButton} alt="play button" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="music-list-content-card">
-                            <div className="music-list-content-card-detail">
-                                <img src={MusicCover6} alt="Music Cover" className='cover'/>
-                                <div className="card-info">
-                                    <p>Night with friend</p>
-                                    <p>4:20</p>
-                                    <img src={PlayButton} alt="play button" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="music-list-content-card">
-                            <div className="music-list-content-card-detail">
-                                <img src={MusicCover7} alt="Music Cover" className='cover'/>
-                                <div className="card-info">
-                                    <p>Summer Vibes</p>
-                                    <p>3:15</p>
-                                    <img src={PlayButton} alt="play button" />
-                                </div>
-                            </div>
+                    <div className="homePage-feeling-content">
+                        <p>Hello arinza</p>
+                        <h2>How are you feeling today?</h2>
+                        <div className="feeling-content-list">
+                            <img src={SadReaction} alt="sad" />
+                            <img src={NormalReaction} alt="normal" />
+                            <img src={HappyReaction} alt="happy" />
                         </div>
                     </div>
-                </div>
-                <div className="homePage-story-content">
-                    <div className="story-top-content">
-                        <h1>Story</h1>
-                        <p><u>See all</u></p>
-                    </div>
-                    <div className="story-list-content">
-                        <div className="story-list-content-card">
-                            <div className="story-list-content-card-detail">
-                                <img src={StoryCover1} alt="story Cover" className='cover'/>
-                                <div className="card-info">
-                                    <p>Track</p>
-                                    <p>3:45</p>
+                    <div className="homePage-music-content">
+                        <div className="music-top-content">
+                            <h1>Music</h1>
+                            <Link to='/music'>See all</Link>
+                        </div>
+                        <div className="music-list-content">
+                            <div className="music-list-content-card">
+                                <div className="music-list-content-card-detail">
+                                    <img src={MusicCover4} alt="Music Cover" className='cover'/>
+                                    <div className="card-info">
+                                        <p>Waiting from the bus</p>
+                                        <p>3:45</p>
+                                        <img src={PlayButton} alt="play button" />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="story-list-content-card">
-                            <div className="story-list-content-card-detail">
-                                <img src={StoryCover2} alt="story Cover" className='cover'/>
-                                <div className="card-info">
-                                    <p>My Emotional</p>
-                                    <p>4:20</p>
+                            <div className="music-list-content-card">
+                                <div className="music-list-content-card-detail">
+                                    <img src={MusicCover5} alt="Music Cover" className='cover'/>
+                                    <div className="card-info">
+                                        <p>Coups</p>
+                                        <p>4:20</p>
+                                        <img src={PlayButton} alt="play button" />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="story-list-content-card">
-                            <div className="story-list-content-card-detail">
-                                <img src={StoryCover3} alt="story Cover" className='cover'/>
-                                <div className="card-info">
-                                    <p>Adventure Night</p>
-                                    <p>4:20</p>
+                            <div className="music-list-content-card">
+                                <div className="music-list-content-card-detail">
+                                    <img src={MusicCover6} alt="Music Cover" className='cover'/>
+                                    <div className="card-info">
+                                        <p>Night with friend</p>
+                                        <p>4:20</p>
+                                        <img src={PlayButton} alt="play button" />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="story-list-content-card">
-                            <div className="story-list-content-card-detail">
-                                <img src={StoryCover4} alt="story Cover" className='cover'/>
-                                <div className="card-info">
-                                    <p>Summer Vibes</p>
-                                    <p>3:15</p>
+                            <div className="music-list-content-card">
+                                <div className="music-list-content-card-detail">
+                                    <img src={MusicCover7} alt="Music Cover" className='cover'/>
+                                    <div className="card-info">
+                                        <p>Summer Vibes</p>
+                                        <p>3:15</p>
+                                        <img src={PlayButton} alt="play button" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="homePage-daily-reflection-content">
-                    <h1>Daily Reflection</h1>
-                    <div className="daily-reflection-content-list">
-                        <div className="daily-reflection-content-card">
-                            <div className="card-detail">
-                                <div className="main-detail">
-                                    <img src={JournalIcon} alt="Journal Icon" />
-                                    <h3>My Journal</h3>
+                    <div className="homePage-story-content">
+                        <div className="story-top-content">
+                            <h1>Story</h1>
+                            <Link to='/story'>See all</Link>
+                        </div>
+                        <div className="story-list-content">
+                            <div className="story-list-content-card">
+                                <div className="story-list-content-card-detail">
+                                    <img src={StoryCover1} alt="story Cover" className='cover'/>
+                                    <div className="card-info">
+                                        <p>Track</p>
+                                        <p>3:45</p>
+                                    </div>
                                 </div>
-                                <p>Write about it...</p>
+                            </div>
+                            <div className="story-list-content-card">
+                                <div className="story-list-content-card-detail">
+                                    <img src={StoryCover2} alt="story Cover" className='cover'/>
+                                    <div className="card-info">
+                                        <p>My Emotional</p>
+                                        <p>4:20</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="story-list-content-card">
+                                <div className="story-list-content-card-detail">
+                                    <img src={StoryCover3} alt="story Cover" className='cover'/>
+                                    <div className="card-info">
+                                        <p>Adventure Night</p>
+                                        <p>4:20</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="story-list-content-card">
+                                <div className="story-list-content-card-detail">
+                                    <img src={StoryCover4} alt="story Cover" className='cover'/>
+                                    <div className="card-info">
+                                        <p>Summer Vibes</p>
+                                        <p>3:15</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div className="daily-reflection-content-card">
-                            <div className="card-detail">
-                                <div className="main-detail">
-                                    <img src={calendarIcon} alt="Journal Icon" />
-                                    <h3>Activity Calendar</h3>
+                    </div>
+                    <div className="homePage-daily-reflection-content">
+                        <h1>Daily Reflection</h1>
+                        <div className="daily-reflection-content-list">
+                            <div className="daily-reflection-content-card">
+                                <div className="card-detail">
+                                    <div className="main-detail">
+                                        <img src={JournalIcon} alt="Journal Icon" />
+                                        <h3>My Journal</h3>
+                                    </div>
+                                    <p>Write about it...</p>
                                 </div>
-                                
-                                <p>Shedule your daily activities here...</p>
                             </div>
-                            
+                            <div className="daily-reflection-content-card">
+                                <div className="card-detail">
+                                    <div className="main-detail">
+                                        <img src={calendarIcon} alt="Journal Icon" />
+                                        <h3>Activity Calendar</h3>
+                                    </div>
+                                    
+                                    <p>Shedule your daily activities here...</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

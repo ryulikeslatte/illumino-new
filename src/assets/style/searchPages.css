@@ -55,19 +55,18 @@
     height: 60px;
 }
 
-.content .main-content {
+.content .searchPage-main-content {
     margin: 40px
 }
 
 .searchPage-searchField{
-    padding: 0 32px;
     position: relative;
 }
 
 .searchPage-searchField img{
     position: absolute;
-    top: 25px;
-    left: 57px;
+    top: 15px;
+    left: 30px;
 }
 
 .searchPage-searchField input{
@@ -84,14 +83,14 @@
     line-height: normal;
 }
 
-.searchPage-recent-activity h2{
+.searchPage-recent-activity h1{
     color: var(--primary, #FFF);
     font-size: 35px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-top: 24px;
-    margin-bottom: 6px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .searchPage-recent-activity .recent-activity-card-list{
@@ -128,39 +127,75 @@
     margin-right: 15px;
 }
 
-.searchPage-popular-story .popular-story-list {
+.searchPage-main-content .searchPage-popular-songs .songs-list {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    margin-bottom: 40px;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.content .main-content .homePage-popular-songs h1{
+.songs-list .songs-card .songs-card-detail{
+    width: 360px;
+    height: 465px;
+    background-color:  #1D1E1F;
+    border-radius: 10px;
+}
+
+.songs-list .songs-card .songs-card-detail .cover {
+    width: 360px;
+    height: 340px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.songs-card .songs-card-detail .card-info {
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.songs-card .songs-card-detail .card-info p {
+    font-size: 16px;
+}
+
+.content .searchPage-main-content .searchPage-popular-songs h1{
     color: var(--primary, #FFF);
     font-size: 34px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin: 40px 0 20px 40px;
-
+    margin: 40px 0 20px 0;
 }
 
-.popular-story-list{
+.searchPage-popular-story .popular-story-list {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     margin-bottom: -7px;
+    justify-content: space-around;
+}
+
+.searchPage-popular-story h1 {
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 40px 0 20px 0;
 }
 
 .popular-story-card .popular-story-card-detail{
-    width: 382px;
+    width: 360px;
     height: 465px;
     background-color:  #1D1E1F;
     border-radius: 10px;
 }
 
 .popular-story-list .popular-story-card .popular-story-card-detail .cover {
-    width: 382px;
+    width: 360px;
     height: 340px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -184,6 +219,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 
 .searchPage-feeling-content p{
@@ -201,10 +237,119 @@
     gap: 100px;
 }
 
+.searchPage-main-content .music-list-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.searchPage-main-content .music-list-content .music-list-content-card {
+    background-color:  #1D1E1F;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.searchPage-main-content .music-list-content .music-list-content-card .card-info {
+    display: flex;
+    padding: 1px 12px 12px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    font-size: 16px;
+}
+
+.searchPage-main-content .music-list-content .music-list-content-card .cover {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 270px;
+}
+
+.searchPage-main-content .searchPage-music-content .music-top-content {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0 20px 0;
+    justify-content: space-between;
+}
+
+.searchPage-main-content .searchPage-music-content .music-top-content h1 {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.searchPage-main-content .searchPage-music-content .music-top-content a {
+    justify-self: center;
+    align-self: flex-end;
+    padding-right: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+.searchPage-story-content h1 {
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.searchPage-main-content .searchPage-story-content .story-top-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 0 20px 0;
+}
+
+.searchPage-main-content .searchPage-story-content .story-top-content h1 {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.searchPage-main-content .searchPage-story-content .story-top-content a {
+    justify-self: center;
+    align-self: flex-end;
+    padding-right: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+.searchPage-main-content .story-list-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.searchPage-main-content .story-list-content .story-list-content-card {
+    background-color:  #1D1E1F;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.searchPage-main-content .story-list-content .story-list-content-card .card-info {
+    display: flex;
+    padding: 20px 20px 20px 12px;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 16px;
+}
+
+.searchPage-main-content .story-list-content .story-list-content-card .cover {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 270px;
+}
+
 .searchPage-daily-reflection-content .daily-reflection-content-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-bottom: 40px;
 }
 
@@ -213,12 +358,12 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin: 0 0 20px 40px;
+    margin: 40px 0 20px 0;
 }
 
 .searchPage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card {
     background-color: #1D1E1F;
-    width: 591px;
+    width: 560px;
     height: 300px;
     border-radius: 10px;
 }
@@ -230,7 +375,7 @@
 }
 
 .searchPage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card .card-detail .main-detail{
-    margin-top: 65px
+    margin-top: 50px
 }
 
 .searchPage-daily-reflection-content .daily-reflection-content-list .daily-reflection-content-card .card-detail .main-detail img {

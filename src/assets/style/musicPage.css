@@ -4,14 +4,51 @@
     height: 100%;
 }
 
-.main {
-    color: white;
+.main .musicPage-core-top-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-hr {
+.main .musicPage-core-top-content .user-profile {
+    margin: 32px 38px 0 0;
+}
+
+.main hr {
     border-top: 1px solid #A69CF8;
     width: 90%;
     margin: auto;
+}
+
+
+.musicPage-core-top-content .back-button-journalPages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 34px 0 0 50px;
+}
+
+.musicPage-core-top-content .back-button-journalPages p{
+    color: var(--primary, #FFF);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.musicPage-core-top-content .back-button-journalPages img{
+    width: 28px;
+    height: 50px;
+}
+
+.musicPage-core-top-content .user-profile img{
+    width: 60px;
+    height: 60px;
+}
+
+.main {
+    color: white;
 }
 
 .main .music-core-content {

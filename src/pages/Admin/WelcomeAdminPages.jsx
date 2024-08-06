@@ -12,21 +12,23 @@ function WelcomeAdminPages(){
     return(
         <>
         <div className="admin-nav-container">
-            <img src={logo} alt="llumino" className="logo" />
+            <Link to='/admin'><img src={logo} alt="llumino" className="logo" /></Link>
             <nav>
                 <div className="admin-links-group">
-                    <ol>
-                        <li><Link to="/login">Log In</Link></li>
-                    </ol>
+                    <Link to="/login">
+                        <ol>
+                            <li>Log In</li>
+                        </ol>
+                    </Link>
                 </div>
             </nav>
         </div>
         <div className="hero">
             <h1>Get Enough Rest for a <span className="gradient-word">Healthy</span> Body and Mind</h1>
             <div className="hero-text-container">
-            <div className="circle-div"></div>
-            <p>Overcome stress and anxiety with an ideal sleep atmosphere through relaxing music and calming bedtime stories. Getting enough, quality sleep is important for overall health and happiness.</p>
-            <a href="#">Welcome Admin</a>
+                <div className="circle-div"></div>
+                <p>Overcome stress and anxiety with an ideal sleep atmosphere through relaxing music and calming bedtime stories. Getting enough, quality sleep is important for overall health and happiness.</p>
+                <a href="#">Welcome Admin</a>
             </div>
         </div>
         </>

@@ -6,18 +6,15 @@ import logo from '../assets/image/llumino.png'
 function LandingPageNav(){
 
     return(
-        <div className="nav-container">
-            <img src={logo} alt="llumino" className="logo" />
-            <nav>
-                <div className="links-group">
-                    <ol>
-                        <li><a href="#">Why Us</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><Link to="/login">Log In</Link></li>
-                    </ol>
-                </div>
+        <div className="landingPage-nav">
+            <Link to='/'><img src={logo} alt="llumino" className="logo" /></Link>
+            <nav className='links'>
+                <ol>
+                    <li><Link to='#'>Why Us</Link></li>
+                    <li><Link to='#'>Testimonials</Link></li>
+                    <li><Link to='/login'>Log In</Link></li>
+                </ol>
             </nav>
-            <div className="empty-div"></div>   
         </div>
     );
 

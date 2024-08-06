@@ -1,25 +1,32 @@
-body{
+content {
     overflow-x: hidden !important;
     background-color: #161616;
-
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-.hero{
-    margin: 96px 130px 0px 130px;
+.content .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 130px;
+}
+
+.landingPage-main-content .hero{
+    width: 100%;
 }
 
 .hero h1{
-    width: 700px;
     color: #FFF;
     font-size: 64px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-left: 130px;
 }
 
 .hero-text-container{
-    width: 150%;
-    height: auto;
     padding-top: 33px;
     padding-bottom: 138px;
     background-color: #161616;

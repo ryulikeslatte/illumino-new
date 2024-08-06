@@ -1,18 +1,15 @@
-.nav-container{
+.landingPage-nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: auto;
-    margin : 38px 130px;
+    width: 1316px;
+    margin-top: 40px;
 }
 
-.empty-div{
-    width: 118.03px;
-    height: 48px;
-
+.landingPage-nav .logo {
+    height: 70px
 }
 
-.links-group{
+.landingPage-nav .links {
+    margin-left: 258px;
     padding: 20px 44px;
     border: none;
     border-radius: 1000px;
@@ -20,10 +17,9 @@
     display: flex;
     justify-content: center;
     background-color: #161616;
-    
 }
 
-.links-group::after{
+.links::after{
     content: '';
     position: absolute;
     height: 102.5%;
@@ -34,13 +30,13 @@
     z-index : -1;
 }
 
-.links-group  ol{
+.links  ol{
     display: flex;
     gap: 100px;
     list-style: none;
 }
 
-.links-group ol li a{
+.links ol li a{
     color: #F5F5F5;
     font-size: 20px;
     font-style: normal;
@@ -48,8 +44,3 @@
     line-height: normal;
 }
 
-
-
-/* .border-gradient-links{
-    border-image-source: linear-gradient(to right, #743ad5, #d53a9d);
-} */

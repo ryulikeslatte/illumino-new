@@ -6,7 +6,7 @@
     margin : 38px 130px;
 }
 
-.admin-links-group{
+.admin-nav-container .admin-links-group {
     padding: 17px 50px;
     border: none;
     border-radius: 1000px;
@@ -17,7 +17,7 @@
     
 }
 
-.admin-links-group::after{
+.admin-nav-container .admin-links-group::after {
     content: '';
     position: absolute;
     height: 102%;
@@ -28,13 +28,13 @@
     z-index : -1;
 }
 
-.admin-links-group  ol{
+.admin-nav-container .admin-links-group a ol{
     display: flex;
     gap: 100px;
     list-style: none;
 }
 
-.admin-links-group ol li a{
+.admin-nav-container .admin-links-group a ol li {
     font-size: 22px;
     font-weight: 500;
     line-height: 33px;
@@ -42,9 +42,3 @@
     color: #F5F5F5;
 
 }
-
-
-
-/* .border-gradient-links{
-    border-image-source: linear-gradient(to right, #743ad5, #d53a9d);
-} */

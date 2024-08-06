@@ -45,7 +45,7 @@ function MusicPage() {
 
                     <div className="music-card">
                         <div className="music-content">
-                            <p>1</p>
+                            <p>2</p>
                             <img src={MusicCover1}/>
                             <div className="detail">
                                 <p>Fire</p>
@@ -61,7 +61,7 @@ function MusicPage() {
 
                     <div className="music-card">
                         <div className="music-content">
-                            <p>1</p>
+                            <p>3</p>
                             <img src={MusicCover1}/>
                             <div className="detail">
                                 <p>Fire</p>

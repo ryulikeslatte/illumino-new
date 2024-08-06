@@ -81,49 +81,77 @@
 
 .container .main .button-bar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin: 40px;
+    background-color: #1D1E1F;
+    border-radius: 20px;
 }
 
-.container .main .button-bar .detail-music {
+.button-bar .button-content  {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-bar .button-content .bar-duration {
+    align-self: center;
+    justify-self: center;
+    margin: 40px 0 30px;
+}
+
+.button-bar .button-content .bar-duration .duration {
+    width: 1120px;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.container .main .button-bar .detail-music .title {
+.button-bar .button-content .button-main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.button-content .button-main .detail-music {
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.button-content .button-main .detail-music .title {
     font-size: 30px;
 }
 
-.container .main .button-bar .button {
+.button-content .button-main .button {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.container .main .button-bar .button img {
+.button-content .button-main .button img {
     width: 30px;
     height: 30px;
     margin: 0 15px 0 15px;
 }
 
-.container .main .button-bar .button .play {
+.button-content .button-main .button .play {
     width: 60px;
     height: 60px;
 }
 
-.container .main .button-bar .mode {
+.button-content .button-main .mode {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 30px;
 }
 
-.container .main .button-bar .mode label input {
+.button-content .button-main .mode label input {
     width: 30px;
     height: 30px;
     margin-left: 20px;
 }
 
-.container .main .button-bar .mode label {
+.button-content .button-main .mode label {
     font-size: 20px;
     display: flex;
 }

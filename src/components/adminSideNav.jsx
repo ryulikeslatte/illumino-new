@@ -27,22 +27,30 @@ function SideNav() {
             <div className="admin-side-nav-container">
                 <img src={Logo} alt="" />
                 <div className="admin-group-links">
-                    <div className={`admin-icon-links ${activePath === '/admin/dashboard' ? 'active' : ''}`}>
-                        <img src={HomeIcon} alt="Home" className="homes-icon" />
-                        <Link to='/admin/dashboard' onClick={(e) => handleNavClick(e, '/admin/dashboard')}><p>Dashboard</p></Link>
-                    </div>
-                    <div className={`admin-icon-links ${activePath === '/admin/music' ? 'active' : ''}`}>
-                        <img src={MusicIcon} alt="Music" />
-                        <Link to='/admin/music' onClick={(e) => handleNavClick(e, '/admin/music')}><p>Music</p></Link>
-                    </div>
-                    <div className={`admin-icon-links ${activePath === '/admin/story' ? 'active' : ''}`}>
-                        <img src={StoryIcon} alt="Story" />
-                        <Link to='/admin/story' onClick={(e) => handleNavClick(e, '/admin/story')}><p>Story</p></Link>
-                    </div>
-                    <div className={`admin-icon-links ${activePath === '/admin/users' ? 'active' : ''}`}>
-                        <img src={UsersIcon} alt="User" />
-                        <Link to='/admin/users' onClick={(e) => handleNavClick(e, '/admin/users')}><p>Users</p></Link>
-                    </div>
+                    <Link to='/admin/dashboard' onClick={(e) => handleNavClick(e, '/admin/dashboard')}>
+                        <div className={`admin-icon-links ${activePath === '/admin/dashboard' ? 'active' : ''}`}>
+                            <img src={HomeIcon} alt="Home" className="homes-icon" />
+                            <p>Dashboard</p>
+                        </div>
+                    </Link>
+                    <Link to='/admin/music' onClick={(e) => handleNavClick(e, '/admin/music')}>
+                        <div className={`admin-icon-links ${activePath === '/admin/music' ? 'active' : ''}`}>
+                            <img src={MusicIcon} alt="Music" />
+                            <p>Music</p>
+                        </div>
+                    </Link>
+                    <Link to='/admin/story' onClick={(e) => handleNavClick(e, '/admin/story')}>
+                        <div className={`admin-icon-links ${activePath === '/admin/story' ? 'active' : ''}`}>
+                            <img src={StoryIcon} alt="Story" />
+                            <p>Story</p>
+                        </div>
+                    </Link>
+                    <Link to='/admin/users' onClick={(e) => handleNavClick(e, '/admin/users')}>
+                        <div className={`admin-icon-links ${activePath === '/admin/users' ? 'active' : ''}`}>
+                            <img src={UsersIcon} alt="User" />
+                            <p>Users</p>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </nav>

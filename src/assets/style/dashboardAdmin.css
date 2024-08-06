@@ -1,33 +1,49 @@
 .dashboard-admin-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 220px 1fr; 
+    height: 100%;
 }
 
-.dashboard-admin-content {
-    width: 100vw;
+.dashboard-admin-container .dashboard-admin-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: white;
 }
 
-.dashboard-admin-top {
+.dashboard-admin-content .dashboard-admin-top {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 31px 26px 21px 26px;
-}
-
-.dashboard-admin-top h1 {
-    color: #FFFFFF;
-    font-size: 45px;
-    font-weight: 500;
-    line-height: 67.5px;
-    text-align: left;
-
 }
 
 .dashboard-admin-content hr {
-    border: 0.5px solid var(--purple-2, #A69CF8);
+    border-top: 1px solid #A69CF8;
+    width: 90%;
+    margin: auto;
+}
+
+.dashboard-admin-content .dashboard-admin-top p {
+    color: var(--primary, #FFF);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 34px 0 25px 50px;
+}
+
+.dashboard-admin-content .dashboard-admin-top .user-profile {
+    margin: 32px 38px 0 0;
+}
+
+.dashboard-admin-top .user-profile img{
+    width: 60px;
+    height: 60px;
 }
 
 .dashboard-admin-core-content {
-    padding: 21px 26px 26px 26px;
+    margin: 40px;
 }
 
 .dashboard-admin-core-content h2 {
@@ -63,7 +79,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 370px;
+    width: 350px;
     height: 300px;
     border-radius: 7px;
     color: #FFFFFF;
@@ -78,7 +94,6 @@
     align-items: center;
     justify-content: space-around;
     margin-top: 18px;
-    gap: 70px;
     margin-bottom: 328px;
 }
 

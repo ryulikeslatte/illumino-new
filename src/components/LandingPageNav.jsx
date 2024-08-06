@@ -10,9 +10,9 @@ function LandingPageNav(){
             <Link to='/'><img src={logo} alt="llumino" className="logo" /></Link>
             <nav className='links'>
                 <ol>
-                    <li><Link to='#'>Why Us</Link></li>
-                    <li><Link to='#'>Testimonials</Link></li>
-                    <li><Link to='/login'>Log In</Link></li>
+                    <li><a href='/#why'>Why Us</a></li>
+                    <li><a href='/#testimonials'>Testimonials</a></li>
+                    <li><a href='/login'>Log In</a></li>
                 </ol>
             </nav>
         </div>

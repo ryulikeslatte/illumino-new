@@ -19,7 +19,7 @@ function registerForm(){
                 </div>            
             </div>
             <div className="buttons-group">
-                <button type="button" className='next-button' href="#"><Link to='/homes'><span className='blue-text'>Sign in</span></Link></button>
+                <button type="button" className='next-button' href="#"><Link to='/admin/dashboard'><span className='blue-text'>Sign in</span></Link></button>
                 <button type="button" className='cancel-button' href="#">Save</button>
             </div>
             

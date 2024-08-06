@@ -53,10 +53,12 @@ nav .side-nav-container .group-links a {
     height: 28px;
 }
 
-/* .active img {} */
-
 .side-nav-container img {
     margin: 34px 0 69px 0;
+}
+
+.active {
+    background-color: #7363F5;
 }
 
 .home img {
@@ -74,4 +76,3 @@ nav .side-nav-container .group-links a {
     margin-left: -10px;
 }
 
-/* .icon-links .homes-icon {} */

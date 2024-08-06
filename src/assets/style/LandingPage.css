@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 content {
     overflow-x: hidden !important;
     background-color: #161616;

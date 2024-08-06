@@ -24,7 +24,7 @@ function LandingPage(){
                     </div>
                 </div>
                 <div className="why-us">
-                    <div className="head-content">
+                    <div className="head-content" id="why">
                         <h1>Why Us</h1>
                     </div>
                     <div className="filler-content">
@@ -45,7 +45,7 @@ function LandingPage(){
                     </div>
                 </div>
                 <div className="exceptional-testimonia">
-                    <div className="head-content-2">
+                    <div className="head-content-2" id="testimonials">
                         <p>Our User</p>
                         <h1>Exceptional Testimonia</h1>
                     </div>
@@ -69,9 +69,9 @@ function LandingPage(){
                     </div>
                 </div>
             </div>
-            <div className="footer">
+            {/* <div className="footer">
                 <Footer/>
-            </div>
+            </div> */}
         </div>
         
         </>

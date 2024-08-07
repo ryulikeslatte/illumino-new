@@ -44,7 +44,7 @@ function DashboardAdminPages() {
                         </Link>
                     </div>
                 </div>
-                <div className="dashboarsd-admin-footer">
+                <div className="dashboard-admin-footer">
                     <SecondFooter />
                 </div>
             </div>

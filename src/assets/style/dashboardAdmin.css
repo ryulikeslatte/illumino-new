@@ -96,21 +96,3 @@
     margin-top: 18px;
     margin-bottom: 328px;
 }
-
-.dashboard-add-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    background-color: #292929;
-    border-radius: 100%;
-    padding: 30px;
-    right: 40px;
-    bottom: -140px;
-    cursor: pointer;
-}
-
-.dashboard-add-button img {
-    width: 42.857px;
-    height: 42.857px;
-}

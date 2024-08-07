@@ -21,25 +21,26 @@ function DashboardMusicPages() {
 
     return (
         <>
-            <div className="dashboard-music-container">
-                <div className="dashboard-music-side-nav">
-                    <AdminSideNav />
-                </div>
-                <div className="dashboard-music-content">
-                    <div className="dashboard-music-top">
-                        <div className="back-button-dashboard">
-                            <img src={chevronIcon} alt="back" />
-                            <p>Music</p>
-                        </div>
-                        <div className="user-profile">
-                            <img src={expProfil} alt="user" />
-                        </div>
+        <div className="dashboard-music-container">
+            <div className="dashboard-music-side-nav">
+                <AdminSideNav />
+            </div>
+            <div className="dashboard-music-content">
+                <div className="dashboard-music-top">
+                    <div className="back-button-dashboard">
+                        <img src={chevronIcon} alt="back" />
+                        <p>Music</p>
                     </div>
-                    <hr />
-                    <div className="dashboard-music-core-content">
-                        <div className="dashboard-music-list-content">
-                            {/* Card 1 */}
-                            <div className="dashboard-music-card">
+                    <div className="user-profile">
+                        <img src={expProfil} alt="user" />
+                    </div>
+                </div>
+                <hr />
+                <div className="dashboard-music-core-content">
+                    <div className="dashboard-music-list-content">
+                        {/* Card 1 */}
+                        <div className="dashboard-music-card">
+                            <div className="music-content">
                                 <p>1</p>
                                 <img
                                     src={MusicCover1}
@@ -50,12 +51,10 @@ function DashboardMusicPages() {
                                     <p>Fire</p>
                                     <p>Artist enjy</p>
                                 </div>
-                                <p>3:15</p>
-                                <img
-                                    src={DeleteIcon}
-                                    alt="Delete"
-                                    onClick={() => showModal(1)} // Tampilkan modal untuk card 1
-                                />
+                            </div>
+                            <div className="music-duration">
+                                <p>4:14</p>
+                                <img src={DeleteIcon} alt="Delete" onClick={() => showModal(1)} />
                                 {activeModalId === 1 && (
                                     <div className="dashboard-music-delete-modal">
                                         <div className="dashboard-music-delete-modal-content">
@@ -68,25 +67,21 @@ function DashboardMusicPages() {
                                     </div>
                                 )}
                             </div>
+                        </div>
 
-                            {/* Card 2 */}
-                            <div className="dashboard-music-card">
+                        {/* Card 2 */}
+                        <div className="dashboard-music-card">
+                            <div className="music-content">
                                 <p>2</p>
-                                <img
-                                    src={StoryCover1}
-                                    alt="Story Cover"
-                                    className='dashboard-music-card-cover'
-                                />
+                                <img src={StoryCover1} alt="Story Cover" className='dashboard-music-card-cover'/>
                                 <div className="dashboard-music-card-detail">
                                     <p>Love</p>
                                     <p>Artist raisa</p>
                                 </div>
+                            </div>
+                            <div className="music-duration">
                                 <p>4:14</p>
-                                <img
-                                    src={DeleteIcon}
-                                    alt="Delete"
-                                    onClick={() => showModal(2)} // Tampilkan modal untuk card 2
-                                />
+                                <img src={DeleteIcon} alt="Delete" onClick={() => showModal(2)} />
                                 {activeModalId === 2 && (
                                     <div className="dashboard-music-delete-modal">
                                         <div className="dashboard-music-delete-modal-content">
@@ -99,25 +94,21 @@ function DashboardMusicPages() {
                                     </div>
                                 )}
                             </div>
+                        </div>
 
-                            {/* Card 3 */}
-                            <div className="dashboard-music-card">
+                        {/* Card 3 */}
+                        <div className="dashboard-music-card">
+                            <div className="music-content">
                                 <p>3</p>
-                                <img
-                                    src={MusicCover1}
-                                    alt="Music Cover"
-                                    className='dashboard-music-card-cover'
-                                />
+                                <img src={MusicCover1} alt="Music Cover" className='dashboard-music-card-cover'/>
                                 <div className="dashboard-music-card-detail">
                                     <p>Tree</p>
                                     <p>Artist sal</p>
                                 </div>
-                                <p>2:15</p>
-                                <img
-                                    src={DeleteIcon}
-                                    alt="Delete"
-                                    onClick={() => showModal(3)} // Tampilkan modal untuk card 3
-                                />
+                            </div>
+                            <div className="music-duration">
+                                <p>4:14</p>
+                                <img src={DeleteIcon} alt="Delete" onClick={() => showModal(3)} />
                                 {activeModalId === 3 && (
                                     <div className="dashboard-music-delete-modal">
                                         <div className="dashboard-music-delete-modal-content">
@@ -130,25 +121,21 @@ function DashboardMusicPages() {
                                     </div>
                                 )}
                             </div>
+                        </div>
 
-                            {/* Card 4 */}
-                            <div className="dashboard-music-card">
+                        {/* Card 4 */}
+                        <div className="dashboard-music-card">
+                            <div className="music-content">
                                 <p>4</p>
-                                <img
-                                    src={StoryCover1}
-                                    alt="Story Cover"
-                                    className='dashboard-music-card-cover'
-                                />
+                                <img src={StoryCover1} alt="Story Cover" className='dashboard-music-card-cover'/>
                                 <div className="dashboard-music-card-detail">
                                     <p>Hurt</p>
                                     <p>Artist isyana</p>
                                 </div>
-                                <p>6:15</p>
-                                <img
-                                    src={DeleteIcon}
-                                    alt="Delete"
-                                    onClick={() => showModal(4)} // Tampilkan modal untuk card 4
-                                />
+                            </div>
+                            <div className="music-duration">
+                                <p>4:14</p>
+                                <img src={DeleteIcon} alt="Delete" onClick={() => showModal(4)} />
                                 {activeModalId === 4 && (
                                     <div className="dashboard-music-delete-modal">
                                         <div className="dashboard-music-delete-modal-content">
@@ -162,15 +149,18 @@ function DashboardMusicPages() {
                                 )}
                             </div>
                         </div>
+                    </div>
+                    <div className="button">
                         <div className="dashboard-add-button">
                             <img src={PlusIcon} alt="add music" />
                         </div>
                     </div>
                 </div>
+                <div className="dashboard-music-footer">
+                    <SecondFooter />
+                </div>
             </div>
-            <div className="dashboard-music-footer">
-                <SecondFooter />
-            </div>
+        </div>
         </>
     );
 }

@@ -12,7 +12,7 @@ function LandingPageNav(){
                 <ol>
                     <li><a href='/#why'>Why Us</a></li>
                     <li><a href='/#testimonials'>Testimonials</a></li>
-                    <li><a href='/login'>Log In</a></li>
+                    <li><Link to='/login'>Log In</Link></li>
                 </ol>
             </nav>
         </div>

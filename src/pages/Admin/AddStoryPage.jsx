@@ -14,10 +14,10 @@ function AddStoryPage(){
                 <AdminSideNav/>
             </div>
             <div className="addStoryPage-content">
-                <div className="dashboard-music-top">
+                <div className="dashboard-addStory-top">
                     <div className="back-button-dashboard">
                         <img src={chevronIcon} alt="back" />
-                        <p>Story</p>
+                        <p>Create Story</p>
                     </div>
                     <div className="user-profile">
                         <img src={expProfil} alt="user" />
@@ -29,23 +29,25 @@ function AddStoryPage(){
                         <img src={PlusIcon} alt="Add Cover" />
                         <p>Add Image</p>
                     </div>
-                    <input type="text" placeholder='Add Story Name'/>
-                    <input type="text" placeholder='Description Story'/>
-                    <div className="uploadStory-field">
-                        <label htmlFor="uploadStory-field">
-                            <img src={UploadIcon} alt="Upload Story" />
-                        </label>
-                        <input type="file" id='uploadStory-field' placeholder='Upload Story'/>
-                    </div>  
-                    <input type="text" placeholder='Artist'/>
-                    <button className='confirm-button' type='submit'>Save</button>
+                    <div className="addStory-forms-content">
+                        <input type="text" placeholder='Add Story Name'/>
+                        <input type="text" placeholder='Description Story'/>
+                        <div className="uploadStory-field">
+                            <label htmlFor="uploadStory-field">
+                                <img src={UploadIcon} alt="Upload Music" />
+                            </label>
+                            <input type="file" id='uploadStory-field' placeholder='Upload Music'/>
+                        </div>  
+                        <input type="text" placeholder='Artist'/>
+                        <div className="confirm-button">
+                            <button type='submit'>Save</button>
+                        </div>
+                    </div>
                 </div>
-
+                <div className="addStoryPage-footer">
+                    <SecondFooter/>
+                </div>
             </div>
-
-        </div>
-        <div className="addStoryPage-footer">
-            <SecondFooter/>
         </div>
         </>
     );

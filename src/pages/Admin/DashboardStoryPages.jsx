@@ -9,6 +9,7 @@ import StoryCover2 from '../../assets/image/storycover10.png';
 import StoryCover3 from '../../assets/image/storycover11.png';
 import StoryCover4 from '../../assets/image/storycover4.png';
 import '../../assets/style/dashboardStory.css';
+import { Link } from 'react-router-dom';
 
 function DashboardStoryPages() {
     // State untuk mengontrol visibilitas modal
@@ -44,12 +45,7 @@ function DashboardStoryPages() {
                             <img src={StoryCover1} alt="Story Cover" />
                             <div className="dashboard-story-card-detail">
                                 <h2>Reflection of the soul</h2>
-                                <button
-                                    className="dashboard-story-delete-button"
-                                    onClick={() => showModal(1)} // Tampilkan modal untuk card 1
-                                >
-                                    Delete
-                                </button> {activeModalId === 1 && (
+                                <button className="dashboard-story-delete-button" onClick={() => showModal(1)}>Delete</button> {activeModalId === 1 && (
                                 <div className="dashboard-story-delete-modal">
                                     <div className="dashboard-story-delete-modal-content">
                                         <p>Delete this Story?</p>
@@ -137,7 +133,7 @@ function DashboardStoryPages() {
                     </div>
                     <div className="dashboard-story-button">
                         <div className="dashboard-add-button">
-                            <img src={PlusIcon} alt="add story" />
+                            <Link to='/admin/story/add'><img src={PlusIcon} alt="add story" /></Link>
                         </div>
                     </div>
                 </div>

@@ -1,3 +1,4 @@
+
 body{
     overflow-x: hidden !important;
     background-color: #161616;
@@ -11,6 +12,7 @@ body{
     font-weight: 500;
     line-height: normal;
     margin-top: 96px;
+    margin-left: 130px;
 }
 
 .hero-text-container{

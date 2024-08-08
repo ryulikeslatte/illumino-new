@@ -44,6 +44,7 @@
 
 .dashboard-admin-core-content {
     margin: 40px;
+    height: 100vh;
 }
 
 .dashboard-admin-core-content h2 {

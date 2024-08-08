@@ -15,7 +15,7 @@ function LandingPage(){
                 <LandingPageNav/>
             </div>
             <div className="landingPage-main-content">
-                <div className="hero">
+                <div className="hero-user">
                     <h1>Get Enough Rest for a <span className="gradient-word">Healthy</span> Body and Mind</h1>
                     <div className="hero-text-container">
                         <div className="circle-div"></div>

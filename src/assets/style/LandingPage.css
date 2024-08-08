@@ -12,25 +12,27 @@ content {
 
 .content .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-left: 130px;
 }
 
-.landingPage-main-content .hero{
+.landingPage-main-content .hero-user{
     width: 100%;
 }
 
-.hero h1{
+.hero-user h1{
+    width: 700px;
     color: #FFF;
     font-size: 64px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     margin-left: 130px;
+    margin-top: 90px;
 }
 
-.hero-text-container{
+.hero-user .hero-text-container{
     padding-top: 33px;
     padding-bottom: 138px;
     background-color: #161616;

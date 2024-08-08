@@ -123,12 +123,15 @@
     height: 431px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .main .main-story .collection .story-card {
     width: 270px;
     height: 440px;
     background-color:  #1D1E1F;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .main .main-story .collection .story-card .story-cover img {

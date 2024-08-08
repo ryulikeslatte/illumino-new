@@ -52,13 +52,14 @@
 }
 
 .main .music-core-content {
-    height: 100%;
+    height: 100vh;
 }
 
 .main .music-core-content .music-card {
     display: flex;
     justify-content: space-between;
     margin : 40px;
+    flex-wrap: wrap;
 }
 
 .main .music-core-content .music-card .music-content {

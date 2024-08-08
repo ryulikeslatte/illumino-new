@@ -64,8 +64,8 @@
 }
 
 .dashboard-story-core-content {
-    margin: 40px 40px 100px 40px;
-    height: 100%;
+    margin: 40px 40px 200px 40px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -92,7 +92,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-}*/
+}
 
 .dashboard-story-card .dashboard-story-card-detail .dashboard-story-delete-button {
     border-radius: 5px;
@@ -104,6 +104,9 @@
     line-height: normal;
     padding: 6px 18px;
     border: none;
+    height: 30px;
+    width: 75px;
+    margin-top: 4px;
 }
 
 .dashboard-story-card .dashboard-story-card-detail {
@@ -192,14 +195,14 @@
     line-height: 28px;
 }
 
-.dashboard-music-core-content .dashboard-story-button {
+.dashboard-story-core-content .dashboard-story-button {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.dashboard-music-core-content .dashboard-add-button {
+.dashboard-story-core-content .dashboard-add-button {
     background-color: #292929;
     border-radius: 100%;
     padding: 30px;
@@ -207,8 +210,8 @@
     width: 100px;
     height: 100px;
     position: fixed;
-    bottom: 120px;
-    right: 40px;
+    bottom: 15%;
+    right: 2%;
 }
 
 .dashboard-add-button img {

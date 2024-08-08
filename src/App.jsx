@@ -19,6 +19,9 @@ import MusicPage from './pages/MusicPage'
 import DetailPlayMusic from './pages/DetailPlayMusic'
 import DetailStory from './pages/DetailStory'
 import LoginPageAdmin from './pages/Admin/LoginPage2';
+import UpdateMusic from './pages/Admin/UpdateMusicPage';
+import UpdateStory from './pages/Admin/UpdateStoryPage';
+
 
 function App() {
   return(
@@ -34,15 +37,17 @@ function App() {
         <Route path='/journal' element={<JournalPages/>}/>
         <Route path='/music' element={<MusicPage/>}/>
         <Route path='/calendar' element={<CalendarPage/>}/>
-        <Route path='/playmusic' element={<DetailPlayMusic/>}/>
-        <Route path='/detailstory' element={<DetailStory/>}/>
+        <Route path='/music/play' element={<DetailPlayMusic/>}/>
+        <Route path='/story/detail' element={<DetailStory/>}/>
         <Route path='/story' element={<StoryPage/>}/>
         <Route path='/admin' element={<WelcomeAdmin/>}/>
         <Route path='/admin/dashboard' element={<AdminDashboard/>}/>
         <Route path='/admin/music' element={<MusicDashboard/>}/>
         <Route path='/admin/music/add' element={<AddMusic/>}/>
+        <Route path='/admin/music/update' element={<UpdateMusic/>}/>
         <Route path='/admin/story' element={<StoryDashboard/>}/>
         <Route path='/admin/story/add' element={<AddStory/>}/>
+        <Route path='/admin/story/update' element={<UpdateStory/>}/>
         <Route path='/admin/users' element={<UsersDashboard/>}/>
       </Routes>
     </Router>

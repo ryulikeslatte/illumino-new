@@ -8,6 +8,7 @@ import MusicCover1 from '../../assets/image/tophit1.png';
 import StoryCover1 from '../../assets/image/storycover5.png';
 import PlusIcon from '../../assets/image/plus.png';
 import '../../assets/style/dashboardMusic.css';
+import { Link } from 'react-router-dom';
 
 function DashboardMusicPages() {
     // State untuk mengontrol visibilitas modal
@@ -152,7 +153,7 @@ function DashboardMusicPages() {
                     </div>
                     <div className="button">
                         <div className="dashboard-add-button">
-                            <img src={PlusIcon} alt="add music" />
+                            <Link to='/admin/music/add'><img src={PlusIcon} alt="add music" /></Link>
                         </div>
                     </div>
                 </div>

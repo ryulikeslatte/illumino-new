@@ -14,10 +14,10 @@ function AddMusicPage(){
                 <AdminSideNav/>
             </div>
             <div className="addMusicPage-content">
-                <div className="dashboard-music-top">
+                <div className="dashboard-addMusic-top">
                     <div className="back-button-dashboard">
                         <img src={chevronIcon} alt="back" />
-                        <p>Music</p>
+                        <p>Create Music</p>
                     </div>
                     <div className="user-profile">
                         <img src={expProfil} alt="user" />
@@ -29,23 +29,25 @@ function AddMusicPage(){
                         <img src={PlusIcon} alt="Add Cover" />
                         <p>Add Image</p>
                     </div>
-                    <input type="text" placeholder='Add Music Name'/>
-                    <input type="text" placeholder='Add Duration'/>
-                    <div className="uploadMusic-field">
-                        <label htmlFor="uploadMusic-field">
-                            <img src={UploadIcon} alt="Upload Music" />
-                        </label>
-                        <input type="file" id='uploadMusic-field' placeholder='Upload Music'/>
-                    </div>  
-                    <input type="text" placeholder='Artist'/>
-                    <button className='confirm-button' type='submit'>Save</button>
+                    <div className="addMusic-forms-content">
+                        <input type="text" placeholder='Add Music Name'/>
+                        <input type="text" placeholder='Add Duration'/>
+                        <div className="uploadMusic-field">
+                            <label htmlFor="uploadMusic-field">
+                                <img src={UploadIcon} alt="Upload Music" />
+                            </label>
+                            <input type="file" id='uploadMusic-field' placeholder='Upload Music'/>
+                        </div>  
+                        <input type="text" placeholder='Artist'/>
+                        <div className="confirm-button">
+                            <button type='submit'>Save</button>
+                        </div>
+                    </div>
                 </div>
-
+                <div className="addMusicPage-footer">
+                    <SecondFooter/>
+                </div>
             </div>
-
-        </div>
-        <div className="addMusicPage-footer">
-            <SecondFooter/>
         </div>
         </>
     );

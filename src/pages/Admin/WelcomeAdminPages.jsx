@@ -15,7 +15,7 @@ function WelcomeAdminPages(){
             <Link to='/admin'><img src={logo} alt="llumino" className="logo" /></Link>
             <nav>
                 <div className="admin-links-group">
-                    <Link to="/login">
+                    <Link to="/admin/login">
                         <ol>
                             <li>Log In</li>
                         </ol>

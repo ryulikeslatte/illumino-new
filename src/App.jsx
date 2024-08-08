@@ -18,6 +18,7 @@ import UsersDashboard from './pages/Admin/DashboardUsersPages'
 import MusicPage from './pages/MusicPage'
 import DetailPlayMusic from './pages/DetailPlayMusic'
 import DetailStory from './pages/DetailStory'
+import LoginPageAdmin from './pages/Admin/LoginPage2';
 
 function App() {
   return(
@@ -25,6 +26,7 @@ function App() {
       <Routes>
         <Route path='/' element={<LandingPages/>}/>
         <Route path='/login' element={<LoginPage/>}/>
+        <Route path='/admin/login/' element={<LoginPageAdmin/>}/>
         <Route path='/register' element={<RegisterPage/>}/>
         <Route path='/register/p' element={<RegisterPage2/>}/>
         <Route path='/homes' element={<HomePages/>}/>

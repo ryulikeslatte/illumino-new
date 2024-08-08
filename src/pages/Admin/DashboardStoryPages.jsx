@@ -22,132 +22,130 @@ function DashboardStoryPages() {
 
     return (
         <>
-            <div className="dashboard-story-container">
-                <div className="dashboard-story-side-nav">
-                    <AdminSideNav />
+        <div className="dashboard-story-container">
+            <div className="dashboard-story-side-nav">
+                <AdminSideNav />
+            </div>
+            <div className="dashboard-story-content">
+                <div className="dashboard-story-top">
+                    <div className="back-button-dashboard">
+                        <img src={chevronIcon} alt="back" />
+                        <p>Story</p>
+                    </div>
+                    <div className="user-profile">
+                        <img src={expProfil} alt="user" />
+                    </div>
                 </div>
-                <div className="dashboard-story-content">
-                    <div className="dashboard-story-top">
-                        <div className="back-button-dashboard">
-                            <img src={chevronIcon} alt="back" />
-                            <p>Story</p>
+                <hr />
+                <div className="dashboard-story-core-content">
+                    <div className="dashboard-story-content-list">
+                        {/* Card 1 */}
+                        <div className="dashboard-story-card">
+                            <img src={StoryCover1} alt="Story Cover" />
+                            <div className="dashboard-story-card-detail">
+                                <h2>Reflection of the soul</h2>
+                                <button
+                                    className="dashboard-story-delete-button"
+                                    onClick={() => showModal(1)} // Tampilkan modal untuk card 1
+                                >
+                                    Delete
+                                </button> {activeModalId === 1 && (
+                                <div className="dashboard-story-delete-modal">
+                                    <div className="dashboard-story-delete-modal-content">
+                                        <p>Delete this Story?</p>
+                                        <div className="delete-modal-button-group">
+                                            <button onClick={hideModal}>No</button>
+                                            <button>Yes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                )}
+                            </div>
                         </div>
-                        <div className="user-profile">
-                            <img src={expProfil} alt="user" />
+
+                        {/* Card 2 */}
+                        <div className="dashboard-story-card">
+                            <img src={StoryCover2} alt="Story Cover" />
+                            <div className="dashboard-story-card-detail">
+                                <h2>Afternoon</h2>
+                                <button
+                                    className="dashboard-story-delete-button"
+                                    onClick={() => showModal(2)}>Delete</button>
+                                {activeModalId === 2 && (
+                                    <div className="dashboard-story-delete-modal">
+                                        <div className="dashboard-story-delete-modal-content">
+                                            <p>Delete this Story?</p>
+                                            <div className="delete-modal-button-group">
+                                                <button onClick={hideModal}>No</button>
+                                                <button>Yes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+
+                        {/* Card 3 */}
+                        <div className="dashboard-story-card">
+                            <img src={StoryCover3} alt="Story Cover" />
+                            <div className="dashboard-story-card-detail">
+                                <h2>Men N dog</h2>
+                                <button
+                                    className="dashboard-story-delete-button"
+                                    onClick={() => showModal(3)} // Tampilkan modal untuk card 3
+                                >
+                                    Delete
+                                </button>
+                                {activeModalId === 3 && (
+                                    <div className="dashboard-story-delete-modal">
+                                        <div className="dashboard-story-delete-modal-content">
+                                            <p>Delete this Story?</p>
+                                            <div className="delete-modal-button-group">
+                                                <button onClick={hideModal}>No</button>
+                                                <button>Yes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+
+                        {/* Card 4 */}
+                        <div className="dashboard-story-card">
+                            <img src={StoryCover4} alt="Story Cover" />
+                            <div className="dashboard-story-card-detail">
+                                <h2>Sunset</h2>
+                                <button
+                                    className="dashboard-story-delete-button"
+                                    onClick={() => showModal(4)} // Tampilkan modal untuk card 4
+                                >
+                                    Delete
+                                </button>
+                                {activeModalId === 4 && (
+                                    <div className="dashboard-story-delete-modal">
+                                        <div className="dashboard-story-delete-modal-content">
+                                            <p>Delete this Story?</p>
+                                            <div className="delete-modal-button-group">
+                                                <button onClick={hideModal}>No</button>
+                                                <button>Yes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
-                    <hr />
-                    <div className="dashboard-story-core-content">
-                        <div className="dashboard-story-content-list">
-                            {/* Card 1 */}
-                            <div className="dashboard-story-card">
-                                <img src={StoryCover1} alt="Story Cover" />
-                                <div className="dashboard-story-card-detail">
-                                    <h2>Reflection of the soul</h2>
-                                    <button
-                                        className="dashboard-story-delete-button"
-                                        onClick={() => showModal(1)} // Tampilkan modal untuk card 1
-                                    >
-                                        Delete
-                                    </button>
-                                    {activeModalId === 1 && (
-                                        <div className="dashboard-story-delete-modal">
-                                            <div className="dashboard-story-delete-modal-content">
-                                                <p>Delete this Story?</p>
-                                                <div className="delete-modal-button-group">
-                                                    <button onClick={hideModal}>No</button>
-                                                    <button>Yes</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-
-                            {/* Card 2 */}
-                            <div className="dashboard-story-card">
-                                <img src={StoryCover2} alt="Story Cover" />
-                                <div className="dashboard-story-card-detail">
-                                    <h2>Afternoon</h2>
-                                    <button
-                                        className="dashboard-story-delete-button"
-                                        onClick={() => showModal(2)} // Tampilkan modal untuk card 2
-                                    >
-                                        Delete
-                                    </button>
-                                    {activeModalId === 2 && (
-                                        <div className="dashboard-story-delete-modal">
-                                            <div className="dashboard-story-delete-modal-content">
-                                                <p>Delete this Story?</p>
-                                                <div className="delete-modal-button-group">
-                                                    <button onClick={hideModal}>No</button>
-                                                    <button>Yes</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-
-                            {/* Card 3 */}
-                            <div className="dashboard-story-card">
-                                <img src={StoryCover3} alt="Story Cover" />
-                                <div className="dashboard-story-card-detail">
-                                    <h2>Men N dog</h2>
-                                    <button
-                                        className="dashboard-story-delete-button"
-                                        onClick={() => showModal(3)} // Tampilkan modal untuk card 3
-                                    >
-                                        Delete
-                                    </button>
-                                    {activeModalId === 3 && (
-                                        <div className="dashboard-story-delete-modal">
-                                            <div className="dashboard-story-delete-modal-content">
-                                                <p>Delete this Story?</p>
-                                                <div className="delete-modal-button-group">
-                                                    <button onClick={hideModal}>No</button>
-                                                    <button>Yes</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-
-                            {/* Card 4 */}
-                            <div className="dashboard-story-card">
-                                <img src={StoryCover4} alt="Story Cover" />
-                                <div className="dashboard-story-card-detail">
-                                    <h2>Sunset</h2>
-                                    <button
-                                        className="dashboard-story-delete-button"
-                                        onClick={() => showModal(4)} // Tampilkan modal untuk card 4
-                                    >
-                                        Delete
-                                    </button>
-                                    {activeModalId === 4 && (
-                                        <div className="dashboard-story-delete-modal">
-                                            <div className="dashboard-story-delete-modal-content">
-                                                <p>Delete this Story?</p>
-                                                <div className="delete-modal-button-group">
-                                                    <button onClick={hideModal}>No</button>
-                                                    <button>Yes</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-                        </div>
+                    <div className="dashboard-story-button">
                         <div className="dashboard-add-button">
                             <img src={PlusIcon} alt="add story" />
                         </div>
                     </div>
                 </div>
+                <div className="dashboard-story-footer">
+                    <SecondFooter />
+                </div>
             </div>
-            <div className="dashboard-story-footer">
-                <SecondFooter />
-            </div>
+        </div>
         </>
     );
 }

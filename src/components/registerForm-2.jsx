@@ -2,7 +2,7 @@ import '../assets/style/registerForm.css'
 import logo from '../assets/image/logo-illumino.png'
 import {Link} from "react-router-dom"
 
-function registerForm(){
+function registerForm2(){
     return(
         <div className="form-container">
             <div className="top-container">
@@ -27,4 +27,4 @@ function registerForm(){
     );
 }
 
-export default registerForm
+export default registerForm2

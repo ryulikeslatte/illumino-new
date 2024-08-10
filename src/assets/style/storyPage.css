@@ -1,19 +1,23 @@
-.container {
+html {
+    height: 100vh;
+}
+
+.storyPage-container {
     display: grid;
     grid-template-columns: 220px 1fr;    
 }
 
-.main .storyPage-core-top-content {
+.storyPage-main .storyPage-core-top-content {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.main .storyPage-core-top-content .user-profile {
+.storyPage-main .storyPage-core-top-content .user-profile {
     margin: 32px 38px 0 0;
 }
 
-.main hr {
+.storyPage-main hr {
     border-top: 1px solid #A69CF8;
     width: 90%;
     margin: auto;
@@ -45,16 +49,19 @@
     height: 60px;
 }
 
-.main {
-    width: 100%;
+.storyPage-main {
     color: white;
 }
 
-.main .recent {
+.storyPage-main .storyPage-main-content {
+    width: 100%;
+}
+
+.storyPage-main .recent {
     margin: 40px; 
 }
 
-.main .recent h1 {
+.storyPage-main .storyPage-main-content .recent h1 {
     color: var(--primary, #FFF);
     font-size: 34px;
     font-style: normal;
@@ -63,26 +70,26 @@
     margin: 0 0 20px 0;
 }
 
-.main .recent .history {
+.storyPage-main .storyPage-main-content .recent .history {
     width: 100%;
     height: 446px;
     display: flex;
     justify-content: space-around;
 }
 
-.main .recent .history .story-card {
+.storyPage-main .storyPage-main-content .recent .history .story-card {
     width: 270px;
     height: 440px;
     background-color:  #1D1E1F;
 }
 
-.main .recent .history .story-card .story-cover img {
+.storyPage-main .storyPage-main-content .recent .history .story-card .story-cover img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 270px;
 }
 
-.main .recent .history .story-card .detail-story {
+.storyPage-main .storyPage-main-content .recent .history .story-card .detail-story {
     background-color:  #1D1E1F;
     height: 106px;
     padding: 12.7px 0 0 12px;
@@ -90,11 +97,11 @@
     border-bottom-right-radius: 10px;
 }
 
-.main .recent .history .story-card .detail-story .title {
+.storyPage-main .storyPage-main-content .recent .history .story-card .detail-story .title {
     font-size: 20px;
 }
 
-.main .recent .history .story-card .detail-story .continue-read {
+.storyPage-main .storyPage-main-content .recent .history .story-card .detail-story .continue-read {
     background-color: #A69CF8;
     text-align: center;
     width: 200px;
@@ -102,15 +109,15 @@
     border-radius: 5px;
 }
 
-.main .recent .history .story-card .detail-story .continue-read .percentage {
+.storyPage-main .storyPage-main-content .recent .history .story-card .detail-story .continue-read .percentage {
     font-size: 12px;
 }
 
-.main .main-story {
+.storyPage-main .storyPage-main-content .main-story {
     margin: 40px; 
 }
 
-.main .main-story h1 {
+.storyPage-main .storyPage-main-content .main-story h1 {
     color: var(--primary, #FFF);
     font-size: 34px;
     font-style: normal;
@@ -119,14 +126,14 @@
     margin: 0 0 20px 0;
 }
 
-.main .main-story .collection {
+.storyPage-main .storyPage-main-content .main-story .collection {
     height: 431px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.main .main-story .collection .story-card {
+.storyPage-main .storyPage-main-content .main-story .collection .story-card {
     width: 270px;
     height: 440px;
     background-color:  #1D1E1F;
@@ -134,13 +141,13 @@
     border-bottom-right-radius: 10px;
 }
 
-.main .main-story .collection .story-card .story-cover img {
+.storyPage-main .storyPage-main-content .main-story .collection .story-card .story-cover img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 270px;
 }
 
-.main .main-story .collection .story-card .detail-story {
+.storyPage-main .storyPage-main-content .main-story .collection .story-card .detail-story {
     background-color:  #1D1E1F;
     height: 100px;
     padding: 12.7px 0 0 12px;
@@ -148,11 +155,11 @@
     border-bottom-right-radius: 10px;
 }
 
-.main .main-story .collection .story-card .detail-story .title {
+.storyPage-main .storyPage-main-content .main-story .collection .story-card .detail-story .title {
     font-size: 20px;
 }
 
-.main .main-story .collection .story-card .detail-story button {
+.storyPage-main .storyPage-main-content .main-story .collection .story-card .detail-story button {
     background-color: #A69CF8;
     text-align: center;
     width: 75px;
@@ -163,11 +170,11 @@
     margin-top: 5px;
 }
 
-.main .recent .history .story-card .detail-story .continue-read .percentage {
+.storyPage-main .storyPage-main-content .recent .history .story-card .detail-story .continue-read .percentage {
     font-size: 12px;
 }
 
-.main .journalPages-footer-container {
+.storyPage-main .storyPage-footer-container {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -5,7 +5,9 @@ import HomeIcon from '../assets/image/Group.png';
 import MusicIcon from '../assets/image/music-icon.png';
 import StoryIcon from '../assets/image/story-icon.png';
 import UsersIcon from '../assets/image/users-icon.png';
+import LogOutIcon from '../assets/image/logout.png';
 import '../assets/style/adminSideNav.css';
+
 
 function SideNav() {
     const location = useLocation();
@@ -49,6 +51,12 @@ function SideNav() {
                         <div className={`admin-icon-links ${activePath === '/admin/users' ? 'active' : ''}`}>
                             <img src={UsersIcon} alt="User" />
                             <p>Users</p>
+                        </div>
+                    </Link>
+                    <Link to='/admin' onClick={(e) => handleNavClick(e, '/admin')}>
+                        <div className={`admin-icon-links ${activePath === '/admin' ? 'active' : ''}`}>
+                            <img src={LogOutIcon} alt="Logout" />
+                            <p>Log Out</p>
                         </div>
                     </Link>
                 </div>

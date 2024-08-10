@@ -11,10 +11,15 @@ content {
 }
 
 .content .navbar {
+    width: 100vw;;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 130px;
+}
+
+.content .navbar .LAndingPage-nav .group-links {
+    display: flex;
+    justify-content: center;
 }
 
 .landingPage-main-content .hero-user{
@@ -92,6 +97,8 @@ content {
 
 .filler-content{
     margin: 136px 130px;
+    display: flex;
+    flex-direction: column;
 }
 
 .head-content{
@@ -143,6 +150,7 @@ content {
     display: flex;
     align-items : center;
     position: relative;
+    justify-content: flex-start;
 }
 
 .content-1::before{
@@ -187,22 +195,20 @@ content {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: relative;
 }
 
 .content-2::after{
     content: "";
     width: 70px;
     height: 600px;
-    top: -360px;
-    bottom: 0;
-    right: 0px;
-    left: 1675px;
+    top: 100%;
+    left: 107%;
     position: absolute;
     border-radius: 100%;
     box-shadow: 0 0 350px 200px #5C45FD;
     background-color: #5C45FD;
-
+    z-index: -1;
+    opacity: 50%;
 }
 
 .content-2-text h2{

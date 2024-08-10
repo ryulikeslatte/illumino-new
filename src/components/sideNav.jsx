@@ -7,6 +7,7 @@ import CalendarIcon from '../assets/image/calendar-icon.png';
 import MusicIcon from '../assets/image/music-icon.png';
 import StoryIcon from '../assets/image/story-icon.png';
 import JournalIcon from '../assets/image/journal-icon.png';
+import LogOutIcon from '../assets/image/logout.png';
 import '../assets/style/sideNav.css';
 
 function SideNav() {
@@ -63,6 +64,12 @@ function SideNav() {
                         <div className={`icon-links ${activePath === '/story' ? 'active' : ''}`}>
                             <img src={StoryIcon} alt="Story" />
                             <p>Story</p>
+                        </div>
+                    </Link>
+                    <Link to='/' onClick={(e) => handleNavClick(e, '/')}>
+                        <div className={`icon-links ${activePath === '/' ? 'active' : ''}`}>
+                            <img src={LogOutIcon} alt="Logout" />
+                            <p>Log Out</p>
                         </div>
                     </Link>
                 </div>

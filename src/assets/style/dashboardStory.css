@@ -94,7 +94,13 @@
     line-height: 24px;
 }
 
-.dashboard-story-card .dashboard-story-card-detail .dashboard-story-delete-button {
+.dashboard-story-card .dashboard-story-card-detail .button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.dashboard-story-card .dashboard-story-card-detail .button-group button {
     border-radius: 5px;
     background: var(--purple-2, #A69CF8);
     color: var(--primary, #FFF);

@@ -7,6 +7,7 @@ import expProfil from '../../assets/image/exp-profil.png';
 import MusicCover1 from '../../assets/image/tophit1.png';
 import StoryCover1 from '../../assets/image/storycover5.png';
 import PlusIcon from '../../assets/image/plus.png';
+import EditIcon from '../../assets/image/edit.png';
 import '../../assets/style/dashboardMusic.css';
 import { Link } from 'react-router-dom';
 
@@ -55,6 +56,7 @@ function DashboardMusicPages() {
                             </div>
                             <div className="music-duration">
                                 <p>4:14</p>
+                                <img src={EditIcon} alt="Icon"/>
                                 <img src={DeleteIcon} alt="Delete" onClick={() => showModal(1)} />
                                 {activeModalId === 1 && (
                                     <div className="dashboard-music-delete-modal">
@@ -82,6 +84,7 @@ function DashboardMusicPages() {
                             </div>
                             <div className="music-duration">
                                 <p>4:14</p>
+                                <img src={EditIcon} alt="Icon"/>
                                 <img src={DeleteIcon} alt="Delete" onClick={() => showModal(2)} />
                                 {activeModalId === 2 && (
                                     <div className="dashboard-music-delete-modal">
@@ -109,6 +112,7 @@ function DashboardMusicPages() {
                             </div>
                             <div className="music-duration">
                                 <p>4:14</p>
+                                <img src={EditIcon} alt="Icon"/>
                                 <img src={DeleteIcon} alt="Delete" onClick={() => showModal(3)} />
                                 {activeModalId === 3 && (
                                     <div className="dashboard-music-delete-modal">
@@ -136,6 +140,7 @@ function DashboardMusicPages() {
                             </div>
                             <div className="music-duration">
                                 <p>4:14</p>
+                                <img src={EditIcon} alt="Icon"/>
                                 <img src={DeleteIcon} alt="Delete" onClick={() => showModal(4)} />
                                 {activeModalId === 4 && (
                                     <div className="dashboard-music-delete-modal">

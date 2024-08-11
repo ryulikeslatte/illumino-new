@@ -45,17 +45,20 @@ function DashboardStoryPages() {
                             <img src={StoryCover1} alt="Story Cover" />
                             <div className="dashboard-story-card-detail">
                                 <h2>Reflection of the soul</h2>
-                                <button className="dashboard-story-delete-button" onClick={() => showModal(1)}>Delete</button> {activeModalId === 1 && (
-                                <div className="dashboard-story-delete-modal">
-                                    <div className="dashboard-story-delete-modal-content">
-                                        <p>Delete this Story?</p>
-                                        <div className="delete-modal-button-group">
-                                            <button onClick={hideModal}>No</button>
-                                            <button>Yes</button>
+                                <div className="button-group">
+                                    <Link to='/admin/story/update'><button>Edit</button></Link>
+                                    <button className="dashboard-story-delete-button" onClick={() => showModal(1)}>Delete</button> {activeModalId === 1 && (
+                                    <div className="dashboard-story-delete-modal">
+                                        <div className="dashboard-story-delete-modal-content">
+                                            <p>Delete this Story?</p>
+                                            <div className="delete-modal-button-group">
+                                                <button onClick={hideModal}>No</button>
+                                                <button>Yes</button>
+                                            </div>
                                         </div>
                                     </div>
+                                    )}
                                 </div>
-                                )}
                             </div>
                         </div>
 
@@ -64,20 +67,23 @@ function DashboardStoryPages() {
                             <img src={StoryCover2} alt="Story Cover" />
                             <div className="dashboard-story-card-detail">
                                 <h2>Afternoon</h2>
-                                <button
-                                    className="dashboard-story-delete-button"
-                                    onClick={() => showModal(2)}>Delete</button>
-                                {activeModalId === 2 && (
-                                    <div className="dashboard-story-delete-modal">
-                                        <div className="dashboard-story-delete-modal-content">
-                                            <p>Delete this Story?</p>
-                                            <div className="delete-modal-button-group">
-                                                <button onClick={hideModal}>No</button>
-                                                <button>Yes</button>
+                                <div className="button-group">
+                                    <Link to='/admin/story/update'><button>Edit</button></Link>
+                                    <button
+                                        className="dashboard-story-delete-button"
+                                        onClick={() => showModal(2)}>Delete</button>
+                                    {activeModalId === 2 && (
+                                        <div className="dashboard-story-delete-modal">
+                                            <div className="dashboard-story-delete-modal-content">
+                                                <p>Delete this Story?</p>
+                                                <div className="delete-modal-button-group">
+                                                    <button onClick={hideModal}>No</button>
+                                                    <button>Yes</button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                )}
+                                    )}
+                                </div>
                             </div>
                         </div>
 
@@ -86,23 +92,26 @@ function DashboardStoryPages() {
                             <img src={StoryCover3} alt="Story Cover" />
                             <div className="dashboard-story-card-detail">
                                 <h2>Men N dog</h2>
-                                <button
-                                    className="dashboard-story-delete-button"
-                                    onClick={() => showModal(3)} // Tampilkan modal untuk card 3
-                                >
-                                    Delete
-                                </button>
-                                {activeModalId === 3 && (
-                                    <div className="dashboard-story-delete-modal">
-                                        <div className="dashboard-story-delete-modal-content">
-                                            <p>Delete this Story?</p>
-                                            <div className="delete-modal-button-group">
-                                                <button onClick={hideModal}>No</button>
-                                                <button>Yes</button>
+                                <div className="button-group">
+                                    <Link to='/admin/story/update'><button>Edit</button></Link>
+                                    <button
+                                        className="dashboard-story-delete-button"
+                                        onClick={() => showModal(3)} // Tampilkan modal untuk card 3
+                                    >
+                                        Delete
+                                    </button>
+                                    {activeModalId === 3 && (
+                                        <div className="dashboard-story-delete-modal">
+                                            <div className="dashboard-story-delete-modal-content">
+                                                <p>Delete this Story?</p>
+                                                <div className="delete-modal-button-group">
+                                                    <button onClick={hideModal}>No</button>
+                                                    <button>Yes</button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                )}
+                                    )}
+                                </div>
                             </div>
                         </div>
 
@@ -111,23 +120,26 @@ function DashboardStoryPages() {
                             <img src={StoryCover4} alt="Story Cover" />
                             <div className="dashboard-story-card-detail">
                                 <h2>Sunset</h2>
-                                <button
-                                    className="dashboard-story-delete-button"
-                                    onClick={() => showModal(4)} // Tampilkan modal untuk card 4
-                                >
-                                    Delete
-                                </button>
-                                {activeModalId === 4 && (
-                                    <div className="dashboard-story-delete-modal">
-                                        <div className="dashboard-story-delete-modal-content">
-                                            <p>Delete this Story?</p>
-                                            <div className="delete-modal-button-group">
-                                                <button onClick={hideModal}>No</button>
-                                                <button>Yes</button>
+                                <div className="button-group">
+                                    <Link to='/admin/music/update'><button>Edit</button></Link>
+                                    <button
+                                        className="dashboard-story-delete-button"
+                                        onClick={() => showModal(4)} // Tampilkan modal untuk card 4
+                                    >
+                                        Delete
+                                    </button>
+                                    {activeModalId === 4 && (
+                                        <div className="dashboard-story-delete-modal">
+                                            <div className="dashboard-story-delete-modal-content">
+                                                <p>Delete this Story?</p>
+                                                <div className="delete-modal-button-group">
+                                                    <button onClick={hideModal}>No</button>
+                                                    <button>Yes</button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                )}
+                                    )}
+                                </div>
                             </div>
                         </div>
                     </div>

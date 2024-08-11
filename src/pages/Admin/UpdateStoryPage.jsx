@@ -40,7 +40,7 @@ function UpdateStoryPage(){
                         </div>  
                         <input type="text" placeholder='Artist'/>
                         <div className="confirm-button">
-                            <button type='submit'>Save</button>
+                            <button type='update'>Update</button>
                         </div>
                     </div>
                 </div>

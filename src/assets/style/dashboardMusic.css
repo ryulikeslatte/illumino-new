@@ -99,6 +99,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .dashboard-music-core-content .dashboard-music-card .music-duration p {

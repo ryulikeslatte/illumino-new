@@ -1,5 +1,6 @@
 import '../assets/style/aboutUs.css';
 import LandingPageNav from "../components/LandingPageNav.jsx";
+import Footer from "../components/Footer.jsx"
 import ArinzaImg from '../assets/image/Arinza.png';
 import FadiaImg from '../assets/image/Fadia.png'
 import RahmanImg from '../assets/image/Rahman.png'
@@ -46,6 +47,9 @@ function AboutUsPage(){
                             <p>Technopreneur</p>
                         </div>
                     </div>
+                </div>
+                <div className="footer">
+                    <Footer/>
                 </div>
             </div>
         </div>

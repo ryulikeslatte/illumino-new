@@ -47,28 +47,32 @@
     height: 60px;
 }
 
-.main .main-content .cal-section  {
+.main .main-content-calendar {
+    margin: 40px;
+}
+
+.main .main-content-calendar .cal-section  {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.main .main-content .cal-section .calendar {
+.main .main-content-calendar .cal-section .calendar {
     height: 648.8px;
     border-radius: 10px;
     background-color: #1D1E1F;
 }
 
-.main .main-content .cal-section .calendar .react-calendar {
+.main .main-content-calendar .cal-section .calendar .react-calendar {
     padding-top: 20px;
 }
 
-.main .main-content .cal-section .calendar .react-calendar .react-calendar__navigation {
+.main .main-content-calendar .cal-section .calendar .react-calendar .react-calendar__navigation {
     display: flex;
 }
 
-.main .main-content .cal-section .calendar .react-calendar .react-calendar__navigation button{
+.main .main-content-calendar .cal-section .calendar .react-calendar .react-calendar__navigation button{
     border-width: 0;
     background-color: #1D1E1F;
     color: white;
@@ -76,39 +80,39 @@
     padding: 10px 30px 30px 30px;
 }
 
-.main .main-content .cal-section .calendar .react-calendar .react-calendar__month-view {
+.main .main-content-calendar .cal-section .calendar .react-calendar .react-calendar__month-view {
     background-color: #1D1E1F;
     font-size: 26px;
     color: white;
     border-width: 0;
 }
 
-.main .main-content .cal-section .calendar .react-calendar .react-calendar__month-view__weekdays__weekday {
+.main .main-content-calendar .cal-section .calendar .react-calendar .react-calendar__month-view__weekdays__weekday {
     text-align: center;
     padding: 10px;
     border: 1px solid rgba(245, 245, 245, 0.40);
 }
 
-.main .main-content .cal-section .calendar .react-calendar .react-calendar__month-view__days button {
+.main .main-content-calendar .cal-section .calendar .react-calendar .react-calendar__month-view__days button {
     padding: 25px;
     background-color: #1D1E1F;
     color: white;
     border: 1px solid rgba(245, 245, 245, 0.40);
 }
 
-.main .main-content .task-list .header{
+.main .main-content-calendar .task-list .header{
     display: flex;
     justify-content: flex-start;
     font-size: 35px;
     margin-top: 36px;
 }
 
-.main .main-content .task-list .task-list-content {
+.main .main-content-calendar .task-list .task-list-content {
     display: flex;
     justify-content: space-around;
 }
 
-.main .main-content .task-list .save {
+.main .main-content-calendar .task-list .save {
     display: flex;
     margin-top: 30px;
     font-size: 22px;
@@ -117,7 +121,7 @@
     text-decoration: underline;
 }
 
-.main .main-content .task-list .task-list-content .task-1 {
+.main .main-content-calendar .task-list .task-list-content .task-1 {
     display: flex;
     flex-direction: column;
     font-size: 20px;
@@ -130,7 +134,7 @@
     justify-content: space-between;
 }
 
-.main .main-content .task-list .task-list-content .task-1 input {
+.main .main-content-calendar .task-list .task-list-content .task-1 input {
     margin-top: 16px;
     margin-left: 16px;
     align-self: flex-start;
@@ -138,7 +142,7 @@
     height: 30px;
 }
 
-.main .main-content .task-list .task-list-content .task-1 p {
+.main .main-content-calendar .task-list .task-list-content .task-1 p {
     align-self: flex-end;
     margin: 30px 24px 0 0;
     color: #A69CF8;
@@ -146,7 +150,7 @@
 
 }
 
-.main .main-content .task-list .task-list-content .task-2 {
+.main .main-content-calendar .task-list .task-list-content .task-2 {
     display: flex;
     flex-direction: column;
     font-size: 20px;
@@ -159,7 +163,7 @@
     background-color: #1D1E1F;
 }
 
-.main .main-content .task-list .task-list-content .task-2 input {
+.main .main-content-calendar .task-list .task-list-content .task-2 input {
     margin-top: 16px;
     margin-left: 16px;
     align-self: flex-start;
@@ -167,7 +171,7 @@
     height: 30px;
 }
 
-.main .main-content .task-list .task-list-content .task-2 p {
+.main .main-content-calendar .task-list .task-list-content .task-2 p {
     align-self: flex-end;
     margin: 30px 24px 0 0;
     color: #A69CF8;
@@ -175,7 +179,7 @@
 
 }
 
-.main .main-content .task-list .task-list-content .task-3 {
+.main .main-content-calendar .task-list .task-list-content .task-3 {
     display: flex;
     flex-direction: column;
     font-size: 20px;
@@ -188,7 +192,7 @@
     background-color: #1D1E1F;
 }
 
-.main .main-content .task-list .task-list-content .task-3 input {
+.main .main-content-calendar .task-list .task-list-content .task-3 input {
     margin-top: 16px;
     margin-left: 16px;
     align-self: flex-start;
@@ -196,14 +200,14 @@
     height: 30px;
 }
 
-.main .main-content .task-list .task-list-content .task-3 p {
+.main .main-content-calendar .task-list .task-list-content .task-3 p {
     align-self: center;
     margin: 30px 0 0 0;
     color: #A69CF8;
     font-size: 26px;
 }
 
-.main .main-content .task-list .task-list-content .task-4 {
+.main .main-content-calendar .task-list .task-list-content .task-4 {
     display: flex;
     flex-direction: column;
     font-size: 20px;
@@ -216,7 +220,7 @@
     background-color: #1D1E1F;
 }
 
-.main .main-content .task-list .task-list-content .task-4 input {
+.main .main-content-calendar .task-list .task-list-content .task-4 input {
     margin-top: 16px;
     margin-left: 16px;
     align-self: flex-start;
@@ -224,7 +228,7 @@
     height: 30px;
 }
 
-.main .main-content .task-list .task-list-content .task-4 p {
+.main .main-content-calendar .task-list .task-list-content .task-4 p {
     align-self: center;
     margin: 30px 0 0 0;
     color: #A69CF8;
@@ -232,31 +236,31 @@
 
 }
 
-.main .main-content .task-list .task-list-content .task-1 img {
+.main .main-content-calendar .task-list .task-list-content .task-1 img {
     width: 163px;
     height: 149px;
     align-self: flex-start;
 }
 
-.main .main-content .task-list .task-list-content .task-2 img {
+.main .main-content-calendar .task-list .task-list-content .task-2 img {
     width: 163px;
     height: 149px;
     align-self: flex-start;
 }
 
-.main .main-content .task-list .task-list-content .task-3 img {
+.main .main-content-calendar .task-list .task-list-content .task-3 img {
     width: 163px;
     height: 149px;
     align-self: flex-start;
 }
 
-.main .main-content .task-list .task-list-content .task-4 img {
+.main .main-content-calendar .task-list .task-list-content .task-4 img {
     width: 163px;
     height: 149px;
     align-self: flex-start;
 }
 
-.main .main-content .recent-activity  .header {
+.main .main-content-calendar .recent-activity  .header {
     font-size: 35px;
     margin-bottom: 20px;
     margin-top: 20px;

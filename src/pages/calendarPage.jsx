@@ -34,7 +34,7 @@ function CalendarPage() {
                     </div>
                 </div>
                 <hr />
-                <div className="main-content">
+                <div className="main-content-calendar">
                     <div className="cal-section">
                         <div className="calendar">
                             <Calendar onChange={onChange} value={date} />

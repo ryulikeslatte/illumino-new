@@ -24,6 +24,7 @@ function DetailStory() {
                         <img src={expProfil} alt="user" />
                     </div>
                 </div>
+                <hr />
                 <div className="main-content">
                     <img src={storyCover}/>
                     <div className="story-content">
@@ -56,6 +57,9 @@ function DetailStory() {
                                 in life. He longs to be free, to be himself, and to feel true happiness.</p>
                         </div>
                     </div>
+                </div>
+                <div className="journalPages-footer-container">
+                    <SecondFooter/>
                 </div>
             </div>
         </div>

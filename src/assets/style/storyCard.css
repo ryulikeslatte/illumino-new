@@ -1,0 +1,24 @@
+.story-card-container .story-list-content-card-detail {
+    background-color:  #1D1E1F;
+    border-radius: 10px;
+}
+
+.story-card-container .story-list-content-card-detail .card-info {
+    display: flex;
+    padding: 1px 12px 12px 12px;
+    flex-direction: column;
+    gap: 4px;
+    align-self: stretch;
+    font-size: 16px;
+}
+
+.story-card-container .story-list-content-card-detail .card-info .duration{
+    font-size: 18px;
+    margin-top: 5px
+}
+
+.story-card-container .story-list-content-card-detail .cover {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 270px;
+}

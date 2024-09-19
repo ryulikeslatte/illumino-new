@@ -30,8 +30,8 @@ function SideNav() {
             <div className="side-nav-container">
                 <img src={Logo} alt="" />
                 <div className="group-links">
-                    <Link to='/homes' onClick={(e) => handleNavClick(e, '/homes')}>
-                        <div className={`icon-links ${activePath === '/homes' ? 'active' : ''}`}>
+                    <Link to='/homes' onClick={(e) => handleNavClick(e, '/home')}>
+                        <div className={`icon-links ${activePath === '/home' ? 'active' : ''}`}>
                             <img src={HomeIcon} alt="Home" className="homes-icon" />
                             <p>Home</p>
                         </div>

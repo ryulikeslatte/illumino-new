@@ -1,0 +1,25 @@
+.music-card-container .music-list-content-card-detail {
+    background-color:  #1D1E1F;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.music-card-container .music-list-content-card-detail .card-info {
+    display: flex;
+    padding: 1px 15px 15px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    font-size: 16px;
+}
+
+.music-card-container .music-list-content-card-detail .card-info img {
+    margin-top: 5px
+}
+
+.music-card-container .music-list-content-card-detail .cover {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 270px;
+}

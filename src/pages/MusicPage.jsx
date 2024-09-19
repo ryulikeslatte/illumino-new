@@ -3,8 +3,7 @@ import chevronIcon from '../assets/image/chevron.svg';
 import expProfil from '../assets/image/exp-profil.png';
 import SideNav from '../components/sideNav'
 import '../assets/style/musicPage.css';
-import MusicCover1 from '../assets/image/musicover1.png';
-import PlayButton from '../assets/image/play-button.svg';
+import MusicList from '../components/musicList';
 
 
 function MusicPage() {
@@ -27,53 +26,9 @@ function MusicPage() {
                 <hr />
                 {/* 1 */}
                 <div className="music-core-content">
-                    <div className="music-card">
-                        <div className="music-content">
-                            <p>1</p>
-                            <img src={MusicCover1}/>
-                            <div className="detail">
-                                <p>Fire</p>
-                                <p>Artist enjy</p>
-                            </div>
-                            
-                        </div>
-                        <div className="music-duration">
-                            <p>3.15</p>
-                            <img src={PlayButton}/>
-                        </div>
-                    </div>
-
-                    <div className="music-card">
-                        <div className="music-content">
-                            <p>2</p>
-                            <img src={MusicCover1}/>
-                            <div className="detail">
-                                <p>Fire</p>
-                                <p>Artist enjy</p>
-                            </div>
-                            
-                        </div>
-                        <div className="music-duration">
-                            <p>3.15</p>
-                            <img src={PlayButton}/>
-                        </div>
-                    </div>
-
-                    <div className="music-card">
-                        <div className="music-content">
-                            <p>3</p>
-                            <img src={MusicCover1}/>
-                            <div className="detail">
-                                <p>Fire</p>
-                                <p>Artist enjy</p>
-                            </div>
-                            
-                        </div>
-                        <div className="music-duration">
-                            <p>3.15</p>
-                            <img src={PlayButton}/>
-                        </div>
-                    </div>
+                    <MusicList/>
+                    <MusicList/>
+                    <MusicList/>
                 </div>
                 <div className="journalPages-footer-container">
                     <SecondFooter/>

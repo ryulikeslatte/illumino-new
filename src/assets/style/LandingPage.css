@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-content {
+.content {
     overflow-x: hidden !important;
     background-color: #161616;
     display: flex;

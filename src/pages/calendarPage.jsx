@@ -9,6 +9,7 @@ import Running from '../assets/image/running.png'
 import Meditation from '../assets/image/meditation.png'
 import Listening from '../assets/image/listeningtomusic.png'
 import Writing from '../assets/image/writing.png'
+import RecentAct from '../components/recentActivity'
 
 function CalendarPage() {
     const [date, setDate] = useState(new Date());
@@ -39,8 +40,6 @@ function CalendarPage() {
                             <Calendar onChange={onChange} value={date} />
                         </div>
                     </div>
-                    
-                    
                     <div className="task-list">
                         <p className="header">Task List</p>
                         <div className="task-list-content">
@@ -70,13 +69,9 @@ function CalendarPage() {
 
                     <div className="recent-activity">
                         <p className="header">Recent Activity</p>
-                        <div className="history-activity">
-                            <p className="number">1</p>
-                            <div className="history">
-                                <p className="date">Monday, August 2 2024</p>
-                                <p className="detail">Running, Meditation, Listening to Music</p>
-                            </div>
-                        </div>
+                        <RecentAct/>
+                        <RecentAct/>
+                        <RecentAct/>
                     </div>
                 </div>
                 <div className="journalPages-footer-container">

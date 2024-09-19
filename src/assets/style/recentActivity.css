@@ -1,0 +1,22 @@
+
+.recent-activity .history-activity {
+    display: flex;
+}
+
+.recent-activity .history-activity p {
+    margin-right: 32px;
+}
+
+.recent-activity .history-activity .number {
+    font-size: 22px;
+}
+
+.recent-activity .history-activity .history .date {
+    font-size: 22px;
+}
+
+.recent-activity .history-activity .history .detail {
+    color: rgba(245, 245, 245, 0.70);
+    margin-top: 5px;
+    margin-bottom: 30px;
+}

@@ -21,6 +21,7 @@ import DetailStory from './pages/DetailStory'
 import LoginPageAdmin from './pages/Admin/LoginPage2';
 import UpdateMusic from './pages/Admin/UpdateMusicPage';
 import UpdateStory from './pages/Admin/UpdateStoryPage';
+import AboutPage from './pages/AboutUsPage';
 
 
 function App() {
@@ -32,7 +33,8 @@ function App() {
         <Route path='/admin/login/' element={<LoginPageAdmin/>}/>
         <Route path='/register' element={<RegisterPage/>}/>
         <Route path='/register/p' element={<RegisterPage2/>}/>
-        <Route path='/homes' element={<HomePages/>}/>
+        <Route path='/about' element={<AboutPage/>}/>        
+        <Route path='/home' element={<HomePages/>}/>
         <Route path='/search' element={<SearchPages/>}/>
         <Route path='/journal' element={<JournalPages/>}/>
         <Route path='/music' element={<MusicPage/>}/>

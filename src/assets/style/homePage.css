@@ -95,37 +95,10 @@
     margin: 0 0 20px 0;
 }
 
-.homePage-popular-songs .songs-list {
+.content .homePage-main-content .homePage-popular-songs .songs-list{
     width: 100%;
     display: flex;
     justify-content: space-around;
-}
-
-.homePage-popular-songs .songs-card .songs-card-detail{
-    width: 360px;
-    height: 465px;
-    background-color:  #1D1E1F;
-    border-radius: 10px;
-}
-
-.homePage-popular-songs .songs-list .songs-card .songs-card-detail .cover {
-    width: 360px;
-    height: 340px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.homePage-popular-songs .songs-card .songs-card-detail .card-info {
-    display: flex;
-    padding: 12px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    align-self: stretch;
-}
-
-.homePage-popular-songs .songs-card .songs-card-detail .card-info p {
-    font-size: 16px;
 }
 
 .homePage-main-content .homePage-feeling-content {
@@ -155,37 +128,11 @@
     flex-direction: column;
 }
 
-.homePage-main-content .music-list-content {
+.homePage-main-content .homePage-music-content .music-list-content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-}
-
-.homePage-main-content .music-list-content .music-list-content-card {
-    background-color:  #1D1E1F;
-    height: 450px;
-    border-radius: 10px;
-}
-
-.homePage-main-content .music-list-content .music-list-content-card .card-info {
-    display: flex;
-    padding: 1px 12px 12px 12px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    align-self: stretch;
-    font-size: 16px;
-}
-
-.homePage-main-content .music-list-content .music-list-content-card .cover {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    width: 270px;
-}
-
-.homePage-main-content .homePage-music-content {
-    margin-top: 40px;
 }
 
 .homePage-main-content .homePage-music-content .music-top-content {
@@ -247,20 +194,6 @@
     background-color:  #1D1E1F;
     height: 450px;
     border-radius: 10px;
-}
-
-.homePage-main-content .story-list-content .story-list-content-card .card-info {
-    display: flex;
-    padding: 20px 20px 20px 12px;
-    flex-direction: column;
-    gap: 4px;
-    font-size: 16px;
-}
-
-.homePage-main-content .story-list-content .story-list-content-card .cover {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    width: 270px;
 }
 
 .homePage-main-content .homePage-daily-reflection-content {

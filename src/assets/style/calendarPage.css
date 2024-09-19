@@ -258,28 +258,6 @@
 
 .main .main-content .recent-activity  .header {
     font-size: 35px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-top: 20px;
-}
-
-.main .main-content .recent-activity .history-activity {
-    display: flex;
-}
-
-.main .main-content .recent-activity .history-activity p {
-    margin-right: 32px;
-}
-
-.main .main-content .recent-activity .history-activity .number {
-    font-size: 22px;
-}
-
-.main .main-content .recent-activity .history-activity .history .date {
-    font-size: 22px;
-}
-
-.main .main-content .recent-activity .history-activity .history .detail {
-    color: rgba(245, 245, 245, 0.70);
-    margin-top: 5px;
-    margin-bottom: 30px;
 }

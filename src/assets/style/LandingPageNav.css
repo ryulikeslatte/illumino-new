@@ -17,13 +17,11 @@
 }
 
 .landingPage-nav .group-links .links {
-    width: 550px;
     left: 22%;
     padding: 20px 44px;
     border: none;
     border-radius: 1000px;
 }
-
 
 .landingPage-nav .group-links .links .links::after{
     content: '';

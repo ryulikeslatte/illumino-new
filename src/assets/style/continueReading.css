@@ -1,0 +1,38 @@
+.story-card {
+    width: 270px;
+    height: 430px;
+    background-color:  #1D1E1F;
+}
+
+.story-card .story-cover img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 270px;
+}
+
+.story-card .detail-story {
+    background-color:  #1D1E1F;
+    height: 99px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.story-card .detail-story .title {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.story-card .detail-story .continue-read {
+    background-color: #7363F5;
+    text-align: center;
+    width: 250px;
+    border-radius: 5px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.story-card .detail-story .continue-read .percentage {
+    font-size: 12px;
+}

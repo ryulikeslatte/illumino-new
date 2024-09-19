@@ -1,0 +1,38 @@
+.music-card {
+    display: flex;
+    justify-content: space-between;
+    margin : 40px;
+    flex-wrap: wrap;
+}
+
+.music-card .music-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-card .music-content p {
+    margin-right: 20px;
+}
+
+.music-card .music-content img {
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+    border-radius: 7px;
+}
+
+.music-card .music-duration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-card .music-duration p {
+    margin-right: 36px;
+}
+
+.music-card .music-duration img {
+    width: 25px;
+    height: 25px;
+}

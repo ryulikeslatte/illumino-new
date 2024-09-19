@@ -27,12 +27,12 @@
 .main .main-content-music {
     display: flex;
     flex-direction: row;
+    margin: 40px;
 }
 
 .container .main .main-content-music .music-cover img {
     width: 650px;
     height: 550px;
-    margin-left: 40px;
     border-radius: 10px;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .container .main .main-content-music .explore {
-    margin: 0px 40px 20px 40px;
+    margin: 0 0 0 40px;
     font-size: 30px;
     width: 100%;
 }

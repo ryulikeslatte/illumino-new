@@ -5,6 +5,8 @@ import SideNav from '../components/sideNav'
 import '../assets/style/storyPage.css';
 import StoryCover2 from '../assets/image/storycover2.png';
 import Story from '../assets/image/story-1.png';
+import ContinueRead from '../components/continueReading'
+import StoryCollection from '../components/storyCollection'
 
 
 function StoryPage() {
@@ -31,102 +33,19 @@ function StoryPage() {
                     <div className="recent">
                         <h1>Recent Activity</h1>
                         <div className="history">
-                            <div className="story-card">
-                                <div className="story-cover">
-                                    <img src={Story}/>
-                                </div>
-                                <div className="detail-story">
-                                    <p className="title">Track</p>
-                                    <div className="continue-read">
-                                        <p>Continue Reading</p>
-                                        <p className="percentage">30% Completed</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="story-card">
-                                <div className="story-cover">
-                                    <img src={Story}/>
-                                </div>
-                                <div className="detail-story">
-                                    <p className="title">Track</p>
-                                    <div className="continue-read">
-                                        <p>Continue Reading</p>
-                                        <p className="percentage">30% Completed</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="story-card">
-                                <div className="story-cover">
-                                    <img src={Story}/>
-                                </div>
-                                <div className="detail-story">
-                                    <p className="title">Track</p>
-                                    <div className="continue-read">
-                                        <p>Continue Reading</p>
-                                        <p className="percentage">30% Completed</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="story-card">
-                                <div className="story-cover">
-                                    <img src={Story}/>
-                                </div>
-                                <div className="detail-story">
-                                    <p className="title">Track</p>
-                                    <div className="continue-read">
-                                        <p>Continue Reading</p>
-                                        <p className="percentage">30% Completed</p>
-                                    </div>
-                                </div>
-                            </div>
-
+                            <ContinueRead/>
+                            <ContinueRead/>
+                            <ContinueRead/>
+                            <ContinueRead/>
                         </div>
                     </div>
                     <div className="main-story">
                         <h1>Story Collection</h1>
                         <div className="collection">
-                            <div className="story-card">
-                                <div className="story-cover">
-                                    <img src={Story}/>
-                                </div>
-                                <div className="detail-story">
-                                    <p className="title">Track</p>
-                                    <button>Read</button>
-                                </div>
-                            </div>
-
-                            <div className="story-card">
-                                <div className="story-cover">
-                                    <img src={Story}/>
-                                </div>
-                                <div className="detail-story">
-                                    <p className="title">Track</p>
-                                    <button>Read</button>
-                                </div>
-                            </div>
-
-                            <div className="story-card">
-                                <div className="story-cover">
-                                    <img src={Story}/>
-                                </div>
-                                <div className="detail-story">
-                                    <p className="title">Track</p>
-                                    <button>Read</button>
-                                </div>
-                            </div>
-
-                            <div className="story-card">
-                                <div className="story-cover">
-                                    <img src={Story}/>
-                                </div>
-                                <div className="detail-story">
-                                    <p className="title">Track</p>
-                                    <button>Read</button>
-                                </div>
-                            </div>
+                            <StoryCollection/>
+                            <StoryCollection/>
+                            <StoryCollection/>
+                            <StoryCollection/>
                         </div>
                     </div>
                 </div>

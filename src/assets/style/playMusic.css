@@ -1,0 +1,68 @@
+.button-bar .button-content  {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-bar .button-content .bar-duration {
+    align-self: center;
+    justify-self: center;
+    margin: 40px 0 30px;
+}
+
+.button-bar .button-content .bar-duration .duration {
+    width: 1120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-bar .button-content .button-main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.button-content .button-main .detail-music {
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.button-content .button-main .detail-music .title {
+    font-size: 30px;
+}
+
+.button-content .button-main .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-content .button-main .button img {
+    width: 30px;
+    height: 30px;
+    margin: 0 15px 0 15px;
+}
+
+.button-content .button-main .button .play {
+    width: 60px;
+    height: 60px;
+}
+
+.button-content .button-main .mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.button-content .button-main .mode label input {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.button-content .button-main .mode label {
+    font-size: 20px;
+    display: flex;
+}

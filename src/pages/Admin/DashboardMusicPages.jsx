@@ -1,28 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import DeleteIcon from '../../assets/image/minus-circle.png';
 import AdminSideNav from '../../components/adminSideNav';
 import SecondFooter from '../../components/SecondFooter';
 import chevronIcon from '../../assets/image/chevron.svg';
 import expProfil from '../../assets/image/exp-profil.png';
-import MusicCover1 from '../../assets/image/tophit1.png';
-import StoryCover1 from '../../assets/image/storycover5.png';
-import PlusIcon from '../../assets/image/plus.png';
 import EditIcon from '../../assets/image/edit.png';
+import PlusIcon from '../../assets/image/plus.png';
 import '../../assets/style/dashboardMusic.css';
 import { Link } from 'react-router-dom';
 
 function DashboardMusicPages() {
-    // State untuk mengontrol visibilitas modal
     const [activeModalId, setActiveModalId] = useState(null);
+    const [musicData, setMusicData] = useState([]);
 
-    // Fungsi untuk menampilkan modal
+    useEffect(() => {
+        const fetchMusicData = async () => {
+            try {
+                const accessToken = localStorage.getItem('access');
+                const response = await fetch('https://illumino-api.kakashispiritnews.my.id/api/song', {
+                    headers: {
+                        'Authorization': `Bearer ${accessToken}`
+                    }
+                });
+                const data = await response.json();
+                if (data.status === 'success') {
+                    setMusicData(data.data);
+                }
+            } catch (error) {
+                console.error('Error fetching music data:', error);
+            }
+        };
+
+        fetchMusicData();
+    }, []);
+
     const showModal = (id) => setActiveModalId(id);
-
-    // Fungsi untuk menyembunyikan modal
     const hideModal = () => setActiveModalId(null);
 
     return (
-        <>
         <div className="dashboard-music-container">
             <div className="dashboard-music-side-nav">
                 <AdminSideNav />
@@ -40,121 +55,38 @@ function DashboardMusicPages() {
                 <hr />
                 <div className="dashboard-music-core-content">
                     <div className="dashboard-music-list-content">
-                        {/* Card 1 */}
-                        <div className="dashboard-music-card">
-                            <div className="music-content">
-                                <p>1</p>
-                                <img
-                                    src={MusicCover1}
-                                    alt="Music Cover"
-                                    className='dashboard-music-card-cover'
-                                />
-                                <div className="dashboard-music-card-detail">
-                                    <p>Fire</p>
-                                    <p>Artist enjy</p>
+                        {musicData.map((music, index) => (
+                            <div className="dashboard-music-card" key={music.id}>
+                                <div className="music-content">
+                                    <p>{index + 1}</p>
+                                    <img
+                                        src={"http://localhost:8000" + music.cover_image || 'default_cover_image_path'}
+                                        alt="Music Cover"
+                                        className='dashboard-music-card-cover'
+                                    />
+                                    <div className="dashboard-music-card-detail">
+                                        <p>{music.title}</p>
+                                        <p>Artist {music.artist}</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="music-duration">
-                                <p>4:14</p>
-                                <img src={EditIcon} alt="Icon"/>
-                                <img src={DeleteIcon} alt="Delete" onClick={() => showModal(1)} />
-                                {activeModalId === 1 && (
-                                    <div className="dashboard-music-delete-modal">
-                                        <div className="dashboard-music-delete-modal-content">
-                                            <p>Delete this Story?</p>
-                                            <div className="delete-modal-button-group">
-                                                <button onClick={hideModal}>No</button>
-                                                <button>Yes</button>
+                                <div className="music-duration">
+                                    <p>{formatDuration(music.duration)}</p>
+                                    <img src={EditIcon} alt="Icon"/>
+                                    <img src={DeleteIcon} alt="Delete" onClick={() => showModal(music.id)} />
+                                    {activeModalId === music.id && (
+                                        <div className="dashboard-music-delete-modal">
+                                            <div className="dashboard-music-delete-modal-content">
+                                                <p>Delete this Story?</p>
+                                                <div className="delete-modal-button-group">
+                                                    <button onClick={hideModal}>No</button>
+                                                    <button>Yes</button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                )}
-                            </div>
-                        </div>
-
-                        {/* Card 2 */}
-                        <div className="dashboard-music-card">
-                            <div className="music-content">
-                                <p>2</p>
-                                <img src={StoryCover1} alt="Story Cover" className='dashboard-music-card-cover'/>
-                                <div className="dashboard-music-card-detail">
-                                    <p>Love</p>
-                                    <p>Artist raisa</p>
+                                    )}
                                 </div>
                             </div>
-                            <div className="music-duration">
-                                <p>4:14</p>
-                                <img src={EditIcon} alt="Icon"/>
-                                <img src={DeleteIcon} alt="Delete" onClick={() => showModal(2)} />
-                                {activeModalId === 2 && (
-                                    <div className="dashboard-music-delete-modal">
-                                        <div className="dashboard-music-delete-modal-content">
-                                            <p>Delete this Story?</p>
-                                            <div className="delete-modal-button-group">
-                                                <button onClick={hideModal}>No</button>
-                                                <button>Yes</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                )}
-                            </div>
-                        </div>
-
-                        {/* Card 3 */}
-                        <div className="dashboard-music-card">
-                            <div className="music-content">
-                                <p>3</p>
-                                <img src={MusicCover1} alt="Music Cover" className='dashboard-music-card-cover'/>
-                                <div className="dashboard-music-card-detail">
-                                    <p>Tree</p>
-                                    <p>Artist sal</p>
-                                </div>
-                            </div>
-                            <div className="music-duration">
-                                <p>4:14</p>
-                                <img src={EditIcon} alt="Icon"/>
-                                <img src={DeleteIcon} alt="Delete" onClick={() => showModal(3)} />
-                                {activeModalId === 3 && (
-                                    <div className="dashboard-music-delete-modal">
-                                        <div className="dashboard-music-delete-modal-content">
-                                            <p>Delete this Story?</p>
-                                            <div className="delete-modal-button-group">
-                                                <button onClick={hideModal}>No</button>
-                                                <button>Yes</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                )}
-                            </div>
-                        </div>
-
-                        {/* Card 4 */}
-                        <div className="dashboard-music-card">
-                            <div className="music-content">
-                                <p>4</p>
-                                <img src={StoryCover1} alt="Story Cover" className='dashboard-music-card-cover'/>
-                                <div className="dashboard-music-card-detail">
-                                    <p>Hurt</p>
-                                    <p>Artist isyana</p>
-                                </div>
-                            </div>
-                            <div className="music-duration">
-                                <p>4:14</p>
-                                <img src={EditIcon} alt="Icon"/>
-                                <img src={DeleteIcon} alt="Delete" onClick={() => showModal(4)} />
-                                {activeModalId === 4 && (
-                                    <div className="dashboard-music-delete-modal">
-                                        <div className="dashboard-music-delete-modal-content">
-                                            <p>Delete this Story?</p>
-                                            <div className="delete-modal-button-group">
-                                                <button onClick={hideModal}>No</button>
-                                                <button>Yes</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                )}
-                            </div>
-                        </div>
+                        ))}
                     </div>
                     <div className="button">
                         <div className="dashboard-add-button">
@@ -167,8 +99,13 @@ function DashboardMusicPages() {
                 </div>
             </div>
         </div>
-        </>
     );
+}
+
+function formatDuration(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
 }
 
 export default DashboardMusicPages;

@@ -8,7 +8,12 @@ import NextButton from '../assets/image/next.png';
 import MusicBar from '../assets/image/music-bar.png';
 
 
-function PlayMusicComp() {
+const PlayMusic =({songs, setSongs, isplaying, setisplaying, audioElem, currentSong, setCurrentSong}) => {
+    const PlayPause = () => 
+    {
+        setisplaying = !isplaying;
+    }
+
     return(
         <>
         <div className="button-content">
@@ -20,7 +25,7 @@ function PlayMusicComp() {
                 <div className="button">
                     <img src={RepeatButton} />
                     <img src={PreviousButton} />
-                    <img src={PlayButton2} className="play"/>
+                    <img src={PlayButton2} className="play" onClick={PlayPause}/>
                     <img src={NextButton} />
                     <img src={ShuffleButton} />
                 </div>
@@ -38,4 +43,4 @@ function PlayMusicComp() {
     );
 }
 
-export default PlayMusicComp;
+export default PlayMusic;

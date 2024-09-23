@@ -101,15 +101,6 @@ function SearchPages(){
                             <StoryCard/>
                         </div>
                     </div>
-                    <div className="searchPage-feeling-content">
-                        <p>Hello arinza</p>
-                        <h2>How are you feeling today?</h2>
-                        <div className="feeling-content-list">
-                            <img src={SadReaction} alt="sad" />
-                            <img src={NormalReaction} alt="normal" />
-                            <img src={HappyReaction} alt="happy" />
-                        </div>
-                    </div>
                     <div className="searchPage-music-content">
                         <div className="music-top-content">
                             <h1>Music</h1>

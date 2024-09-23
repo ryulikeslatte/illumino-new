@@ -54,12 +54,6 @@ function SideNav() {
                             <p>Music</p>
                         </div>
                     </Link>
-                    <Link to='/calendar' onClick={(e) => handleNavClick(e, '/calendar')}>
-                        <div className={`icon-links ${activePath === '/calendar' ? 'active' : ''}`}>
-                            <img src={CalendarIcon} alt="Calendar" />
-                            <p>Calendar</p>
-                        </div>
-                    </Link>
                     <Link to='/story' onClick={(e) => handleNavClick(e, '/story')}>
                         <div className={`icon-links ${activePath === '/story' ? 'active' : ''}`}>
                             <img src={StoryIcon} alt="Story" />

@@ -7,7 +7,6 @@ import HomePages from './pages/HomePages'
 import SearchPages from './pages/SearchPages'
 import JournalPages from './pages/JournalPages'
 import StoryPage from './pages/storyPage'
-import CalendarPage from './pages/calendarPage'
 import WelcomeAdmin from './pages/Admin/WelcomeAdminPages'
 import AdminDashboard from './pages/Admin/DashboardAdminPages'
 import MusicDashboard from './pages/Admin/DashboardMusicPages'
@@ -38,7 +37,6 @@ function App() {
         <Route path='/search' element={<SearchPages/>}/>
         <Route path='/journal' element={<JournalPages/>}/>
         <Route path='/music' element={<MusicPage/>}/>
-        <Route path='/calendar' element={<CalendarPage/>}/>
         <Route path='/music/play' element={<DetailPlayMusic/>}/>
         <Route path='/story/detail' element={<DetailStory/>}/>
         <Route path='/story' element={<StoryPage/>}/>

@@ -1,5 +1,5 @@
 import '../assets/style/loginForm.css'
-import logo from '../assets/image/logo-illumino.png'
+import logo from '../assets/image/llumino.png'
 import expProfil from '../assets/image/exp-profil.png'
 import {Link} from "react-router-dom"
 import defaultProfil from '../assets/image/default-profil.png'
@@ -11,7 +11,7 @@ function LoginForm(){
                 <div className="left-container">
                     <img src={logo} alt="llumino"/>
                     <h1>Choose account</h1>
-                    <p>Sign in <span className='llumino-link'>llumino</span></p>
+                    <p>Sign in to <span className='llumino-link'>Illumino</span></p>
                 </div>
                 <div className="right-container">
                     <div className="account">

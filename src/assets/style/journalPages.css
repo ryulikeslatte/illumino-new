@@ -130,16 +130,8 @@
     height: 511px;
     margin-bottom: 27px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.journalPages-recent-activity-content .recent-activity-content-list p{
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 36px;
-    text-align: left;
-    color: #F5F5F54D;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .content .journalPages-footer-container {

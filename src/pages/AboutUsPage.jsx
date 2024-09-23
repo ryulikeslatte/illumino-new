@@ -5,6 +5,9 @@ import ArinzaImg from '../assets/image/Arinza.png';
 import FadiaImg from '../assets/image/Fadia.png'
 import RahmanImg from '../assets/image/Rahman.png'
 import NazaImg from '../assets/image/Nazario.png'
+import BoyImg from '../assets/image/Vinsesius.png'
+import LarasImg from '../assets/image/Laras.png'
+
 
 function AboutUsPage(){
     return(
@@ -33,6 +36,13 @@ function AboutUsPage(){
                             <p>Front-End</p>
                         </div>
                     </div>
+                    <div className="vinsesius">
+                        <img src={BoyImg} alt="Vinsesius"/>
+                        <div className="detail-info">
+                            <p className='name'>Vinsesius</p>
+                            <p>Front-End</p>
+                        </div>
+                    </div>
                     <div className="rahman">
                         <img src={RahmanImg} alt="Rahman Hakim"/>
                         <div className="detail-info">
@@ -44,6 +54,13 @@ function AboutUsPage(){
                         <img src={NazaImg} alt="Nazario Valente"/>
                         <div className="detail-info">
                             <p className='name'>Nazario Valente</p>
+                            <p>Technopreneur</p>
+                        </div>
+                    </div>
+                    <div className="laras">
+                        <img src={LarasImg} alt="Larasati"/>
+                        <div className="detail-info">
+                            <p className='name'>Larasati</p>
                             <p>Technopreneur</p>
                         </div>
                     </div>

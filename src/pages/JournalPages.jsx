@@ -3,6 +3,7 @@ import chevronIcon from '../assets/image/chevron.svg';
 import expProfil from '../assets/image/exp-profil.png';
 import SideNav from '../components/sideNav'
 import '../assets/style/journalPages.css';
+import JournalCard from '../components/journalCard'
 
 function JournalPages(){
     return(
@@ -31,9 +32,11 @@ function JournalPages(){
                         </div>
                     </div>
                     <div className="journalPages-recent-activity-content">
-                        <h2>Recent Activity</h2>
+                        <h2>Recent Journal</h2>
                         <div className="recent-activity-content-list">
-                            <p>No activities</p>
+                            <JournalCard/>
+                            <JournalCard/>
+                            <JournalCard/>
                         </div>
                     </div>
                 </div>

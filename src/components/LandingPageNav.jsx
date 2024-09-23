@@ -12,8 +12,8 @@ function LandingPageNav(){
                         <ol>
                             <li><a href='/#why'>Why Us</a></li>
                             <li><a href='/#testimonials'>Testimonials</a></li>
-                            <li><Link to='/login'>Log In</Link></li>
                             <li><Link to='/about'>About Us</Link></li>
+                            <li><Link to='/login'>Log In</Link></li>
                         </ol>
                     </nav>
                 </div>

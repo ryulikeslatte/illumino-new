@@ -22,15 +22,6 @@ function HomePages(){
             <div className="content">
                 <div className="homePage-top-content">
                     <p>Welcome to llumino!</p>
-                    <div className="homePage-login-option">
-                        <a href="#">Sign Up</a>
-                        <a href="#">
-                            <div className="google-option">
-                                <img src={GoogleIcon} alt="Google Icons" />
-                                Log in
-                            </div>
-                        </a>
-                    </div>
                 </div>
                 <hr />
                 <div className="homePage-main-content">
@@ -42,15 +33,6 @@ function HomePages(){
                             <PopularSongsCard/>
                         </div>
                     </div> 
-                    <div className="homePage-feeling-content">
-                        <p>Hello arinza</p>
-                        <h2>How are you feeling today?</h2>
-                        <div className="feeling-content-list">
-                            <img src={SadReaction} alt="sad" />
-                            <img src={NormalReaction} alt="normal" />
-                            <img src={HappyReaction} alt="happy" />
-                        </div>
-                    </div>
                     <div className="homePage-music-content">
                         <div className="music-top-content">
                             <h1>Music</h1>

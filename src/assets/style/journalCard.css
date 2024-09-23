@@ -1,0 +1,16 @@
+.card-journal {
+    background-color: #1D1E1F;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 10px 20px;
+}
+
+.journal-content {
+    margin: 0 0 10px 20px;
+    font-weight: 300;
+}

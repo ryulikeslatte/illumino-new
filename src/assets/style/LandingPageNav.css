@@ -19,18 +19,18 @@
 .landingPage-nav .group-links .links {
     left: 22%;
     padding: 20px 44px;
-    border: none;
     border-radius: 1000px;
+    
 }
 
 .landingPage-nav .group-links .links .links::after{
     content: '';
     position: absolute;
-    height: 102.5%;
-    width: 100.5%;
+    height: 120%;
+    width: 110%;
     top: -0.7px;
     border-radius: 1000px;
-    background-image: linear-gradient(to right, #743ad5, #d53a9d);
+    border-color: red;
     z-index : -1;
 }
 

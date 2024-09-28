@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import AdminSideNav from '../../components/adminSideNav';
 import SecondFooter from '../../components/SecondFooter';
 import chevronIcon from '../../assets/image/chevron.svg';
@@ -9,9 +9,41 @@ import StoryCover2 from '../../assets/image/storycover10.png';
 import StoryCover3 from '../../assets/image/storycover11.png';
 import StoryCover4 from '../../assets/image/storycover4.png';
 import '../../assets/style/dashboardStory.css';
-import { Link } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 
 function DashboardStoryPages() {
+    const nav = useNavigate();
+
+    const [stories, setStories] = useState(null);
+
+    const handleDelete = async (id) => {
+        await fetch(`https://illumino-api.kakashispiritnews.my.id/api/cms/story?${id}`, {
+            method: 'DELETE',
+            headers: {
+                "Authorization": `Bearer ${localStorage.getItem('access')}`
+            }
+        }).then(async (v) => {
+            if (v.status === 200 || v.status === 201) {
+                hideModal()
+                await getStories()
+            }
+        })
+    }
+
+    const getStories = async () => {
+        await fetch(`https://illumino-api.kakashispiritnews.my.id/api/cms/story`, {
+            method: 'GET',
+            headers: {
+                "Authorization": `Bearer ${localStorage.getItem('access')}`
+            }
+        }).then(async (v) => {
+            if (v.status === 200 || v.status === 201) {
+                const response = await v.json();
+                setStories(response.data)
+            }
+        });
+    }
+
     // State untuk mengontrol visibilitas modal
     const [activeModalId, setActiveModalId] = useState(null);
 
@@ -20,6 +52,10 @@ function DashboardStoryPages() {
 
     // Fungsi untuk menyembunyikan modal
     const hideModal = () => setActiveModalId(null);
+
+    useEffect(() => {
+        getStories()
+    }, []);
 
     return (
         <>
@@ -40,108 +76,33 @@ function DashboardStoryPages() {
                 <hr />
                 <div className="dashboard-story-core-content">
                     <div className="dashboard-story-content-list">
-                        {/* Card 1 */}
-                        <div className="dashboard-story-card">
-                            <img src={StoryCover1} alt="Story Cover" />
-                            <div className="dashboard-story-card-detail">
-                                <h2>Reflection of the soul</h2>
-                                <div className="button-group">
-                                    <Link to='/admin/story/update'><button>Edit</button></Link>
-                                    <button className="dashboard-story-delete-button" onClick={() => showModal(1)}>Delete</button> {activeModalId === 1 && (
-                                    <div className="dashboard-story-delete-modal">
-                                        <div className="dashboard-story-delete-modal-content">
-                                            <p>Delete this Story?</p>
-                                            <div className="delete-modal-button-group">
-                                                <button onClick={hideModal}>No</button>
-                                                <button>Yes</button>
-                                            </div>
+                        {stories?.map((v, id) => {
+                            return (
+                                <div className="dashboard-story-card">
+                                    <img src={`https://illumino-api.kakashispiritnews.my.id${v?.image}`} alt="Story Cover"/>
+                                    <div className="dashboard-story-card-detail">
+                                        <h2>{v?.title}</h2>
+                                        <div className="button-group">
+                                            <button style={{ cursor: 'pointer' }} onClick={() => nav(`/admin/story/${v?.id}`)}>Edit</button>
+                                            <button className="dashboard-story-delete-button" style={{ cursor: 'pointer' }}
+                                                    onClick={() => showModal(1)}>Delete
+                                            </button>
+                                            {activeModalId === 1 && (
+                                                <div className="dashboard-story-delete-modal">
+                                                    <div className="dashboard-story-delete-modal-content">
+                                                        <p>Delete this Story?</p>
+                                                        <div className="delete-modal-button-group">
+                                                            <button onClick={hideModal}>No</button>
+                                                            <button onClick={() => handleDelete(v?.id)}>Yes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            )}
                                         </div>
                                     </div>
-                                    )}
                                 </div>
-                            </div>
-                        </div>
-
-                        {/* Card 2 */}
-                        <div className="dashboard-story-card">
-                            <img src={StoryCover2} alt="Story Cover" />
-                            <div className="dashboard-story-card-detail">
-                                <h2>Afternoon</h2>
-                                <div className="button-group">
-                                    <Link to='/admin/story/update'><button>Edit</button></Link>
-                                    <button
-                                        className="dashboard-story-delete-button"
-                                        onClick={() => showModal(2)}>Delete</button>
-                                    {activeModalId === 2 && (
-                                        <div className="dashboard-story-delete-modal">
-                                            <div className="dashboard-story-delete-modal-content">
-                                                <p>Delete this Story?</p>
-                                                <div className="delete-modal-button-group">
-                                                    <button onClick={hideModal}>No</button>
-                                                    <button>Yes</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Card 3 */}
-                        <div className="dashboard-story-card">
-                            <img src={StoryCover3} alt="Story Cover" />
-                            <div className="dashboard-story-card-detail">
-                                <h2>Men N dog</h2>
-                                <div className="button-group">
-                                    <Link to='/admin/story/update'><button>Edit</button></Link>
-                                    <button
-                                        className="dashboard-story-delete-button"
-                                        onClick={() => showModal(3)} // Tampilkan modal untuk card 3
-                                    >
-                                        Delete
-                                    </button>
-                                    {activeModalId === 3 && (
-                                        <div className="dashboard-story-delete-modal">
-                                            <div className="dashboard-story-delete-modal-content">
-                                                <p>Delete this Story?</p>
-                                                <div className="delete-modal-button-group">
-                                                    <button onClick={hideModal}>No</button>
-                                                    <button>Yes</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Card 4 */}
-                        <div className="dashboard-story-card">
-                            <img src={StoryCover4} alt="Story Cover" />
-                            <div className="dashboard-story-card-detail">
-                                <h2>Sunset</h2>
-                                <div className="button-group">
-                                    <Link to='/admin/music/update'><button>Edit</button></Link>
-                                    <button
-                                        className="dashboard-story-delete-button"
-                                        onClick={() => showModal(4)} // Tampilkan modal untuk card 4
-                                    >
-                                        Delete
-                                    </button>
-                                    {activeModalId === 4 && (
-                                        <div className="dashboard-story-delete-modal">
-                                            <div className="dashboard-story-delete-modal-content">
-                                                <p>Delete this Story?</p>
-                                                <div className="delete-modal-button-group">
-                                                    <button onClick={hideModal}>No</button>
-                                                    <button>Yes</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-                        </div>
+                            )
+                        })}
                     </div>
                     <div className="dashboard-story-button">
                         <div className="dashboard-add-button">

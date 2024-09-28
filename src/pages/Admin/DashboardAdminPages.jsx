@@ -32,7 +32,7 @@ function DashboardAdminPages() {
                         </Link>
                         <Link to='/admin/story'><div className="dashboard-core-content-button story-links-button">
                             <img src={StoryIcon} alt="Story" />
-                            <p>Music</p>
+                            <p>Story</p>
                         </div>
                         </Link>
 

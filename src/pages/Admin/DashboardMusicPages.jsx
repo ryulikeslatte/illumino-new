@@ -92,7 +92,7 @@ function DashboardMusicPages() {
                                     {activeModalId === music?.id && (
                                         <div className="dashboard-music-delete-modal">
                                             <div className="dashboard-music-delete-modal-content">
-                                                <p>Delete this Story?</p>
+                                                <p>Delete this Music?</p>
                                                 <div className="delete-modal-button-group">
                                                     <button onClick={hideModal}>No</button>
                                                     <button onClick={() => handleDelete(music?.id)}>Yes</button>

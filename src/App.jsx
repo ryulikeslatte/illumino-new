@@ -13,7 +13,6 @@ import MusicDashboard from './pages/Admin/DashboardMusicPages'
 import AddMusic from './pages/Admin/AddMusicPage'
 import StoryDashboard from './pages/Admin/DashboardStoryPages'
 import AddStory from './pages/Admin/AddStoryPage'
-import UsersDashboard from './pages/Admin/DashboardUsersPages'
 import MusicPage from './pages/MusicPage'
 import DetailPlayMusic from './pages/DetailPlayMusic'
 import DetailStory from './pages/DetailStory'
@@ -48,7 +47,6 @@ function App() {
         <Route path='/admin/story' element={<StoryDashboard/>}/>
         <Route path='/admin/story/add' element={<AddStory/>}/>
         <Route path='/admin/story/:id' element={<UpdateStory/>}/>
-        <Route path='/admin/users' element={<UsersDashboard/>}/>
       </Routes>
     </Router>
   );

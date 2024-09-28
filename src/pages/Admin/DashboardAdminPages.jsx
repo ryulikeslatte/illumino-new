@@ -35,13 +35,6 @@ function DashboardAdminPages() {
                             <p>Story</p>
                         </div>
                         </Link>
-
-                        <Link to='/admin/users'>
-                            <div className="dashboard-core-content-button users-links-button">
-                                <img src={UsersIcon} alt="Users" />
-                                <p>Users</p>
-                            </div>
-                        </Link>
                     </div>
                 </div>
                 <div className="dashboard-admin-footer">

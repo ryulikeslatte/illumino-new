@@ -74,9 +74,9 @@ function MusicPage() {
                            />
                        )
                     })}
-                </div>
-                <div className="journalPages-footer-container">
-                    <SecondFooter/>
+                    <div className="journalPages-footer-container">
+                        <SecondFooter/>
+                    </div>
                 </div>
             </div>
         </div>

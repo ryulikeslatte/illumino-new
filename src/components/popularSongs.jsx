@@ -1,22 +1,37 @@
 import '../assets/style/popularSongs.css'
-import MusicCover1 from '../assets/image/tophit2.png'
 import PlayButton from '../assets/image/play-button.svg'
+import PauseButton from '../assets/image/pause.png'
+import {useEffect, useRef, useState} from "react";
+import {useNavigate} from "react-router-dom";
 
-function popularSongComp() {
-    return(
-        <>
+function PopularSongsComp({ data, isPlaying, onPlay }) {
+    const nav = useNavigate();
+
+    return (
         <div className="popular-songs-container">
-            <div classNa3qame="songs-card-detail">
-                <img src={MusicCover1} alt="music cover" className='cover' />
+            <div className="songs-card-detail">
+                <img
+                    src={`https://illumino-api.kakashispiritnews.my.id${data.cover_image}`}
+                    alt="music cover"
+                    className="cover"
+                    onClick={() => {
+                        nav(`/music/play/${data.id}`)
+                    }}
+                    style={{ cursor: 'pointer' }}
+                />
                 <div className="card-info">
-                    <p>Top hit 1</p>
-                    <p>3:45</p>
-                    <img src={PlayButton} alt=""/>
-                </div>  
+                    <p>{data.title}</p>
+                    <p>{data.duration}</p>
+                    <img
+                        src={isPlaying ? PauseButton : PlayButton}
+                        alt="Play button"
+                        style={{ cursor: 'pointer' }}
+                        onClick={onPlay}
+                    />
+                </div>
             </div>
         </div>
-        </>
-    )
+    );
 }
 
-export default popularSongComp;
+export default PopularSongsComp;

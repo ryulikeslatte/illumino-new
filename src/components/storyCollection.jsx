@@ -1,21 +1,23 @@
 import '../assets/style/storyCollection.css'
 import Story from '../assets/image/musicover1.png'
-import { Link } from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 
-function storyCollectComp() {
+function StoryCollectComp({data}) {
+    const nav = useNavigate();
     return(
         <>
         <div className="story-collection">
             <div className="story-cover">
-                <img src={Story}/>
+                <img src={`https://illumino-api.kakashispiritnews.my.id${data?.image}`} style={{ backgroundSize: 'cover', height: '340px' }}/>
+                {/*<img src={Story}/>*/}
             </div>
             <div className="detail-story">
-                <p className="title">Track</p>
-                <Link to="/story/detail">Read</Link>
+                <p className="title">{data?.title}</p>
+                <Link onClick={() => nav(`/story/${data?.id}`)} style={{ cursor: 'pointer' }}>Read</Link>
             </div>
         </div>
         </>
     )
 }
 
-export default storyCollectComp
+export default StoryCollectComp

@@ -7,35 +7,51 @@ import expProfil from '../../assets/image/exp-profil.png';
 import EditIcon from '../../assets/image/edit.png';
 import PlusIcon from '../../assets/image/plus.png';
 import '../../assets/style/dashboardMusic.css';
-import { Link } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 
 function DashboardMusicPages() {
+    const nav = useNavigate();
+    const accessToken = localStorage.getItem('access');
+
     const [activeModalId, setActiveModalId] = useState(null);
     const [musicData, setMusicData] = useState([]);
 
-    useEffect(() => {
-        const fetchMusicData = async () => {
-            try {
-                const accessToken = localStorage.getItem('access');
-                const response = await fetch('https://illumino-api.kakashispiritnews.my.id/api/song', {
-                    headers: {
-                        'Authorization': `Bearer ${accessToken}`
-                    }
-                });
-                const data = await response.json();
-                if (data.status === 'success') {
-                    setMusicData(data.data);
+    const fetchMusicData = async () => {
+        try {
+            const response = await fetch('https://illumino-api.kakashispiritnews.my.id/api/song', {
+                headers: {
+                    'Authorization': `Bearer ${accessToken}`
                 }
-            } catch (error) {
-                console.error('Error fetching music data:', error);
+            });
+            const data = await response.json();
+            if (data.status === 'success') {
+                setMusicData(data.data);
             }
-        };
-
-        fetchMusicData();
-    }, []);
+        } catch (error) {
+            console.error('Error fetching music data:', error);
+        }
+    };
 
     const showModal = (id) => setActiveModalId(id);
     const hideModal = () => setActiveModalId(null);
+
+    const handleDelete = async (id) => {
+        const response = await fetch(`https://illumino-api.kakashispiritnews.my.id/api/cms/song?id=${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Authorization': `Bearer ${accessToken}`
+            }
+        });
+
+        if (response.status === 200 || response.status === 201) {
+            window.alert('Delete success')
+            hideModal();
+        }
+    }
+
+    useEffect(() => {
+        fetchMusicData();
+    }, []);
 
     return (
         <div className="dashboard-music-container">
@@ -56,30 +72,30 @@ function DashboardMusicPages() {
                 <div className="dashboard-music-core-content">
                     <div className="dashboard-music-list-content">
                         {musicData.map((music, index) => (
-                            <div className="dashboard-music-card" key={music.id}>
+                            <div className="dashboard-music-card" key={music?.id}>
                                 <div className="music-content">
                                     <p>{index + 1}</p>
                                     <img
-                                        src={"http://localhost:8000" + music.cover_image || 'default_cover_image_path'}
+                                        src={`https://illumino-api.kakashispiritnews.my.id${music?.cover_image}`}
                                         alt="Music Cover"
                                         className='dashboard-music-card-cover'
                                     />
                                     <div className="dashboard-music-card-detail">
-                                        <p>{music.title}</p>
-                                        <p>Artist {music.artist}</p>
+                                        <p>{music?.title}</p>
+                                        <p>Artist {music?.artist}</p>
                                     </div>
                                 </div>
                                 <div className="music-duration">
-                                    <p>{formatDuration(music.duration)}</p>
-                                    <img src={EditIcon} alt="Icon"/>
-                                    <img src={DeleteIcon} alt="Delete" onClick={() => showModal(music.id)} />
-                                    {activeModalId === music.id && (
+                                    <p>{formatDuration(music?.duration)}</p>
+                                    <img src={EditIcon} alt="Icon"  onClick={() => nav(`/admin/music/${music?.id}`)} style={{ cursor: 'pointer' }}/>
+                                    <img src={DeleteIcon} alt="Delete" onClick={() => showModal(music?.id)} style={{ cursor: 'pointer' }}/>
+                                    {activeModalId === music?.id && (
                                         <div className="dashboard-music-delete-modal">
                                             <div className="dashboard-music-delete-modal-content">
                                                 <p>Delete this Story?</p>
                                                 <div className="delete-modal-button-group">
                                                     <button onClick={hideModal}>No</button>
-                                                    <button>Yes</button>
+                                                    <button onClick={() => handleDelete(music?.id)}>Yes</button>
                                                 </div>
                                             </div>
                                         </div>

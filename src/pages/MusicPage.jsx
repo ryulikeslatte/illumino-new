@@ -4,9 +4,47 @@ import expProfil from '../assets/image/exp-profil.png';
 import SideNav from '../components/sideNav'
 import '../assets/style/musicPage.css';
 import MusicList from '../components/musicList';
+import {useEffect, useState} from "react";
 
 
 function MusicPage() {
+    const [musics, setMusics] = useState(null);
+    const [currentSongIndex, setCurrentSongIndex] = useState(null);
+    const [audio, setAudio] = useState(null);
+
+    const handlePlay = (musicUri, index) => {
+        if (audio) {
+            audio.pause();
+            setAudio(null);
+        }
+
+        if (currentSongIndex !== index) {
+            const newAudio = new Audio(`https://illumino-api.kakashispiritnews.my.id${musicUri}`);
+            newAudio.play();
+            setAudio(newAudio);
+            setCurrentSongIndex(index);
+        } else {
+            setCurrentSongIndex(null);
+        }
+    };
+
+    const getMusics = async () => {
+        const response = await fetch('https://illumino-api.kakashispiritnews.my.id/api/song', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(async (v) => {
+            const resJson = await v.json();
+
+            setMusics(resJson.data)
+        });
+    }
+
+    useEffect(() => {
+        getMusics()
+    }, []);
+
     return (
         <>
         <div className="container">
@@ -26,9 +64,16 @@ function MusicPage() {
                 <hr />
                 {/* 1 */}
                 <div className="music-core-content">
-                    <MusicList/>
-                    <MusicList/>
-                    <MusicList/>
+                    {musics?.map((v, id) => {
+                       return (
+                           <MusicList
+                               key={id}
+                               data={v}
+                               isPlaying={currentSongIndex === id}
+                               onPlay={() => handlePlay(v.music_uri, id)}
+                           />
+                       )
+                    })}
                 </div>
                 <div className="journalPages-footer-container">
                     <SecondFooter/>

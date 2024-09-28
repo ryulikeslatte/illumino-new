@@ -10,9 +10,64 @@ import MusicCard from '../components/musicCard'
 import StoryCard from '../components/storyCard'
 import PopularSongsCard from '../components/popularSongs'
 import '../assets/style/homePage.css'
-import { Link } from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
+import {useEffect, useState} from "react";
 
 function HomePages(){
+    const nav = useNavigate();
+
+    const [songs, setSongs] = useState(null);
+    const [currentSongIndex, setCurrentSongIndex] = useState(null);
+    const [audio, setAudio] = useState(null);
+
+    const [stories, setStories] = useState(null);
+
+    const handlePlay = (musicUri, index) => {
+        if (audio) {
+            audio.pause();
+            setAudio(null);
+        }
+
+        if (currentSongIndex !== index) {
+            const newAudio = new Audio(`https://illumino-api.kakashispiritnews.my.id${musicUri}`);
+            newAudio.play();
+            setAudio(newAudio);
+            setCurrentSongIndex(index);
+        } else {
+            setCurrentSongIndex(null);
+        }
+    };
+    const getSongs = async () => {
+        const response = await fetch('https://illumino-api.kakashispiritnews.my.id/api/song', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(async (v) => {
+            const resJson = await v.json();
+
+            setSongs(resJson.data)
+        });
+    }
+
+
+    const getStories = async () => {
+        const response = await fetch('https://illumino-api.kakashispiritnews.my.id/api/story', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(async (v) => {
+            const resJson = await v.json();
+
+            setStories(resJson.data)
+        });
+    }
+
+    useEffect(() => {
+        getSongs();
+        getStories();
+    }, []);
     return(
         <>
         <div className="homePage-container">
@@ -28,9 +83,16 @@ function HomePages(){
                     <div className="homePage-popular-songs">
                         <h1>Popular Songs</h1>
                         <div className="songs-list">
-                            <PopularSongsCard/>
-                            <PopularSongsCard/>
-                            <PopularSongsCard/>
+                            {songs?.map((v, id) => {
+                                return (
+                                    <MusicCard
+                                        key={id}
+                                        data={v}
+                                        isPlaying={currentSongIndex === id}
+                                        onPlay={() => handlePlay(v.music_uri, id)}
+                                    />
+                                )
+                            })}
                         </div>
                     </div> 
                     <div className="homePage-music-content">
@@ -39,10 +101,16 @@ function HomePages(){
                             <Link to='/music'>See all</Link>
                         </div>
                         <div className="music-list-content">
-                            <MusicCard/>
-                            <MusicCard/>
-                            <MusicCard/>
-                            <MusicCard/>
+                            {songs?.map((v, id) => {
+                                return (
+                                    <MusicCard
+                                        key={id}
+                                        data={v}
+                                        isPlaying={currentSongIndex === id}
+                                        onPlay={() => handlePlay(v.music_uri, id)}
+                                    />
+                                )
+                            })}
                         </div>
                     </div>
                     <div className="homePage-story-content">
@@ -51,10 +119,11 @@ function HomePages(){
                             <Link to='/story'>See all</Link>
                         </div>
                         <div className="story-list-content">
-                            <StoryCard/>
-                            <StoryCard/>
-                            <StoryCard/>
-                            <StoryCard/>
+                            {stories?.map((v, id) => {
+                                return (
+                                    <StoryCard key={id} data={v}/>
+                                )
+                            })}
                         </div>
                     </div>
                     <div className="homePage-daily-reflection-content">

@@ -47,7 +47,7 @@ function App() {
         <Route path='/admin/music/:id' element={<UpdateMusic/>}/>
         <Route path='/admin/story' element={<StoryDashboard/>}/>
         <Route path='/admin/story/add' element={<AddStory/>}/>
-        <Route path='/admin/story/update' element={<UpdateStory/>}/>
+        <Route path='/admin/story/:id' element={<UpdateStory/>}/>
         <Route path='/admin/users' element={<UsersDashboard/>}/>
       </Routes>
     </Router>

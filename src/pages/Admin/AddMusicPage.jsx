@@ -71,7 +71,7 @@ function AddMusicPage() {
                     </div>
                     <hr />
                     <div className="addMusicPage-core-content">
-                        <div className="addMusicCover-field">
+                        <div className="addMusicCover-field" style={{ cursor: 'pointer' }}>
                             <img src={PlusIcon} alt="Add Cover" />
                             <p>Add Image</p>
                             <input 

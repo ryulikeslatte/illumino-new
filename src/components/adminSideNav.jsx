@@ -47,12 +47,12 @@ function SideNav() {
                             <p>Story</p>
                         </div>
                     </Link>
-                    <Link to='/admin/users' onClick={(e) => handleNavClick(e, '/admin/users')}>
-                        <div className={`admin-icon-links ${activePath === '/admin/users' ? 'active' : ''}`}>
-                            <img src={UsersIcon} alt="User" />
-                            <p>Users</p>
-                        </div>
-                    </Link>
+                    {/*<Link to='/admin/users' onClick={(e) => handleNavClick(e, '/admin/users')}>*/}
+                    {/*    <div className={`admin-icon-links ${activePath === '/admin/users' ? 'active' : ''}`}>*/}
+                    {/*        <img src={UsersIcon} alt="User" />*/}
+                    {/*        <p>Users</p>*/}
+                    {/*    </div>*/}
+                    {/*</Link>*/}
                     <Link to='/admin' onClick={(e) => handleNavClick(e, '/admin')}>
                         <div className={`admin-icon-links ${activePath === '/admin' ? 'active' : ''}`}>
                             <img src={LogOutIcon} alt="Logout" />

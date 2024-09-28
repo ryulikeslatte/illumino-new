@@ -37,14 +37,14 @@ function App() {
         <Route path='/search' element={<SearchPages/>}/>
         <Route path='/journal' element={<JournalPages/>}/>
         <Route path='/music' element={<MusicPage/>}/>
-        <Route path='/music/play' element={<DetailPlayMusic/>}/>
-        <Route path='/story/detail' element={<DetailStory/>}/>
+        <Route path='/music/play/:id' element={<DetailPlayMusic/>}/>
+        <Route path='/story/:id' element={<DetailStory/>}/>
         <Route path='/story' element={<StoryPage/>}/>
         <Route path='/admin' element={<WelcomeAdmin/>}/>
         <Route path='/admin/dashboard' element={<AdminDashboard/>}/>
         <Route path='/admin/music' element={<MusicDashboard/>}/>
         <Route path='/admin/music/add' element={<AddMusic/>}/>
-        <Route path='/admin/music/update' element={<UpdateMusic/>}/>
+        <Route path='/admin/music/:id' element={<UpdateMusic/>}/>
         <Route path='/admin/story' element={<StoryDashboard/>}/>
         <Route path='/admin/story/add' element={<AddStory/>}/>
         <Route path='/admin/story/update' element={<UpdateStory/>}/>

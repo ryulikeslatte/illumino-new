@@ -3,13 +3,31 @@ import chevronIcon from '../assets/image/chevron.svg';
 import expProfil from '../assets/image/exp-profil.png';
 import SideNav from '../components/sideNav'
 import '../assets/style/storyPage.css';
-import StoryCover2 from '../assets/image/storycover2.png';
-import Story from '../assets/image/story-1.png';
 import ContinueRead from '../components/continueReading'
 import StoryCollection from '../components/storyCollection'
+import {useEffect, useState} from "react";
+import StoryCard from "../components/storyCard.jsx";
 
 
 function StoryPage() {
+    const [stories, setStories] = useState(null);
+    const getStories = async () => {
+        const response = await fetch('https://illumino-api.kakashispiritnews.my.id/api/story', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(async (v) => {
+            const resJson = await v.json();
+
+            setStories(resJson.data)
+        });
+    }
+
+    useEffect(() => {
+        getStories()
+    }, [])
+
     return (
         <>
         <div className="storyPage-container">
@@ -33,19 +51,21 @@ function StoryPage() {
                     <div className="recent">
                         <h1>Recent Activity</h1>
                         <div className="history">
-                            <ContinueRead/>
-                            <ContinueRead/>
-                            <ContinueRead/>
-                            <ContinueRead/>
+                            {stories?.map((v, id) => {
+                                return (
+                                    <ContinueRead key={id} data={v}/>
+                                )
+                            })}
                         </div>
                     </div>
                     <div className="main-story">
                         <h1>Story Collection</h1>
                         <div className="collection">
-                            <StoryCollection/>
-                            <StoryCollection/>
-                            <StoryCollection/>
-                            <StoryCollection/>
+                            {stories?.map((v, id) => {
+                                return (
+                                    <StoryCollection key={id} data={v}/>
+                                )
+                            })}
                         </div>
                     </div>
                 </div>

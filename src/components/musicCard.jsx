@@ -1,22 +1,38 @@
 import '../assets/style/musicCard.css'
 import MusicCover5 from '../assets/image/musicover1.png'
 import PlayButton from '../assets/image/play-button.svg'
+import PauseButton from "../assets/image/pause.png";
+import {useNavigate} from "react-router-dom";
+import {formatDuration} from "../utils/text.js";
 
-function musicCardComp() {
-    return(
-        <>
-        <div className="music-card-container">
-            <div className="music-list-content-card-detail">
-                <img src={MusicCover5} alt="Music Cover" className='cover'/>
+function MusicCardComp({ data, isPlaying, onPlay }) {
+    const nav = useNavigate();
+
+    return (
+        <div className="popular-songs-container">
+            <div className="songs-card-detail">
+                <img
+                    src={`https://illumino-api.kakashispiritnews.my.id${data?.cover_image}`}
+                    alt="music cover"
+                    className="cover"
+                    onClick={() => {
+                        nav(`/music/play/${data?.id}`)
+                    }}
+                    style={{ cursor: 'pointer' }}
+                />
                 <div className="card-info">
-                    <p>Coups</p>
-                    <p>4:20</p>
-                    <img src={PlayButton} alt="play button" />
+                    <p>{data?.title}</p>
+                    <p>{formatDuration(data?.duration)}</p>
+                    <img
+                        src={isPlaying ? PauseButton : PlayButton}
+                        alt="Play button"
+                        style={{ cursor: 'pointer' }}
+                        onClick={onPlay}
+                    />
                 </div>
             </div>
         </div>
-        </>
-    )
+    );
 }
 
-export default musicCardComp
+export default MusicCardComp

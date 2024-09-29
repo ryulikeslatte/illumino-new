@@ -54,7 +54,7 @@ function SideNav() {
                     {/*    </div>*/}
                     {/*</Link>*/}
                     <Link to='/admin' onClick={(e) => handleNavClick(e, '/admin')}>
-                        <div className={`admin-icon-links ${activePath === '/admin' ? 'active' : ''}`}>
+                        <div className={`admin-icon-links ${activePath === '/' ? 'active' : ''}`}>
                             <img src={LogOutIcon} alt="Logout" />
                             <p>Log Out</p>
                         </div>

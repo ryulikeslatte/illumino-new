@@ -5,7 +5,7 @@ import ArinzaImg from '../assets/image/Arinza.png';
 import FadiaImg from '../assets/image/Fadia.png'
 import RahmanImg from '../assets/image/Rahman.png'
 import NazaImg from '../assets/image/Nazario.png'
-import BoyImg from '../assets/image/Vinsesius.png'
+import BoyImg from '../assets/image/Vinsensius.png'
 import LarasImg from '../assets/image/Laras.png'
 
 

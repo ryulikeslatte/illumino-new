@@ -53,7 +53,7 @@ function SideNav() {
                     {/*        <p>Users</p>*/}
                     {/*    </div>*/}
                     {/*</Link>*/}
-                    <Link to='/admin' onClick={(e) => handleNavClick(e, '/admin')}>
+                    <Link to='/admin' onClick={(e) => handleNavClick(e, '/')}>
                         <div className={`admin-icon-links ${activePath === '/' ? 'active' : ''}`}>
                             <img src={LogOutIcon} alt="Logout" />
                             <p>Log Out</p>
